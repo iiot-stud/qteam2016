@@ -5,7 +5,11 @@
 ## (Executive) Abstract
 
 ## Introduction
-With increased interest in cloud computing and operating-system-level virtualization containers, the topic of container orchestration also gained interest. When trying to orchestrate across cloud provider borders, one of the different challenges is, to decide which nodes from which provider to use in a given situation. We propose a policy engine, which decides on a set of given parameters, which cluster nodes fulfill the given constraints. `paragraph in work`
+With increased interest in cloud computing and operating-system-level virtualization containers, the topic of container orchestration also gained interest. When trying to orchestrate across cloud provider borders, one of the different challenges is, to decide, which nodes from which provider to use, in a given situation. We want to elaborate a policy engine which decides, which cluster nodes meet the demands of a given policy by its given constraints. 
+
+In order to do this we need to identify criteria on which we can define a set of policies on. We also need to define an interface to connect with orchestration software.
+
+`TODO: bring up what work (packages) we assess`
 
 ### Research Area
 ### Research Issue
