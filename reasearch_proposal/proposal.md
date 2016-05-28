@@ -16,11 +16,13 @@ We want to apply semantic web methods to support container orchestration in enfo
 <!-- significance of research/Evaluation -->
 Therefore our research improves knowledge on using semantic web technologies to enforce policies.
 
+<!-- subheadings suggested by Alex
 ### Research Area
 ### Research Issue
 ### Related Work (Gap)
 ### Own Approach
 ### Evaluation
+-->
 
 ## Related work (Gap)
 
