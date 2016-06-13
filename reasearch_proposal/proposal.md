@@ -43,6 +43,24 @@ Therefore our research improves knowledge on using semantic web technologies to 
 
 ### WPx
 
+The result of this work package is a REST API to communicate with our policy engine, containing all necessary information to enforce policies. Part of this work is describing how to possibly communicate with Ubernetes/Kubernetes.
+
+
+#### Kubernetes ####
+Kubernetes itself already contains a scheduler implementing a predicate and priority policy.
+
+#### Ubernetes ####
+<!-- x-cluster scheduling knowledge -->
+
+<!-- demultiplexing -->Scheduling may demultiplex resource requests into multiples and assign to different clusters. Therefore some knowledge about internal coupling of components is required. Also, responses have to be remultiplexed into a single response.
+
+Moving existing instances to another cluster would be the related topic of cross-cluster migration.
+
+<!-- Ubernetes API -->
+Ubernetes Api is proposed to look like the existing Kubernetes API, with the extend of clusters being single objects to operate on, similar to nodes. This includes registering, listing, describing and deregistering clusters, but also requesting resources from a specific or, by some metric, automatically assigned cluster. This kind of automatic scheduling is proposed to be done by a not further defined, optional policy engine, which might be our proposed policy engine.
+
+references
+
 ## Impact / Outlook
 
 ## ((Ethical Issues))
