@@ -43,16 +43,61 @@ Therefore our research improves knowledge on using semantic web technologies to 
 
 ### WPx
 
-### 3.1 policy engine api design
-The result of this work package is a REST API to communicate with our policy engine, containing all necessary information to enforce policies. Part of this work is describing how to possibly communicate with Ubernetes/Kubernetes.
+### 3.1 Policy Engine API Design
+The result of this work package is a REST API to communicate with our policy engine, containing all necessary information to enforce policies. Part of this work is researching how to possibly communicate with Ubernetes/Kubernetes. With knowledge of Kubernetes/Ubernetes API we can thoroughly design our related API and also have the option to directly control Ubernetes/Kubernetes with our policy engine.
 
+<!-- TODO
+- Ubernetes/Kubernetes api
+- (general) policy engine input/output
+- already discussed input/output
+
+possible implementation via Apiary.io or swagger.io
+
+notes
+- what do we get back from Ubernetes/Kubernetes if called
+- we discussed to different use cases
+    + customer requests cumputing nodes conforming (his given) policy
+    + customer has a list of nodes and we apply a policy filter on it, returning only policy conform nodes
+-->
 
 #### Kubernetes ####
-Kubernetes itself already contains a scheduler implementing a predicate and priority policy.
+Kubernetes itself contains a pluggable scheduler to determine the placement of new pods onto cluster nodes. It has predicate and priority functions, on which a policy can be build on.
+Predicates are requirements defined via labels on Kubernetes pods, which then get scheduled to nodes also having those labels and thus fulfilling the requirements.
+Then the priority policy helps to rank this list of nodes, to decide which have precedence.
+
+Below, the default policy configuration.
+```
+kind: "Policy"
+version: "v1"
+predicates:
+  - name: "PodFitsPorts"
+  - name: "PodFitsResources"
+  - name: "NoDiskConflict"
+  - name: "MatchNodeSelector"
+  - name: "HostName"
+priorities:
+  - name: "LeastRequestedPriority"
+    weight: 1
+  - name: "BalancedResourceAllocation"
+    weight: 1
+  - name: "ServiceSpreadingPriority"
+    weight: 1
+```
+
+`PodFitsPorts` checks for conflicting network ports on a node.
+`PodFitsResources` determines if the resources defined in the pod requirements, are available on a node.
+`NoDiskConflict` checks if the requested volume is not mounted by an other pod.
+`MatchNodeSelector` tests if the pod's selector query is is satisfied by a node.
+`HostName` checks if a node's name is equivalent to a possibly specified name in the pod's configuration.
+
+`LeastRequestedPriority` prefers nodes with less load.
+`BalancedResourceAllocation` favors nodes with similar memory and cpu load percentage in relation to maximum cpu and memory capacity. This should be used in conjunction with `LeastRequestedPriority`.
+`ServiceSpreadingPriority` minimizes pods of the same service on the same node.
+
 
 #### Ubernetes ####
 <!-- x-cluster scheduling knowledge -->
-A part of Ubernetes ist how to handle cross-cluster scheduling or migration by constraints like location affinity, available computing and network resources, availability, privacy, service level agreements, pricing or other policies. <!-- different vendor, capacity, network: bandwith, latency --> Additionally, to creating, moving, or replicating existing cluster instances, authorization and authentication has to be handled at some point.
+A part of Ubernetes ist how to handle cross-cluster scheduling or migration by constraints like location affinity, available computing and network resources, availability, privacy, service level agreements, pricing or other policies. <!-- different vendor, capacity, network: bandwidth, latency --> Additionally, to creating, moving, or replicating existing cluster instances, authorization and authentication has to be handled at some point.
 
 <!-- demultiplexing -->Scheduling may demultiplex resource requests into multiples and assign to different clusters. Therefore some knowledge about internal coupling of components is required. Also, responses have to be remultiplexed into a single response.
 
@@ -61,6 +106,11 @@ Ubernetes Api is proposed to look like the existing Kubernetes API, with the ext
 
 references
 [Ubernetes Doc](https://github.com/kubernetes/kubernetes/blob/master/docs/proposals/federation.md)
+[Kubernetes Scheduler Doc OpenShift](https://docs.openshift.org/latest/admin_guide/scheduler.html)
+[Kubernetes policy types](https://github.com/kubernetes/kubernetes/blob/master/plugin/pkg/scheduler/api/types.go)
+[Kubernetes Predicate Functions](https://github.com/kubernetes/kubernetes/blob/master/plugin/pkg/scheduler/algorithm/predicates/predicates.go)
+[Kubernetes Priority Functions](https://github.com/kubernetes/kubernetes/blob/master/plugin/pkg/scheduler/algorithm/priorities/priorities.go)
+
 
 ## Impact / Outlook
 
