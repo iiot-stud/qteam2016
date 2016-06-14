@@ -61,6 +61,22 @@ notes
 -->
 
 #### Kubernetes ####
+Kubernetes can be configured by its REST API, provided by the Kubernetes API server, or using its command-line interface, which itself calls the REST API.
+The API itself has a versioned Uri and is centered around Kubernetes components: Node, Pod, Service and Replication Controller. These components can then use label, selector, namespace, annotation, name, secret (, volume...).
+In return to a REST API call, mostly singular JSON objects are returned. These JSON Objects have a `kind` field, identifying the schema, and `apiVersion` field, for schema versioning.
+<!-- TODO:
+ further describe api conventions for a better understanding of the related components and their structure.
+
+[Kubernetes API reference](https://github.com/kubernetes/kubernetes/blob/master/docs/api-reference/README.md)
+[Kubernetes API conventions](https://github.com/kubernetes/kubernetes/blob/master/docs/devel/api-conventions.md)
+
+example request: GET /api/v1/namespaces/{namespace}/endpoints
+
+ starting points [http://kubernetes.io/docs/reference/], [http://kubernetes.io/docs/api/], [http://kubernetes.io/docs/user-guide/], [browsable api](http://kubernetes.io/kubernetes/third_party/swagger-ui/#/), [OpenShift Kubernetes api listing](https://docs.openshift.org/latest/rest_api/kubernetes_v1.html#paths)
+
+-->
+
+##### Kubernetes Scheduler #####
 Kubernetes itself contains a pluggable scheduler to determine the placement of new pods onto cluster nodes. It has predicate and priority functions, on which a policy can be build on.
 Predicates are requirements defined via labels on Kubernetes pods, which then get scheduled to nodes also having those labels and thus fulfilling the requirements.
 Then the priority policy helps to rank this list of nodes, to decide which have precedence.
@@ -105,12 +121,17 @@ A part of Ubernetes ist how to handle cross-cluster scheduling or migration by c
 Ubernetes Api is proposed to look like the existing Kubernetes API, with the extend of clusters being single objects to operate on, similar to nodes. This includes registering, listing, describing and deregistering clusters, but also requesting resources from a specific or, by some metric, automatically assigned cluster. This kind of automatic scheduling is proposed to be done by a not further defined, optional policy engine, which might be our proposed policy engine.
 
 references
+<!-- Ubernetes -->
 [Ubernetes Doc](https://github.com/kubernetes/kubernetes/blob/master/docs/proposals/federation.md)
+<!-- Kubernetes Scheduler -->
 [Kubernetes Scheduler Doc OpenShift](https://docs.openshift.org/latest/admin_guide/scheduler.html)
 [Kubernetes policy types](https://github.com/kubernetes/kubernetes/blob/master/plugin/pkg/scheduler/api/types.go)
 [Kubernetes Predicate Functions](https://github.com/kubernetes/kubernetes/blob/master/plugin/pkg/scheduler/algorithm/predicates/predicates.go)
 [Kubernetes Priority Functions](https://github.com/kubernetes/kubernetes/blob/master/plugin/pkg/scheduler/algorithm/priorities/priorities.go)
-
+<!-- Kubernetes API -->
+[Kubernetes architecture](https://github.com/kubernetes/kubernetes/blob/master/docs/design/architecture.md)
+[Kubernetes API reference](https://github.com/kubernetes/kubernetes/blob/master/docs/api-reference/README.md)
+[Kubernetes API conventions](https://github.com/kubernetes/kubernetes/blob/master/docs/devel/api-conventions.md)
 
 ## Impact / Outlook
 
