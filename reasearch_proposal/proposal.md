@@ -24,9 +24,24 @@ Therefore our research improves knowledge on using semantic web technologies to 
 ### Evaluation
 -->
 
-## Related work (Gap)
+## Related work
+<!--- to be rewritten -->
+Policy management in cloud-infrastructures are becomming a pervasive issue. Governments steadily pass new laws and regulations that impact IT-Systems i.e. Privacy Regulations. People that are responsible for cloud systems need to respect those laws and regulations, since violating these regulations will tend to legal-penalties, financial-penalties or sanctions from other goverments towards the industry. But also public outcry caused by violations of privacy rules are things that cloud-managers need to worry about. Therefore the Industry needs to gather with IT-Professionals, Lawyers, Gevernments and Auditors to face several issues in order to describe best practices  to address these Governmential regulations and restriction policies. That costs a lot of menpower and time and is therefore expensive.
+The policies need also to be applied across multiple components of a cloud infrastructure as well as beeing applied just in a range of seconds.
 
-### Übernetes
+When adressing policy issues people tend to have multiple definitions what a policy may be. Some definitions of policies or policy engines are rely on software componants that allows organizations to create, monitor and enforce rules about networks resources and data-acces rules for role-based permissions. On the other hand policies can also face Geofencing policies with  user-data.
+
+This is an issue in countries like Singapur or Japan where laws are implemented by the Government, that dissallows Data that originates from a citizen of that country to leave the geographical boundaries of that country. These kind of data management needs to be adressed in time of deployment to prevent legal penalties.
+
+A policy engine should be implemented in order to be aware of all of this situations and turn them  either into configuration files, physical topology, networking gears, or Application Settings. 
+
+A comparable policy engine which was published by OpenStack in 2016 is the policy engine called "Congress". 
+
+Congress is a software component in OpenStack infrastructure that is able to monitor the cloud for violations, enforce that these violations can not ocure or correct them after they occured. Mainly infrastructure components ask the policy engine before deploying if a violation of policies may ocure, in order to get permissions.
+
+Congress relys entirely on all other services that exist in clouds today and uses sql tables, reasoning measures and several logs in order to apply and monitor policies.
+
+
 ### ...
 
 ## Implementation
