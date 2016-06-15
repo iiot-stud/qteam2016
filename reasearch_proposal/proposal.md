@@ -61,24 +61,34 @@ Congress relys entirely on all other services that exist in clouds today and use
 ### 3.1 Policy Engine API Design
 The result of this work package is a REST API to communicate with our policy engine, containing all necessary information to enforce policies. Part of this work is researching how to possibly communicate with Ubernetes/Kubernetes. With knowledge of Kubernetes/Ubernetes API we can thoroughly design our related API and also have the option to directly control Ubernetes/Kubernetes with our policy engine.
 
+<!-- TODO-NOW
+- roughly describe Kubernetes API ideas
+- describe requirements to launch a service
+ -->
+
 <!-- TODO
 - Ubernetes/Kubernetes api
 - (general) policy engine input/output
 - already discussed input/output
+
+Kubernetes API basics to show Kubernetes components, parts, and generalized basics about api design. Go into depth as far as is required to initially create and schedule a defined service with its pods onto some nodes.
 
 possible implementation via Apiary.io or swagger.io
 
 notes
 - what do we get back from Ubernetes/Kubernetes if called
 - we discussed to different use cases
-    + customer requests cumputing nodes conforming (his given) policy
+    + customer requests computing nodes conforming (his given) policy
     + customer has a list of nodes and we apply a policy filter on it, returning only policy conform nodes
 -->
 
 #### Kubernetes ####
 Kubernetes can be configured by its REST API, provided by the Kubernetes API server, or using its command-line interface, which itself calls the REST API.
-The API itself has a versioned Uri and is centered around Kubernetes components: Node, Pod, Service and Replication Controller. These components can then use label, selector, namespace, annotation, name, secret (, volume...).
+The API itself has a versioned Uri and is centered around Kubernetes components: Node, Pod, Service and Replication Controller. These components can then use label, selector, namespace, annotation, name and secret.<!--  (, volume...). -->
 In return to a REST API call, mostly singular JSON objects are returned. These JSON Objects have a `kind` field, identifying the schema, and `apiVersion` field, for schema versioning.
+
+
+
 <!-- TODO:
  further describe api conventions for a better understanding of the related components and their structure.
 
@@ -134,6 +144,11 @@ A part of Ubernetes ist how to handle cross-cluster scheduling or migration by c
 
 <!-- Ubernetes API -->
 Ubernetes Api is proposed to look like the existing Kubernetes API, with the extend of clusters being single objects to operate on, similar to nodes. This includes registering, listing, describing and deregistering clusters, but also requesting resources from a specific or, by some metric, automatically assigned cluster. This kind of automatic scheduling is proposed to be done by a not further defined, optional policy engine, which might be our proposed policy engine.
+
+#### Proposed Design ####
+The API can not specify every possible input to our policy engine, because possible policies, including their rules on input objects, are unknown at API design stage and subject to change. Instead the API is designed around a schema which can be used and adapted according to a policy's needs. The Kubernetes Scheduler's policy configuration with its predicates and priorities, is a suitable base skeleton for further API design. With its distinction between forced predicates and favorable priorities, policy configuration has a rough structure. Further policy configuration may be done by extending the skeleton's JSON encoded objects with objects of key-value pairs. Such an object may look like `{subject:Tom, predicate:is, object:human}` or `{ name:HumanSubjectsNamedTom, triplet: {subject:Tom, predicate:is, object:human} }`.
+
+Because our policy engine supports only one operation mode, which is applying a policy to a list of nodes, the REST API call itself is simple. We can use a simple HTTP POST to send our described JSON configuration. A response will contain a JSON encoded, ranked list of nodes, fulfilling the requested policy.
 
 references
 <!-- Ubernetes -->
