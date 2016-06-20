@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>FITeagle</title>
+    <link rel="stylesheet" type="text/css" href="fiteagle.css"/>
+    <style>
+        .pre {outline: 1px solid #ccc; padding: 5px; margin: 5px; white-space: pre;}
+        .string { color: green; }
+        .number { color: darkorange; }
+        .boolean { color: blue; }
+        .null { color: magenta; }
+        .key { color: red; }
+    </style>
+    <script src="js/jquery.js"></script>
+    <script src="js/mimic.js" language="javascript"></script>
+    <script type="text/javascript">
+//var url = location.href;
+
+var url2 = window.location.origin + "/sfa/api/am/v3";
+
+function syntaxHighlight(json) {
+    json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
+        var cls = 'number';
+        if (/^"/.test(match)) {
+            if (/:$/.test(match)) {
+                cls = 'key';
+            } else {
+                cls = 'string';
+            }
+        } else if (/true|false/.test(match)) {
+            cls = 'boolean';
+        } else if (/null/.test(match)) {
+            cls = 'null';
+        }
+        return '<span class="' + cls + '">' + match + '</span>';
+    });
+}
+
+function getVersion() {
+	document.getElementById("getversionResponse").innerHTML="...";
+	var method = "getVersion";
+	var request = new XmlRpcRequest(url2, method);
+	var response = request.send();
+	document.getElementById("getversionResponse").innerHTML=syntaxHighlight(JSON.stringify(response.parseXML(), null, 2));
+}
+function ListResources() {
+	document.getElementById("ListResourcesResponse").innerHTML="...";
+	var method = "ListResources";
+	var request = new XmlRpcRequest(url2, method);
+	console.log(request);
+	var response = request.send();
+	document.getElementById("ListResourcesResponse").innerHTML=syntaxHighlight(JSON.stringify(response.parseXML(), null, 2));
+}
+    </script>
+  </head>
+  <body>
+
+    <div class="logo-holder">
+        <!--<img id="background" src="fiteagle_bg.jpg" alt="background" />-->
+        <a href="http://fiteagle.org" id="mailer">
+            <img id="logo" src="fiteagle_logo.png" alt="FITeagle" title="FITeagle"/>
+        </a>
+	<div id="text">
+	<h2 class="section-heading">Welcome to FITeagle</h2>
+	<p class="lead">This is the landing page of a testbed, powered by <a href="http://fiteagle.org">FITeagle</a>.<p>
+	<p>In order to communicate with this server you might need an SFA compatible software like <a href="http://jfed.iminds.be/">jFed</a>.
+
+	<h2 class="section-heading">Testbed API</h2>
+	<p>Slice-Authority:	(Authentication and Authorization) <br>
+	<output class="lead" id="api-url-sa"> </output>
+	<p>Aggregate-Manager:	(Reserve,Provision,Delete)	<br>
+	<output class="lead" id="api-url"> </output>
+	<script>
+	var url = location.href;
+	var sa = "sfa/api/sa/v1";
+	var am = "sfa/api/am/v3";
+	var resultAM = url.concat(am);
+	var resultSA = url.concat(sa)
+	document.getElementById("api-url").innerHTML = resultAM;
+	document.getElementById("api-url-sa").innerHTML = resultSA;
+	</script>
+
+
+	<h2 class="section-heading">Testbed Information</h2>
+	<!--button type="button" class="lead" id="testbed-meta">Get Information</button><br/-->
+SFA: <button type="button" onClick="getVersion();" >GetVersion</button> REST: <a href="/native/api/resources/getVersion">link</a> <br/> <div class="pre" id="getversionResponse" >..</div>
+SFA: <button type="button" onClick="ListResources();" >ListResources</button>(illegal w/o credential) REST: <a href="/native/api/resources/ListResources">link</a> <br/> <div class="pre" id="ListResourcesResponse" >..</div>
+	<script>
+	function get_Version () {
+	$.ajax({
+			cache: false,
+			type: "POST",
+			async: false,
+			data: "<?xml version=\"1.0\"?><methodCall><methodName>GetVersion</methodName><params></params></methodCall>",
+			url: document.getElementById("api-url").value,
+			success: function(data2,status){
+			var newData = data2.replace('<?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>output</name><value><string>SUCCESS</string></value></member><member><name>geni_api</name><value><int>3</int></value></member><member><name>code</name><value><struct><member><name>geni_code</name><value><int>0</int></value></member><member><name>am_code</name><value><int>0</int></value></member></struct></value></member><member><name>value</name><value><struct><member><name>geni_api_versions</name><value><struct><member><name>3</name><value><string>localhost/sfa/api/am/v3</string></value></member></struct></value></member><member><name>geni_credential_types</name><value><array><data><value><struct><member><name>geni_type</name><value><string>geni_sfa</string></value></member><member><name>geni_version</name><value><string>1</string></value></member></struct></value></data></array></value></member><member><name>geni_api</name><value><int>3</int></value></member><member><name>geni_ad_rspec_versions</name><value><array><data><value><struct><member><name>schema</name><value><string>http://www.geni.net/resources/rspec/3/ad.xsd</string></value></member><member><name>extensions</name><value><array><data></data></array></value></member><member><name>namespace</name><value><string>http://open-multinet.info/ontology/omn-resource</string></value></member><member><name>type</name><value><string>open-multinet</string></value></member><member><name>version</name><value><string>1</string></value></member></struct></value><value><struct><member><name>schema</name><value><string>http://www.geni.net/resources/rspec/3/ad.xsd</string></value></member><member><name>extensions</name><value><array><data></data></array></value></member><member><name>namespace</name><value><string>http://www.geni.net/resources/rspec/3</string></value></member><member><name>type</name><value><string>GENI</string></value></member><member><name>version</name><value><string>3</string></value></member></struct></value></data></array></value></member><member><name>geni_request_rspec_versions</name><value><array><data><value><struct><member><name>schema</name><value><string>http://www.geni.net/resources/rspec/3/request.xsd</string></value></member><member><name>extensions</name><value><array><data></data></array></value></member><member><name>namespace</name><value><string>http://open-multinet.info/ontology/omn-resource</string></value></member><member><name>type</name><value><string>open-multinet</string></value></member><member><name>version</name><value><string>1</string></value></member></struct></value><value><struct><member><name>schema</name><value><string>http://www.geni.net/resources/rspec/3/request.xsd</string></value></member><member><name>extensions</name><value><array><data></data></array></value></member><member><name>namespace</name><value><string>http://www.geni.net/resources/rspec/3</string></value></member><member><name>type</name><value><string>GENI</string></value></member><member><name>version</name><value><string>3</string></value></member></struct></value></data></array></value></member><member><name>omn_testbed</name><value><string>', " ");
+
+			var newData2 = newData.replace('</string></value></member></struct></value></member></struct></value></param></params></methodResponse>', '');
+			alert(newData2);
+			},
+			error: function(xhl,status){
+			alert("Sorry, an error occurred");
+			},
+			statusCode:{
+				201: function(){
+				alert("fehler");
+				}
+			}
+		});
+	}
+	document.getElementById("testbed-meta").onclick = get_Version;
+	</script>
+	</div>
+    </div>
+  </body>
+</html>

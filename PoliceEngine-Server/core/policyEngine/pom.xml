@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<name>FITeagle :: Core :: Federationmanager</name>
+	<groupId>org.q-team.core</groupId>
+	<artifactId>federationManager</artifactId>
+	<version>0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+	<parent>
+		<groupId>org.q-team</groupId>
+		<artifactId>core</artifactId>
+		<version>0.1-SNAPSHOT</version>
+	</parent>
+
+<!-- 	<dependencies> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.q-team.adapters</groupId> -->
+<!-- 			<artifactId>abstract</artifactId> -->
+<!-- 			<version>0.1-SNAPSHOT</version> -->
+<!-- 		</dependency> -->
+<!-- 	</dependencies> -->
+
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.wildfly.plugins</groupId>
+				<artifactId>wildfly-maven-plugin</artifactId>
+				<version>${wildfly.version}</version>
+				<configuration>
+					<skip>false</skip>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<filename>${project.build.finalName}.war</filename>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
+
+
+
