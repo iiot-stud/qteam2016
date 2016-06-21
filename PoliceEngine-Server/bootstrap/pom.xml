@@ -32,16 +32,16 @@
 		<resteasy.version>3.0.8.Final</resteasy.version>
 	</properties>
 
-	<repositories>
-		<repository>
-			<id>fiteagle-repo</id>
-			<url>http://fiteagle.org/maven</url>
-		</repository>
-		<repository>
-			<id>JBoss Repository</id>
-			<url>https://repository.jboss.org/nexus/content/groups/public/</url>
-		</repository>
-	</repositories>
+<!-- 	<repositories> -->
+<!-- 		<repository> -->
+<!-- 			<id>fiteagle-repo</id> -->
+<!-- 			<url>http://fiteagle.org/maven</url> -->
+<!-- 		</repository> -->
+<!-- 		<repository> -->
+<!-- 			<id>JBoss Repository</id> -->
+<!-- 			<url>https://repository.jboss.org/nexus/content/groups/public/</url> -->
+<!-- 		</repository> -->
+<!-- 	</repositories> -->
 
 	<pluginRepositories>
         <pluginRepository>
@@ -70,29 +70,29 @@
 		<url>https://github.com/fiteagle</url>
 	</scm>
 
-	<distributionManagement>
-		<repository>
-			<uniqueVersion>false</uniqueVersion>
-			<id>fiteagle</id>
-			<name>fiteagle</name>
-			<url>http://fiteagle.org/maven</url>
-		</repository>
-		<site>
-			<id>github</id>
-			<name>fiteagle</name>
-			<url>https://github.com/fiteagle/</url>
-		</site>
-	</distributionManagement>
+<!-- 	<distributionManagement> -->
+<!-- 		<repository> -->
+<!-- 			<uniqueVersion>false</uniqueVersion> -->
+<!-- 			<id>fiteagle</id> -->
+<!-- 			<name>fiteagle</name> -->
+<!-- 			<url>http://fiteagle.org/maven</url> -->
+<!-- 		</repository> -->
+<!-- 		<site> -->
+<!-- 			<id>github</id> -->
+<!-- 			<name>fiteagle</name> -->
+<!-- 			<url>https://github.com/fiteagle/</url> -->
+<!-- 		</site> -->
+<!-- 	</distributionManagement> -->
 
 	<ciManagement>
 		<system>travis</system>
 		<url>http://travis.org</url>
 	</ciManagement>
 
-	<issueManagement>
-		<system>GitHub</system>
-		<url>http://github.com/fiteagle</url>
-	</issueManagement>
+<!-- 	<issueManagement> -->
+<!-- 		<system>GitHub</system> -->
+<!-- 		<url>http://github.com/fiteagle</url> -->
+<!-- 	</issueManagement> -->
 
 	<mailingLists>
 		<mailingList>
