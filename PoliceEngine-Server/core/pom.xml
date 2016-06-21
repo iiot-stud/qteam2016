@@ -13,6 +13,7 @@
 		<groupId>org.q-team</groupId>
 		<artifactId>bootstrap</artifactId>
 		<version>0.1-SNAPSHOT</version>
+		<relativePath>../bootstrap/pom.xml</relativePath>
 	</parent>
 
 	<dependencies>
