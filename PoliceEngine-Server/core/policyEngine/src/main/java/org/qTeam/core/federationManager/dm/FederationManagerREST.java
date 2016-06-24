@@ -42,7 +42,8 @@ public class FederationManagerREST{
 		  Response response = engine.handleRequest(jsonRequest);
 		  String responseString = response.parseToJsonString();
 		  
-	    	return  responseString;
+		  return Response.ok(responseString).header("Access-Control-Allow-Origin", "*").build();	  
+		  
 	  }
 	  
 	  /*
