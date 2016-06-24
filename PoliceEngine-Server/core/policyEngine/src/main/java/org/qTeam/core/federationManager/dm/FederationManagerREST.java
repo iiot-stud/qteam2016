@@ -12,7 +12,6 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
-import javax.ws.rs.core.Response;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
@@ -42,7 +41,7 @@ public class FederationManagerREST{
 		  // Taking the Json-Body and handling it to the PolicyEngine 
 		  Response response = engine.handleRequest(jsonRequest);
 		  String responseString = response.parseToJsonString();
-		  return Response.ok(responseString).header("Access-Control-Allow-Origin", "*").build();	  
+		  return javax.ws.rs.core.Response.ok(responseString).header("Access-Control-Allow-Origin", "*").build();	  
 		  
 	  }
 	  
