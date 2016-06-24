@@ -37,7 +37,7 @@ public class FederationManagerREST{
 	  @POST
 	  @Path("/request/v1")
 	  @Consumes(MediaType.APPLICATION_JSON)
-	  public String request(String jsonRequest) {
+	  public Response request(String jsonRequest) {
 		  // Taking the Json-Body and handling it to the PolicyEngine 
 		  Response response = engine.handleRequest(jsonRequest);
 		  String responseString = response.parseToJsonString();
