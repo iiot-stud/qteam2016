@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.2">
-<!--     <deployment> -->
-<!--         <dependencies> -->
-<!--             <module export="true" name="deployment.openrdf-workbench.war"/> -->
-<!--             <module export="true" name="deployment.openrdf-sesame.war"/> -->
-<!--         </dependencies> -->
-<!--     </deployment> -->
-</jboss-deployment-structure>

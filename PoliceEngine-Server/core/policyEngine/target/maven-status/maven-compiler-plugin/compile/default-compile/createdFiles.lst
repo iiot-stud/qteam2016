@@ -1,8 +1,0 @@
-org/qTeam/core/federationManager/PolicyEngine.class
-org/qTeam/core/federationManager/Response.class
-org/qTeam/core/federationManager/Datacenter.class
-org/qTeam/core/federationManager/FederationManager.class
-org/qTeam/core/federationManager/dm/FederationManagerMDBListener.class
-org/qTeam/core/federationManager/dm/FederationManagerREST.class
-org/qTeam/core/federationManager/dm/ControlFilter.class
-org/qTeam/core/federationManager/Request.class
