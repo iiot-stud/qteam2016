@@ -1,0 +1,395 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4">
+        <rdfs:label xml:lang="en">Q-Team Communication Testbed</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">Q-Team Communication Testbed</rdfs:seeAlso>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#containsRule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#containsRule">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#partOf"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#containsRule"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Act"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#containsRule"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hasDataCenter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hasDataCenter">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#locatedIn"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hosts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hosts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Law_alliance"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hosts"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Data_center"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hosts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hosts">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hosts"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Data_center"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hosts"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slots"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#isAppliedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#isAppliedIn">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#isAppliedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Act"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#isAppliedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#isAppliedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Law_alliance"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#locatedIn">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hasDataCenter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hasDataCenter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Law_alliance"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hosts"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#partOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#partOf">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#partOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#partOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Act"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#minAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#minAge">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Act -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Act">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Data_center"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Law_alliance"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slots"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#China"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#England"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#France"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Germany"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Italy"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Data_center"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Law_alliance"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slots"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Data_center -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Data_center">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Law_alliance"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slots"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Law_alliance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Law_alliance">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slots"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slots"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#RuleWithMinAge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#RuleWithMinAge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slots -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slots"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#China -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#China">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EU -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EU">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Law_alliance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#England -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#England">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#France">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Germany -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Germany">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Italy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Italy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Recht_auf_Vergessen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Recht_auf_Vergessen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule"/>
+        <partOf rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dsgvo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#bdsg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#bdsg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Act"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_g_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_g_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Data_center"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_g_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_g_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Data_center"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_usa_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_usa_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Data_center"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dsgvo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dsgvo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Act"/>
+        <containsRule rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Recht_auf_Vergessen"/>
+        <containsRule rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#meldepflicht_bei_verletzung"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#einwilligung_zur_datensammlung -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#einwilligung_zur_datensammlung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#RuleWithMinAge"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#meldepflicht_bei_verletzung -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#meldepflicht_bei_verletzung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule"/>
+        <partOf rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dsgvo"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
