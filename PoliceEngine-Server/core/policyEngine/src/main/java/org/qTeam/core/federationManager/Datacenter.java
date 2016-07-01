@@ -99,4 +99,12 @@ public class Datacenter {
 	protected void setPrice(String price) {
 		this.price = price;
 	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
 }

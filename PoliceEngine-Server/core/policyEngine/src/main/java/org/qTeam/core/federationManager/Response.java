@@ -1,5 +1,6 @@
 package org.qTeam.core.federationManager;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.hornetq.utils.json.JSONException;
@@ -18,6 +19,10 @@ public class Response {
 		this.version = version;
 		this.success = success;
 		this.locations = locations;
+	}
+	
+	public Response(){
+		locations = new ArrayList<Datacenter>();
 	}
 	
 	public String parseToJsonString(){

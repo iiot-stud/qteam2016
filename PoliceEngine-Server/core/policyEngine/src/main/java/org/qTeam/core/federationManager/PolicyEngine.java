@@ -6,7 +6,9 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.qTeam.api.tripletStoreAccessor.TripletStoreAccessor;
 import org.qTeam.api.tripletStoreAccessor.TripletStoreAccessor.ResourceRepositoryException;
+import org.apache.jena.atlas.json.io.parserjavacc.javacc.JSON_Parser;
 import org.hornetq.utils.json.JSONArray;
+import org.hornetq.utils.json.JSONException;
 import org.hornetq.utils.json.JSONObject;
 
 import com.hp.hpl.jena.rdf.model.Model;
@@ -65,6 +67,7 @@ public class PolicyEngine {
 	private ArrayList<Datacenter> getDatacentersForCountrys(ArrayList<String> countryArray) {
 		// TODO Ask TripletStoreAccessor for all Datacenters
 		Model model = null;
+		ArrayList<Datacenter> datacenterArray = new ArrayList<Datacenter>();
 		
 //	 	Getting ALL Resources in the Database. Will change to get only Resources from one Country
 //		or maybe better get ALL Countrys but without the other Resources
@@ -79,13 +82,18 @@ public class PolicyEngine {
 			// TODO
 //			model.listResourcesWithProperty("av:isIn", "av:"+s );
 		}
-		
-		
+		Datacenter data = new Datacenter();
+		data.setContinent("europe");
+		data.setCountry("Germany");
+		data.setName("Strato");
+		data.setPrice("2€/hr");
+		data.setLocation("Berlin");
+		datacenterArray.add(data);
 		
 		
 //		resultModel.listStatements(new SimpleSelector(null, Omn.isReservationOf,(Object)null));
 		
-		return null;
+		return datacenterArray;
 	}
 
 
@@ -112,10 +120,16 @@ public class PolicyEngine {
 	
 	private Request parseFromJSON(String jsonString){
 		Request request = new Request();
-		JSONObject tmpJson = new  JSONObject();
+		JSONObject tmpJson  = null;
+		try {
+			tmpJson = new  JSONObject(jsonString);
+		} catch (JSONException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		
 		try {
-			tmpJson.getJSONObject(jsonString);
+//			tmpJson.getJSONObject(jsonString);
 			
 			request.setName(tmpJson.getString("name"));
 			request.setVendor(tmpJson.getString("vendor"));
@@ -129,6 +143,7 @@ public class PolicyEngine {
 			tmpArray = tmpJson.getJSONArray("attributes");
 			for(int i=0 ; i < tmpArray.length() ; i++){
 			request.getAttributes().add(tmpArray.getString(i));
+			String a;
 			}
 			
 			return request;

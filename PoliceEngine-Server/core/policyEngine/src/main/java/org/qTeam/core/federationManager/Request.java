@@ -1,5 +1,6 @@
 package org.qTeam.core.federationManager;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Request {
@@ -18,7 +19,8 @@ public class Request {
 	}
 	
 	public Request(){
-		
+		attributes =new ArrayList<String>();
+		preferences = new ArrayList<String>();
 	}
 	
 	protected String getName() {
