@@ -1,51 +1,246 @@
-@prefix wgs:  <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix owl:  <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix omn:  <http://open-multinet.info/ontology/omn#> .
-@prefix av:   <http://federation.av.tu-berlin.de/about#> .
-@prefix omn-federation: <http://open-multinet.info/ontology/omn-federation#> .
-@prefix omn-lifecycle: <http://open-multinet.info/ontology/omn-lifecycle#> .
+@base <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4> .
 
-av:Q-Team_Testbed a omn-federation:Infrastructure,
-owl:NamedIndividual;
-rdfs:label "Q-Team Communication Testbed" ;
-rdfs:seeAlso "https://federation.av.tu-berlin.de" ;
-wgs:lat       "52.516377" ;
-wgs:long      "13.323732" .
+<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4> rdf:type owl:Ontology ;
+                                                                                rdfs:label "Q-Team Communication Testbed"@en ;
+                                                                                rdfs:seeAlso "Q-Team Communication Testbed"@en .
 
-av:Q-Team_Testbed
-    omn-lifecycle:implements   av:Policies ;
-    omn-lifecycle:implements   av:Countries .
+#################################################################
+#    Object Properties
+#################################################################
 
-    av:Policies av:has av:HighSecurity.
-    av:Policies av:has av:LowSecurity.
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#containsRule
+:containsRule rdf:type owl:ObjectProperty ;
+              owl:inverseOf :partOf ;
+              rdfs:domain [ rdf:type owl:Restriction ;
+                            owl:onProperty :containsRule ;
+                            owl:someValuesFrom :Act
+                          ] ;
+              rdfs:range [ rdf:type owl:Restriction ;
+                           owl:onProperty :containsRule ;
+                           owl:someValuesFrom :Rule
+                         ] .
 
-    av:HighSecurity av:needs av:isInEurope;
-    av:needs av:has4AugenPrinzip;
-    av:forbids av:hasVDS;
-    av:forbids av:contractWithUSA.
 
-    av:Countries av:hasCountry av:Germany .
-    av:Countries av:hasCountry av:France .
-    av:Countries av:hasCountry av:Spain .
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hasDataCenter
+:hasDataCenter rdf:type owl:ObjectProperty ;
+               owl:inverseOf :locatedIn ;
+               rdfs:domain [ rdf:type owl:Restriction ;
+                             owl:onProperty :hosts ;
+                             owl:someValuesFrom :Country
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hosts ;
+                             owl:someValuesFrom :Law_alliance
+                           ] ;
+               rdfs:range [ rdf:type owl:Restriction ;
+                            owl:onProperty :hosts ;
+                            owl:allValuesFrom :Data_center
+                          ] .
 
-    av:Spain
-    av:isInEurope true;
-    av:hasVDS false;
-    av:has4AugenPrinzip true;
-    av:contractWithUSA true.
 
-    av:Germany
-    av:isInEurope true;
-    av:hasVDS true;
-    av:has4AugenPrinzip false;
-    av:contractWithUSA true.
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hosts
+:hosts rdf:type owl:ObjectProperty ;
+       rdfs:domain [ rdf:type owl:Restriction ;
+                     owl:onProperty :hosts ;
+                     owl:allValuesFrom :Data_center
+                   ] ;
+       rdfs:range [ rdf:type owl:Restriction ;
+                    owl:onProperty :hosts ;
+                    owl:allValuesFrom :Slots
+                  ] .
 
-    av:France
-    av:isInEurope true;
-    av:hasVDS false;
-    av:has4AugenPrinzip false;
-    av:contractWithUSA false.
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#isAppliedIn
+:isAppliedIn rdf:type owl:ObjectProperty ;
+             rdfs:domain [ rdf:type owl:Restriction ;
+                           owl:onProperty :isAppliedIn ;
+                           owl:someValuesFrom :Act
+                         ] ;
+             rdfs:range [ rdf:type owl:Restriction ;
+                          owl:onProperty :isAppliedIn ;
+                          owl:someValuesFrom :Country
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :isAppliedIn ;
+                          owl:someValuesFrom :Law_alliance
+                        ] .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#locatedIn
+:locatedIn rdf:type owl:ObjectProperty ;
+           rdfs:domain [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasDataCenter ;
+                         owl:someValuesFrom :Country
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasDataCenter ;
+                         owl:someValuesFrom :Law_alliance
+                       ] ;
+           rdfs:range [ rdf:type owl:Restriction ;
+                        owl:onProperty :hosts ;
+                        owl:allValuesFrom :Country
+                      ] .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#partOf
+:partOf rdf:type owl:ObjectProperty ;
+        rdfs:domain [ rdf:type owl:Restriction ;
+                      owl:onProperty :partOf ;
+                      owl:someValuesFrom :Rule
+                    ] ;
+        rdfs:range [ rdf:type owl:Restriction ;
+                     owl:onProperty :partOf ;
+                     owl:someValuesFrom :Act
+                   ] .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#minAge
+:minAge rdf:type owl:DatatypeProperty ;
+        rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Act
+:Act rdf:type owl:Class ;
+     owl:disjointWith :Country ,
+                      :Data_center ,
+                      :Law_alliance ,
+                      :Rule ,
+                      :Slots .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country
+:Country rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Class ;
+                               owl:oneOf ( :China
+                                           :England
+                                           :France
+                                           :Germany
+                                           :Italy
+                                         )
+                             ] ;
+         owl:disjointWith :Data_center ,
+                          :Law_alliance ,
+                          :Rule ,
+                          :Slots .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Data_center
+:Data_center rdf:type owl:Class ;
+             owl:disjointWith :Law_alliance ,
+                              :Rule ,
+                              :Slots .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Law_alliance
+:Law_alliance rdf:type owl:Class ;
+              owl:disjointWith :Rule ,
+                               :Slots .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule
+:Rule rdf:type owl:Class ;
+      owl:disjointWith :Slots .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#RuleWithMinAge
+:RuleWithMinAge rdf:type owl:Class ;
+                rdfs:subClassOf :Rule .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slots
+:Slots rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#China
+:China rdf:type owl:NamedIndividual ,
+                :Country .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EU
+:EU rdf:type owl:NamedIndividual ,
+             :Law_alliance .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#England
+:England rdf:type owl:NamedIndividual ,
+                  :Country .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#France
+:France rdf:type owl:NamedIndividual ,
+                 :Country .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Germany
+:Germany rdf:type owl:NamedIndividual ,
+                  :Country .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Italy
+:Italy rdf:type owl:NamedIndividual ,
+                :Country .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Recht_auf_Vergessen
+:Recht_auf_Vergessen rdf:type owl:NamedIndividual ,
+                              :Rule ;
+                     :partOf :dsgvo .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#bdsg
+:bdsg rdf:type owl:NamedIndividual ,
+               :Act .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_g_1
+:dc_g_1 rdf:type owl:NamedIndividual ,
+                 :Data_center .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_g_2
+:dc_g_2 rdf:type owl:NamedIndividual ,
+                 :Data_center .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_usa_1
+:dc_usa_1 rdf:type owl:NamedIndividual ,
+                   :Data_center .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dsgvo
+:dsgvo rdf:type owl:NamedIndividual ,
+                :Act ;
+       :containsRule :Recht_auf_Vergessen ,
+                     :meldepflicht_bei_verletzung .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#einwilligung_zur_datensammlung
+:einwilligung_zur_datensammlung rdf:type owl:NamedIndividual ,
+                                         :RuleWithMinAge .
+
+
+###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#meldepflicht_bei_verletzung
+:meldepflicht_bei_verletzung rdf:type owl:NamedIndividual ,
+                                      :Rule ;
+                             :partOf :dsgvo .
+
+
+###  Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
