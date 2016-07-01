@@ -1,0 +1,51 @@
+@prefix wgs:  <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix omn:  <http://open-multinet.info/ontology/omn#> .
+@prefix av:   <http://federation.av.tu-berlin.de/about#> .
+@prefix omn-federation: <http://open-multinet.info/ontology/omn-federation#> .
+@prefix omn-lifecycle: <http://open-multinet.info/ontology/omn-lifecycle#> .
+
+av:Q-Team_Testbed a omn-federation:Infrastructure,
+owl:NamedIndividual;
+rdfs:label "Q-Team Communication Testbed" ;
+rdfs:seeAlso "https://federation.av.tu-berlin.de" ;
+wgs:lat       "52.516377" ;
+wgs:long      "13.323732" .
+
+av:Q-Team_Testbed
+    omn-lifecycle:implements   av:Policies ;
+    omn-lifecycle:implements   av:Countries .
+
+    av:Policies av:has av:HighSecurity.
+    av:Policies av:has av:LowSecurity.
+
+    av:HighSecurity av:needs av:isInEurope;
+    av:needs av:has4AugenPrinzip;
+    av:forbids av:hasVDS;
+    av:forbids av:contractWithUSA.
+
+    av:Countries av:hasCountry av:Germany .
+    av:Countries av:hasCountry av:France .
+    av:Countries av:hasCountry av:Spain .
+
+    av:Spain
+    av:isInEurope true;
+    av:hasVDS false;
+    av:has4AugenPrinzip true;
+    av:contractWithUSA true.
+
+    av:Germany
+    av:isInEurope true;
+    av:hasVDS true;
+    av:has4AugenPrinzip false;
+    av:contractWithUSA true.
+
+    av:France
+    av:isInEurope true;
+    av:hasVDS false;
+    av:has4AugenPrinzip false;
+    av:contractWithUSA false.
