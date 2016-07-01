@@ -7,7 +7,6 @@ import javax.servlet.http.HttpServletRequest;
 import org.qTeam.api.tripletStoreAccessor.TripletStoreAccessor;
 import org.qTeam.api.tripletStoreAccessor.TripletStoreAccessor.ResourceRepositoryException;
 import org.hornetq.utils.json.JSONArray;
-import org.hornetq.utils.json.JSONException;
 import org.hornetq.utils.json.JSONObject;
 
 import com.hp.hpl.jena.rdf.model.Model;
@@ -134,7 +133,7 @@ public class PolicyEngine {
 			
 			return request;
 
-		} catch (JSONException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		

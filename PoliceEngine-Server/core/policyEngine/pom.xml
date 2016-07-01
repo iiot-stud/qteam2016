@@ -15,13 +15,23 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-<!-- 	<dependencies> -->
+
+
+	<dependencies>
 <!-- 		<dependency> -->
 <!-- 			<groupId>org.q-team.adapters</groupId> -->
 <!-- 			<artifactId>abstract</artifactId> -->
 <!-- 			<version>0.1-SNAPSHOT</version> -->
 <!-- 		</dependency> -->
-<!-- 	</dependencies> -->
+
+<!-- https://mvnrepository.com/artifact/org.hornetq/hornetq-core -->
+<dependency>
+    <groupId>org.hornetq</groupId>
+    <artifactId>hornetq-core</artifactId>
+    <version>2.2.21.Final</version>
+</dependency>
+
+	</dependencies>
 
 	<build>
 		<finalName>${project.artifactId}</finalName>
