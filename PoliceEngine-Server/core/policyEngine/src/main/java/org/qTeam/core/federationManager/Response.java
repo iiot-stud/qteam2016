@@ -3,6 +3,7 @@ package org.qTeam.core.federationManager;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.hornetq.utils.json.JSONArray;
 import org.hornetq.utils.json.JSONException;
 import org.hornetq.utils.json.JSONObject;
 
@@ -42,6 +43,11 @@ public class Response {
 			
 			// If we found something we will continue with the Locations
 			// TODO Implement Locations-Array
+			JSONArray jsonArray = new JSONArray("locations");
+			for(Datacenter d : locations){
+				jsonArray.put(d.parseToJsonObject());
+			}
+			mainObject.put("locations", jsonArray);
 			
 			return mainObject.toString();
 			
