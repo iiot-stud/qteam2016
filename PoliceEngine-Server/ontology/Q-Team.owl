@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#"
-     xml:base="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4"
+<rdf:RDF xmlns="http://www.q-team.org/Ontology#"
+     xml:base="http://www.q-team.org/Ontology"
      xmlns:p0="http://www.w3.org/2003/01/geo/wgs84_pos"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -8,6 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-4="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://www.q-team.org/Ontology#">
@@ -71,6 +72,7 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location">
         <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/based_near"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
     </owl:AnnotationProperty>
     
 
@@ -230,9 +232,7 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#location -->
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location">
-        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
     
 
 
@@ -413,8 +413,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EU">
         <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#LawAlliance"/>
-        <hasMember rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#France"/>
-        <hasMember rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Germany"/>
+        <untitled-ontology-4:hasMember rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#France"/>
+        <untitled-ontology-4:hasMember rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Germany"/>
     </owl:NamedIndividual>
     
 
@@ -423,7 +423,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#England">
         <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country"/>
-        <memberOf rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EU"/>
+        <untitled-ontology-4:memberOf rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EU"/>
     </owl:NamedIndividual>
     
 
@@ -448,7 +448,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Italy">
         <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country"/>
-        <memberOf rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EU"/>
+        <untitled-ontology-4:memberOf rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EU"/>
     </owl:NamedIndividual>
     
 
@@ -457,7 +457,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Recht_auf_Vergessen">
         <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule"/>
-        <partOfAct rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dsgvo"/>
+        <untitled-ontology-4:partOfAct rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dsgvo"/>
     </owl:NamedIndividual>
     
 
@@ -474,7 +474,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#bdsg">
         <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Act"/>
-        <appliedIn rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Germany"/>
+        <untitled-ontology-4:appliedIn rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Germany"/>
     </owl:NamedIndividual>
     
 
@@ -483,7 +483,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_fr_1">
         <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#DataCenter"/>
-        <locatedIn rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#France"/>
+        <untitled-ontology-4:locatedIn rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#France"/>
     </owl:NamedIndividual>
     
 
@@ -492,9 +492,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_g_1">
         <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#DataCenter"/>
-        <locatedIn rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Germany"/>
-        <latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">52.473412</latitude>
-        <longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.390961</longitude>
+        <untitled-ontology-4:locatedIn rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Germany"/>
+        <untitled-ontology-4:latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">52.473412</untitled-ontology-4:latitude>
+        <untitled-ontology-4:longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.390961</untitled-ontology-4:longitude>
     </owl:NamedIndividual>
     
 
@@ -503,7 +503,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_g_2">
         <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#DataCenter"/>
-        <locatedIn rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Germany"/>
+        <untitled-ontology-4:locatedIn rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Germany"/>
     </owl:NamedIndividual>
     
 
@@ -512,7 +512,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_usa_1">
         <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#DataCenter"/>
-        <locatedIn rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#USA"/>
+        <untitled-ontology-4:locatedIn rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#USA"/>
     </owl:NamedIndividual>
     
 
@@ -521,9 +521,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dsgvo">
         <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Act"/>
-        <appliedIn rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EU"/>
-        <containsRule rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Recht_auf_Vergessen"/>
-        <containsRule rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#meldepflicht_bei_verletzung"/>
+        <untitled-ontology-4:appliedIn rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EU"/>
+        <untitled-ontology-4:containsRule rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Recht_auf_Vergessen"/>
+        <untitled-ontology-4:containsRule rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#meldepflicht_bei_verletzung"/>
     </owl:NamedIndividual>
     
 
@@ -532,8 +532,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#einwilligung_zur_datensammlung_eu">
         <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EinwilligungZurDatensammlung"/>
-        <partOfAct rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dsgvo"/>
-        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</minAge>
+        <untitled-ontology-4:partOfAct rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dsgvo"/>
+        <untitled-ontology-4:minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</untitled-ontology-4:minAge>
     </owl:NamedIndividual>
     
 
@@ -542,8 +542,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#einwilligung_zur_datensammlung_ger">
         <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EinwilligungZurDatensammlung"/>
-        <partOfAct rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#bdsg"/>
-        <minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</minAge>
+        <untitled-ontology-4:partOfAct rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#bdsg"/>
+        <untitled-ontology-4:minAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</untitled-ontology-4:minAge>
     </owl:NamedIndividual>
     
 
@@ -552,7 +552,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#meldepflicht_bei_verletzung">
         <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule"/>
-        <partOfAct rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dsgvo"/>
+        <untitled-ontology-4:partOfAct rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dsgvo"/>
     </owl:NamedIndividual>
     
 
@@ -561,7 +561,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#slot1_g">
         <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slot"/>
-        <hostedInDataCenter rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_g_1"/>
+        <untitled-ontology-4:hostedInDataCenter rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_g_1"/>
     </owl:NamedIndividual>
     
 
@@ -570,7 +570,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#slot2_fr">
         <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slot"/>
-        <hostedInDataCenter rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_fr_1"/>
+        <untitled-ontology-4:hostedInDataCenter rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_fr_1"/>
     </owl:NamedIndividual>
     
 
@@ -579,7 +579,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#slot2_g">
         <rdf:type rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slot"/>
-        <hostedInDataCenter rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_g_2"/>
+        <untitled-ontology-4:hostedInDataCenter rdf:resource="http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_g_2"/>
     </owl:NamedIndividual>
     
 
