@@ -32,7 +32,7 @@ dc:title rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#alt
 wgs84_pos:alt rdf:type owl:AnnotationProperty ;
-              rdfs:comment """The WGS84 altitude of a SpatialThing (decimal meters 
+              rdfs:comment """The WGS84 altitude of a SpatialThing (decimal meters
 above the local reference ellipsoid).""" ;
               rdfs:label "altitude" ;
               rdfs:domain wgs84_pos:SpatialThing .
@@ -66,90 +66,90 @@ foaf:based_near rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#appliedIn
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#appliedIn> rdf:type owl:ObjectProperty ;
-                                                                                         owl:inverseOf <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hasAct> ;
-                                                                                         rdfs:domain <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Act> ;
-                                                                                         rdfs:range <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#LegalArea> .
+###  http://www.q-team.org/Ontology#appliedIn
+<http://www.q-team.org/Ontology#appliedIn> rdf:type owl:ObjectProperty ;
+                                                                                         owl:inverseOf <http://www.q-team.org/Ontology#hasAct> ;
+                                                                                         rdfs:domain <http://www.q-team.org/Ontology#Act> ;
+                                                                                         rdfs:range <http://www.q-team.org/Ontology#LegalArea> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#complyWithRule
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#complyWithRule> rdf:type owl:ObjectProperty ;
+###  http://www.q-team.org/Ontology#complyWithRule
+<http://www.q-team.org/Ontology#complyWithRule> rdf:type owl:ObjectProperty ;
                                                                                               rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                                              rdfs:domain <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slot> ;
-                                                                                              owl:propertyChainAxiom ( <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hostedInDataCenter>
-                                                                                                                       <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#locatedIn>
-                                                                                                                       <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hasAct>
-                                                                                                                       <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#containsRule>
+                                                                                              rdfs:domain <http://www.q-team.org/Ontology#Slot> ;
+                                                                                              owl:propertyChainAxiom ( <http://www.q-team.org/Ontology#hostedInDataCenter>
+                                                                                                                       <http://www.q-team.org/Ontology#locatedIn>
+                                                                                                                       <http://www.q-team.org/Ontology#hasAct>
+                                                                                                                       <http://www.q-team.org/Ontology#containsRule>
                                                                                                                      ) ,
-                                                                                                                     ( <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hostedInDataCenter>
-                                                                                                                       <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#locatedIn>
-                                                                                                                       <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#memberOf>
-                                                                                                                       <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hasAct>
-                                                                                                                       <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#containsRule>
+                                                                                                                     ( <http://www.q-team.org/Ontology#hostedInDataCenter>
+                                                                                                                       <http://www.q-team.org/Ontology#locatedIn>
+                                                                                                                       <http://www.q-team.org/Ontology#memberOf>
+                                                                                                                       <http://www.q-team.org/Ontology#hasAct>
+                                                                                                                       <http://www.q-team.org/Ontology#containsRule>
                                                                                                                      ) .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#containsRule
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#containsRule> rdf:type owl:ObjectProperty ;
-                                                                                            owl:inverseOf <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#partOfAct> ;
-                                                                                            rdfs:domain <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Act> .
+###  http://www.q-team.org/Ontology#containsRule
+<http://www.q-team.org/Ontology#containsRule> rdf:type owl:ObjectProperty ;
+                                                                                            owl:inverseOf <http://www.q-team.org/Ontology#partOfAct> ;
+                                                                                            rdfs:domain <http://www.q-team.org/Ontology#Act> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hasAct
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hasAct> rdf:type owl:ObjectProperty ;
-                                                                                      rdfs:domain <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#LegalArea> ;
-                                                                                      rdfs:range <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Act> .
+###  http://www.q-team.org/Ontology#hasAct
+<http://www.q-team.org/Ontology#hasAct> rdf:type owl:ObjectProperty ;
+                                                                                      rdfs:domain <http://www.q-team.org/Ontology#LegalArea> ;
+                                                                                      rdfs:range <http://www.q-team.org/Ontology#Act> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hasDataCenter
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hasDataCenter> rdf:type owl:ObjectProperty ;
-                                                                                             owl:inverseOf <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#locatedIn> ;
-                                                                                             rdfs:domain <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country> ;
-                                                                                             rdfs:range <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#DataCenter> .
+###  http://www.q-team.org/Ontology#hasDataCenter
+<http://www.q-team.org/Ontology#hasDataCenter> rdf:type owl:ObjectProperty ;
+                                                                                             owl:inverseOf <http://www.q-team.org/Ontology#locatedIn> ;
+                                                                                             rdfs:domain <http://www.q-team.org/Ontology#Country> ;
+                                                                                             rdfs:range <http://www.q-team.org/Ontology#DataCenter> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hasMember
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hasMember> rdf:type owl:ObjectProperty ;
-                                                                                         owl:inverseOf <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#memberOf> ;
-                                                                                         rdfs:domain <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#LawAlliance> ;
-                                                                                         rdfs:range <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country> .
+###  http://www.q-team.org/Ontology#hasMember
+<http://www.q-team.org/Ontology#hasMember> rdf:type owl:ObjectProperty ;
+                                                                                         owl:inverseOf <http://www.q-team.org/Ontology#memberOf> ;
+                                                                                         rdfs:domain <http://www.q-team.org/Ontology#LawAlliance> ;
+                                                                                         rdfs:range <http://www.q-team.org/Ontology#Country> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hostedInDataCenter
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hostedInDataCenter> rdf:type owl:ObjectProperty ;
-                                                                                                  owl:inverseOf <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hosts> ;
-                                                                                                  rdfs:domain <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slot> ;
-                                                                                                  rdfs:range <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#DataCenter> .
+###  http://www.q-team.org/Ontology#hostedInDataCenter
+<http://www.q-team.org/Ontology#hostedInDataCenter> rdf:type owl:ObjectProperty ;
+                                                                                                  owl:inverseOf <http://www.q-team.org/Ontology#hosts> ;
+                                                                                                  rdfs:domain <http://www.q-team.org/Ontology#Slot> ;
+                                                                                                  rdfs:range <http://www.q-team.org/Ontology#DataCenter> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hosts
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hosts> rdf:type owl:ObjectProperty ;
-                                                                                     rdfs:domain <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#DataCenter> ;
-                                                                                     rdfs:range <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slot> .
+###  http://www.q-team.org/Ontology#hosts
+<http://www.q-team.org/Ontology#hosts> rdf:type owl:ObjectProperty ;
+                                                                                     rdfs:domain <http://www.q-team.org/Ontology#DataCenter> ;
+                                                                                     rdfs:range <http://www.q-team.org/Ontology#Slot> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#locatedIn
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#locatedIn> rdf:type owl:ObjectProperty ;
-                                                                                         rdfs:domain <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#DataCenter> ;
-                                                                                         rdfs:range <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country> .
+###  http://www.q-team.org/Ontology#locatedIn
+<http://www.q-team.org/Ontology#locatedIn> rdf:type owl:ObjectProperty ;
+                                                                                         rdfs:domain <http://www.q-team.org/Ontology#DataCenter> ;
+                                                                                         rdfs:range <http://www.q-team.org/Ontology#Country> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#memberOf
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#memberOf> rdf:type owl:ObjectProperty ;
-                                                                                        rdfs:domain <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country> ;
-                                                                                        rdfs:range <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#LawAlliance> .
+###  http://www.q-team.org/Ontology#memberOf
+<http://www.q-team.org/Ontology#memberOf> rdf:type owl:ObjectProperty ;
+                                                                                        rdfs:domain <http://www.q-team.org/Ontology#Country> ;
+                                                                                        rdfs:range <http://www.q-team.org/Ontology#LawAlliance> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#partOfAct
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#partOfAct> rdf:type owl:ObjectProperty ;
-                                                                                         rdfs:range <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Act> .
+###  http://www.q-team.org/Ontology#partOfAct
+<http://www.q-team.org/Ontology#partOfAct> rdf:type owl:ObjectProperty ;
+                                                                                         rdfs:range <http://www.q-team.org/Ontology#Act> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#tmp
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#tmp> rdf:type owl:ObjectProperty ;
-                                                                                   owl:propertyChainAxiom ( <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#partOfAct>
-                                                                                                            <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hasAct>
+###  http://www.q-team.org/Ontology#tmp
+<http://www.q-team.org/Ontology#tmp> rdf:type owl:ObjectProperty ;
+                                                                                   owl:propertyChainAxiom ( <http://www.q-team.org/Ontology#partOfAct>
+                                                                                                            <http://www.q-team.org/Ontology#hasAct>
                                                                                                           ) .
 
 
@@ -161,16 +161,16 @@ wgs84_pos:location rdf:type owl:ObjectProperty .
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#latitude
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#latitude> rdf:type owl:DatatypeProperty .
+###  http://www.q-team.org/Ontology#latitude
+<http://www.q-team.org/Ontology#latitude> rdf:type owl:DatatypeProperty .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#longitude
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#longitude> rdf:type owl:DatatypeProperty .
+###  http://www.q-team.org/Ontology#longitude
+<http://www.q-team.org/Ontology#longitude> rdf:type owl:DatatypeProperty .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#minAge
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#minAge> rdf:type owl:DatatypeProperty ;
+###  http://www.q-team.org/Ontology#minAge
+<http://www.q-team.org/Ontology#minAge> rdf:type owl:DatatypeProperty ;
                                                                                       rdfs:range xsd:integer .
 
 
@@ -178,64 +178,64 @@ wgs84_pos:location rdf:type owl:ObjectProperty .
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Act
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Act> rdf:type owl:Class ;
-                                                                                   owl:disjointWith <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#DataCenter> ,
-                                                                                                    <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule> ,
-                                                                                                    <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slot> .
+###  http://www.q-team.org/Ontology#Act
+<http://www.q-team.org/Ontology#Act> rdf:type owl:Class ;
+                                                                                   owl:disjointWith <http://www.q-team.org/Ontology#DataCenter> ,
+                                                                                                    <http://www.q-team.org/Ontology#Rule> ,
+                                                                                                    <http://www.q-team.org/Ontology#Slot> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country> rdf:type owl:Class ;
+###  http://www.q-team.org/Ontology#Country
+<http://www.q-team.org/Ontology#Country> rdf:type owl:Class ;
                                                                                        owl:equivalentClass [ rdf:type owl:Class ;
-                                                                                                             owl:oneOf ( <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#China>
-                                                                                                                         <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#England>
-                                                                                                                         <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#France>
-                                                                                                                         <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Germany>
-                                                                                                                         <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Italy>
+                                                                                                             owl:oneOf ( <http://www.q-team.org/Ontology#China>
+                                                                                                                         <http://www.q-team.org/Ontology#England>
+                                                                                                                         <http://www.q-team.org/Ontology#France>
+                                                                                                                         <http://www.q-team.org/Ontology#Germany>
+                                                                                                                         <http://www.q-team.org/Ontology#Italy>
                                                                                                                        )
                                                                                                            ] ;
-                                                                                       rdfs:subClassOf <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#LegalArea> .
+                                                                                       rdfs:subClassOf <http://www.q-team.org/Ontology#LegalArea> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#DataCenter
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#DataCenter> rdf:type owl:Class ;
-                                                                                          owl:disjointWith <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule> ,
-                                                                                                           <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slot> .
+###  http://www.q-team.org/Ontology#DataCenter
+<http://www.q-team.org/Ontology#DataCenter> rdf:type owl:Class ;
+                                                                                          owl:disjointWith <http://www.q-team.org/Ontology#Rule> ,
+                                                                                                           <http://www.q-team.org/Ontology#Slot> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EinwilligungZurDatensammlung
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EinwilligungZurDatensammlung> rdf:type owl:Class ;
-                                                                                                            rdfs:subClassOf <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#RuleWithMinAge> .
+###  http://www.q-team.org/Ontology#EinwilligungZurDatensammlung
+<http://www.q-team.org/Ontology#EinwilligungZurDatensammlung> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://www.q-team.org/Ontology#RuleWithMinAge> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#LawAlliance
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#LawAlliance> rdf:type owl:Class ;
-                                                                                           rdfs:subClassOf <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#LegalArea> .
+###  http://www.q-team.org/Ontology#LawAlliance
+<http://www.q-team.org/Ontology#LawAlliance> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://www.q-team.org/Ontology#LegalArea> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#LegalArea
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#LegalArea> rdf:type owl:Class .
+###  http://www.q-team.org/Ontology#LegalArea
+<http://www.q-team.org/Ontology#LegalArea> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule> rdf:type owl:Class ;
-                                                                                    owl:disjointWith <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slot> .
+###  http://www.q-team.org/Ontology#Rule
+<http://www.q-team.org/Ontology#Rule> rdf:type owl:Class ;
+                                                                                    owl:disjointWith <http://www.q-team.org/Ontology#Slot> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#RuleWithMinAge
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#RuleWithMinAge> rdf:type owl:Class ;
-                                                                                              rdfs:subClassOf <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule> .
+###  http://www.q-team.org/Ontology#RuleWithMinAge
+<http://www.q-team.org/Ontology#RuleWithMinAge> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf <http://www.q-team.org/Ontology#Rule> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slot
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slot> rdf:type owl:Class .
+###  http://www.q-team.org/Ontology#Slot
+<http://www.q-team.org/Ontology#Slot> rdf:type owl:Class .
 
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#Point
 wgs84_pos:Point rdf:type owl:Class ;
                 rdfs:subClassOf wgs84_pos:SpatialThing ;
-                rdfs:comment """ 
+                rdfs:comment """
 Uniquely identified by lat/long/alt. i.e.
 
 spaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),
@@ -260,127 +260,127 @@ wgs84_pos:SpatialThing rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#China
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#China> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country> .
+###  http://www.q-team.org/Ontology#China
+<http://www.q-team.org/Ontology#China> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.q-team.org/Ontology#Country> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EU
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EU> rdf:type owl:NamedIndividual ,
-                                                                                           <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#LawAlliance> ;
-                                                                                  <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hasMember> <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#France> ,
-                                                                                                                                                                           <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Germany> .
+###  http://www.q-team.org/Ontology#EU
+<http://www.q-team.org/Ontology#EU> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.q-team.org/Ontology#LawAlliance> ;
+                                                                                  <http://www.q-team.org/Ontology#hasMember> <http://www.q-team.org/Ontology#France> ,
+                                                                                                                                                                           <http://www.q-team.org/Ontology#Germany> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#England
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#England> rdf:type owl:NamedIndividual ,
-                                                                                                <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country> ;
-                                                                                       <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#memberOf> <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EU> .
+###  http://www.q-team.org/Ontology#England
+<http://www.q-team.org/Ontology#England> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.q-team.org/Ontology#Country> ;
+                                                                                       <http://www.q-team.org/Ontology#memberOf> <http://www.q-team.org/Ontology#EU> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#France
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#France> rdf:type owl:NamedIndividual ,
-                                                                                               <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country> .
+###  http://www.q-team.org/Ontology#France
+<http://www.q-team.org/Ontology#France> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.q-team.org/Ontology#Country> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Germany
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Germany> rdf:type owl:NamedIndividual ,
-                                                                                                <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country> .
+###  http://www.q-team.org/Ontology#Germany
+<http://www.q-team.org/Ontology#Germany> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.q-team.org/Ontology#Country> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Italy
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Italy> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country> ;
-                                                                                     <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#memberOf> <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EU> .
+###  http://www.q-team.org/Ontology#Italy
+<http://www.q-team.org/Ontology#Italy> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.q-team.org/Ontology#Country> ;
+                                                                                     <http://www.q-team.org/Ontology#memberOf> <http://www.q-team.org/Ontology#EU> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Recht_auf_Vergessen
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Recht_auf_Vergessen> rdf:type owl:NamedIndividual ,
-                                                                                                            <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule> ;
-                                                                                                   <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#partOfAct> <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dsgvo> .
+###  http://www.q-team.org/Ontology#Recht_auf_Vergessen
+<http://www.q-team.org/Ontology#Recht_auf_Vergessen> rdf:type owl:NamedIndividual ,
+                                                                                                            <http://www.q-team.org/Ontology#Rule> ;
+                                                                                                   <http://www.q-team.org/Ontology#partOfAct> <http://www.q-team.org/Ontology#dsgvo> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#USA
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#USA> rdf:type owl:NamedIndividual ,
-                                                                                            <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Country> .
+###  http://www.q-team.org/Ontology#USA
+<http://www.q-team.org/Ontology#USA> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.q-team.org/Ontology#Country> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#bdsg
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#bdsg> rdf:type owl:NamedIndividual ,
-                                                                                             <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Act> ;
-                                                                                    <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#appliedIn> <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Germany> .
+###  http://www.q-team.org/Ontology#bdsg
+<http://www.q-team.org/Ontology#bdsg> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.q-team.org/Ontology#Act> ;
+                                                                                    <http://www.q-team.org/Ontology#appliedIn> <http://www.q-team.org/Ontology#Germany> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_fr_1
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_fr_1> rdf:type owl:NamedIndividual ,
-                                                                                                <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#DataCenter> ;
-                                                                                       <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#locatedIn> <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#France> .
+###  http://www.q-team.org/Ontology#dc_fr_1
+<http://www.q-team.org/Ontology#dc_fr_1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.q-team.org/Ontology#DataCenter> ;
+                                                                                       <http://www.q-team.org/Ontology#locatedIn> <http://www.q-team.org/Ontology#France> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_g_1
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_g_1> rdf:type owl:NamedIndividual ,
-                                                                                               <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#DataCenter> ;
-                                                                                      <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#locatedIn> <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Germany> ;
-                                                                                      <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#latitude> 52.473412 ;
-                                                                                      <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#longitude> 13.390961 .
+###  http://www.q-team.org/Ontology#dc_g_1
+<http://www.q-team.org/Ontology#dc_g_1> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.q-team.org/Ontology#DataCenter> ;
+                                                                                      <http://www.q-team.org/Ontology#locatedIn> <http://www.q-team.org/Ontology#Germany> ;
+                                                                                      <http://www.q-team.org/Ontology#latitude> 52.473412 ;
+                                                                                      <http://www.q-team.org/Ontology#longitude> 13.390961 .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_g_2
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_g_2> rdf:type owl:NamedIndividual ,
-                                                                                               <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#DataCenter> ;
-                                                                                      <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#locatedIn> <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Germany> .
+###  http://www.q-team.org/Ontology#dc_g_2
+<http://www.q-team.org/Ontology#dc_g_2> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.q-team.org/Ontology#DataCenter> ;
+                                                                                      <http://www.q-team.org/Ontology#locatedIn> <http://www.q-team.org/Ontology#Germany> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_usa_1
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_usa_1> rdf:type owl:NamedIndividual ,
-                                                                                                 <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#DataCenter> ;
-                                                                                        <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#locatedIn> <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#USA> .
+###  http://www.q-team.org/Ontology#dc_usa_1
+<http://www.q-team.org/Ontology#dc_usa_1> rdf:type owl:NamedIndividual ,
+                                                                                                 <http://www.q-team.org/Ontology#DataCenter> ;
+                                                                                        <http://www.q-team.org/Ontology#locatedIn> <http://www.q-team.org/Ontology#USA> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dsgvo
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dsgvo> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Act> ;
-                                                                                     <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#appliedIn> <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EU> ;
-                                                                                     <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#containsRule> <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Recht_auf_Vergessen> ,
-                                                                                                                                                                                 <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#meldepflicht_bei_verletzung> .
+###  http://www.q-team.org/Ontology#dsgvo
+<http://www.q-team.org/Ontology#dsgvo> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.q-team.org/Ontology#Act> ;
+                                                                                     <http://www.q-team.org/Ontology#appliedIn> <http://www.q-team.org/Ontology#EU> ;
+                                                                                     <http://www.q-team.org/Ontology#containsRule> <http://www.q-team.org/Ontology#Recht_auf_Vergessen> ,
+                                                                                                                                                                                 <http://www.q-team.org/Ontology#meldepflicht_bei_verletzung> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#einwilligung_zur_datensammlung_eu
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#einwilligung_zur_datensammlung_eu> rdf:type owl:NamedIndividual ,
-                                                                                                                          <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EinwilligungZurDatensammlung> ;
-                                                                                                                 <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#partOfAct> <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dsgvo> ;
-                                                                                                                 <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#minAge> 16 .
+###  http://www.q-team.org/Ontology#einwilligung_zur_datensammlung_eu
+<http://www.q-team.org/Ontology#einwilligung_zur_datensammlung_eu> rdf:type owl:NamedIndividual ,
+                                                                                                                          <http://www.q-team.org/Ontology#EinwilligungZurDatensammlung> ;
+                                                                                                                 <http://www.q-team.org/Ontology#partOfAct> <http://www.q-team.org/Ontology#dsgvo> ;
+                                                                                                                 <http://www.q-team.org/Ontology#minAge> 16 .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#einwilligung_zur_datensammlung_ger
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#einwilligung_zur_datensammlung_ger> rdf:type owl:NamedIndividual ,
-                                                                                                                           <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#EinwilligungZurDatensammlung> ;
-                                                                                                                  <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#partOfAct> <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#bdsg> ;
-                                                                                                                  <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#minAge> 12 .
+###  http://www.q-team.org/Ontology#einwilligung_zur_datensammlung_ger
+<http://www.q-team.org/Ontology#einwilligung_zur_datensammlung_ger> rdf:type owl:NamedIndividual ,
+                                                                                                                           <http://www.q-team.org/Ontology#EinwilligungZurDatensammlung> ;
+                                                                                                                  <http://www.q-team.org/Ontology#partOfAct> <http://www.q-team.org/Ontology#bdsg> ;
+                                                                                                                  <http://www.q-team.org/Ontology#minAge> 12 .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#meldepflicht_bei_verletzung
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#meldepflicht_bei_verletzung> rdf:type owl:NamedIndividual ,
-                                                                                                                    <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule> ;
-                                                                                                           <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#partOfAct> <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dsgvo> .
+###  http://www.q-team.org/Ontology#meldepflicht_bei_verletzung
+<http://www.q-team.org/Ontology#meldepflicht_bei_verletzung> rdf:type owl:NamedIndividual ,
+                                                                                                                    <http://www.q-team.org/Ontology#Rule> ;
+                                                                                                           <http://www.q-team.org/Ontology#partOfAct> <http://www.q-team.org/Ontology#dsgvo> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#slot1_g
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#slot1_g> rdf:type owl:NamedIndividual ,
-                                                                                                <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slot> ;
-                                                                                       <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hostedInDataCenter> <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_g_1> .
+###  http://www.q-team.org/Ontology#slot1_g
+<http://www.q-team.org/Ontology#slot1_g> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.q-team.org/Ontology#Slot> ;
+                                                                                       <http://www.q-team.org/Ontology#hostedInDataCenter> <http://www.q-team.org/Ontology#dc_g_1> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#slot2_fr
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#slot2_fr> rdf:type owl:NamedIndividual ,
-                                                                                                 <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slot> ;
-                                                                                        <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hostedInDataCenter> <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_fr_1> .
+###  http://www.q-team.org/Ontology#slot2_fr
+<http://www.q-team.org/Ontology#slot2_fr> rdf:type owl:NamedIndividual ,
+                                                                                                 <http://www.q-team.org/Ontology#Slot> ;
+                                                                                        <http://www.q-team.org/Ontology#hostedInDataCenter> <http://www.q-team.org/Ontology#dc_fr_1> .
 
 
-###  http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#slot2_g
-<http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#slot2_g> rdf:type owl:NamedIndividual ,
-                                                                                                <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slot> ;
-                                                                                       <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#hostedInDataCenter> <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#dc_g_2> .
+###  http://www.q-team.org/Ontology#slot2_g
+<http://www.q-team.org/Ontology#slot2_g> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.q-team.org/Ontology#Slot> ;
+                                                                                       <http://www.q-team.org/Ontology#hostedInDataCenter> <http://www.q-team.org/Ontology#dc_g_2> .
 
 
 #################################################################
@@ -389,8 +389,8 @@ wgs84_pos:SpatialThing rdf:type owl:Class ;
 
 wgs84_pos: dc:date "$Date: 2009/04/20 15:00:30 $" ;
            rdfs:label "geo" ;
-           dc:description """A vocabulary for representing latitude, longitude and 
- altitude information in the WGS84 geodetic reference datum. 
+           dc:description """A vocabulary for representing latitude, longitude and
+ altitude information in the WGS84 geodetic reference datum.
  Version $Id: wgs84_pos.rdf,v 1.22 2009/04/20 15:00:30 timbl Exp $. See http://www.w3.org/2003/01/geo/ for more details.""" ;
            rdfs:comment """
 Recent changes to this namespace:
@@ -484,7 +484,7 @@ wgs84_pos:lat_long rdfs:comment "A comma-separated representation of a latitude,
 
 
 wgs84_pos:location rdfs:label "location" ;
-                   rdfs:comment """The relation between something and the point, 
+                   rdfs:comment """The relation between something and the point,
  or other geometrical thing in space, where it is.  For example, the realtionship between
  a radio tower and a Point with a given lat and long.
  Or a relationship between a park and its outline as a closed arc of points, or a road and
@@ -499,11 +499,11 @@ wgs84_pos:location rdfs:label "location" ;
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Act>
-                <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#DataCenter>
-                <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#LegalArea>
-                <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Rule>
-                <http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slot>
+  owl:members ( <http://www.q-team.org/Ontology#Act>
+                <http://www.q-team.org/Ontology#DataCenter>
+                <http://www.q-team.org/Ontology#LegalArea>
+                <http://www.q-team.org/Ontology#Rule>
+                <http://www.q-team.org/Ontology#Slot>
               )
 ] .
 
