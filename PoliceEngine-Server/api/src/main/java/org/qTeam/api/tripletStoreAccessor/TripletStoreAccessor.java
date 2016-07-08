@@ -64,96 +64,6 @@ public class TripletStoreAccessor {
   private final static String FUNCTIONAL_PROPERTY = "http://www.w3.org/2002/07/owl#FunctionalProperty";
   
 
-//  private static Boolean rdfReady;
-//  private static Boolean allreadySearchingForTripletStore;
-//  private static int failureCounter;
-
-//  @javax.annotation.Resource
-//  public static TimerService timerService;
-  
-//  @javax.annotation.Resource
-//  private static InitialContext initialContext;
-
-  
-//  public static void initialize(){
-//     	try {
-////			initialContext = new InitialContext();
-//			rdfReady = (Boolean) initialContext.lookup("java:global/RDF-Database-Ready");
-//	     	allreadySearchingForTripletStore = (Boolean) initialContext.lookup("java:global/RDF-Database-Testing");
-//		  
-//		} catch (NamingException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//       	LOGGER.log(Level.SEVERE,"INIT");
-//
-//     	if(!rdfReady && !allreadySearchingForTripletStore){
-//           	LOGGER.log(Level.SEVERE,"Now searching for Database");
-//
-//     	failureCounter = 0;
-//	  TimerConfig config = new TimerConfig();
-//	  config.setPersistent(false);
-//      Timer timer = timerService.createIntervalTimer(0, 5000, config);
-//	  }
-//  }
-
-  
-  
-//  @Timeout
-//  @AccessTimeout(value = 5, unit = TimeUnit.MINUTES)
-//  public void timerMethod(Timer timer) {
-//	  allreadySearchingForTripletStore = true;
-//
-//      if (failureCounter < 20) {
-//          try {
-//        	  	// setting boolean so others see someone is allready searching for Database
-//             	initialContext.rebind("java:global/RDF-Database-Testing", allreadySearchingForTripletStore);    	
-//
-//        	  //try to find Database
-//               Model infModel = TripletStoreAccessor.getInfrastructure();
-//
-//               // If found set Global Variables to true
-//               rdfReady = true;
-//         	  allreadySearchingForTripletStore = false;
-//
-//               try {
-//               	initialContext.rebind("java:global/RDF-Database-Ready", rdfReady);    	
-//				initialContext.rebind("java:global/RDF-Database-Testing", allreadySearchingForTripletStore);
-//
-//               	LOGGER.log(Level.INFO,"Found Database");
-//              	timer.cancel(); 
-//
-//
-//               } catch (NamingException e) {
-//               	// TODO Auto-generated catch block
-//               	e.printStackTrace();
-//               }
-//               
-//               
-//          }catch (ResourceRepositoryException e) {
-//              LOGGER.log(Level.INFO,
-//                      "Could not find Database - will try again");
-//              failureCounter++;
-//          }catch(Exception e){
-//              LOGGER.warning(
-//                      "Could not find Database - will try again");
-//              failureCounter++;
-//          }
-//      } else {
-//    	  allreadySearchingForTripletStore = false;
-//       		try {
-//				initialContext.rebind("java:global/RDF-Database-Testing", allreadySearchingForTripletStore);
-//			} catch (NamingException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}    	
-//
-//      	timer.cancel(); 
-//          LOGGER.severe(
-//                  "Tried read Database several times, but failed. Please check the OpenRDF-Database");
-//      }
-//
-//  }
 
   public static void removePropertyValue(Resource subject, Resource predicate) throws ResourceRepositoryException{
     String existingValue = "<"+subject.getURI()+"> <"+predicate.getURI()+"> ?anyObject .";
@@ -180,7 +90,8 @@ public class TripletStoreAccessor {
       query.addResultVar("p");
       LOGGER.log(Level.SEVERE, "Working on GetResources in TripletStoreAccesor");
 
-      Model model = getNodesAndLinks(query, Omn.Resource.asNode());
+      Node node = new Node_Variable("http://www.q-team.org/Ontology#Country");
+      Model model = getNodesAndLinks(query, node);
       model.add(getNodesAndLinks(query, Omn_resource.Link.asNode()));
       model.add(getDiskImages());
       Model locationModel = getLocations(model);
@@ -393,6 +304,72 @@ public class TripletStoreAccessor {
             }
         }
         addModel(model);
+    }
+    
+    public static Model getDataCenters(){
+    	Query query = QueryFactory.create();
+        query.setQueryDescribeType();
+        query.addResultVar("resource");
+        Triple tripleForPattern = new Triple(new Node_Variable("resource"),new Node_Variable("o"),new Node_Variable("p"));
+        Node node = ModelFactory.createDefaultModel().getResource("http://www.q-team.org/Ontology#Data_center").asNode();
+        ElementGroup whereClause = new ElementGroup();
+        whereClause.addTriplePattern(new Triple(new Node_Variable("resource"), RDF.type.asNode(), node));
+        whereClause.addTriplePattern(tripleForPattern);
+        query.setQueryPattern(whereClause);
+
+        QueryExecution execution =  QueryExecutionFactory.sparqlService(QueryExecuter.SESAME_SERVICE, query);
+        Model model = execution.execDescribe();
+    	return model;
+    }
+    
+    public static Model getAllSlots(){
+    	Query query = QueryFactory.create();
+        query.setQueryDescribeType();
+        query.addResultVar("resource");
+        Triple tripleForPattern = new Triple(new Node_Variable("resource"),new Node_Variable("o"),new Node_Variable("p"));
+        Node node = ModelFactory.createDefaultModel().getResource("http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slot").asNode();
+        ElementGroup whereClause = new ElementGroup();
+        whereClause.addTriplePattern(new Triple(new Node_Variable("resource"), RDF.type.asNode(), node));
+        whereClause.addTriplePattern(tripleForPattern);
+        query.setQueryPattern(whereClause);
+
+        QueryExecution execution =  QueryExecutionFactory.sparqlService(QueryExecuter.SESAME_SERVICE, query);
+        Model model = execution.execDescribe();
+    	return model;
+    }
+    
+    public static Model getRules(){
+    	Query query = QueryFactory.create();
+        query.setQueryDescribeType();
+        query.addResultVar("resource");
+        Triple tripleForPattern = new Triple(new Node_Variable("resource"),new Node_Variable("o"),new Node_Variable("p"));
+        Node node = ModelFactory.createDefaultModel().getResource("http://www.q-team.org/Ontology#Rule").asNode();
+        ElementGroup whereClause = new ElementGroup();
+        whereClause.addTriplePattern(new Triple(new Node_Variable("resource"), RDF.type.asNode(), node));
+        whereClause.addTriplePattern(tripleForPattern);
+        query.setQueryPattern(whereClause);
+
+        QueryExecution execution =  QueryExecutionFactory.sparqlService(QueryExecuter.SESAME_SERVICE, query);
+        Model model = execution.execDescribe();
+        
+    	return model;
+    }
+    
+    public static Model getCountrys(){
+    	Query query = QueryFactory.create();
+        query.setQueryDescribeType();
+        query.addResultVar("resource");
+        Triple tripleForPattern = new Triple(new Node_Variable("resource"),new Node_Variable("o"),new Node_Variable("p"));
+        Node node = ModelFactory.createDefaultModel().getResource("http://www.q-team.org/Ontology#Country").asNode();
+        ElementGroup whereClause = new ElementGroup();
+        whereClause.addTriplePattern(new Triple(new Node_Variable("resource"), RDF.type.asNode(), node));
+        whereClause.addTriplePattern(tripleForPattern);
+        query.setQueryPattern(whereClause);
+
+        QueryExecution execution =  QueryExecutionFactory.sparqlService(QueryExecuter.SESAME_SERVICE, query);
+        Model model = execution.execDescribe();
+        
+    	return model;
     }
     
     public static Model getAPIs(){

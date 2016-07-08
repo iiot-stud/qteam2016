@@ -350,7 +350,7 @@ function configContainerFromCheckout() {
     _wildfly_res_path="${_base}/bootstrap/resources/wildfly"
 
     [ ! -z "${WILDFLY_HOME}" ] || WILDFLY_HOME="${_container_root}"
-
+		WILDFLY_HOME="${_base}/server/wildfly"
     cp "${_wildfly_res_path}/standalone/configuration/${_container_keystore}" "${_container_root}/standalone/configuration"
     cp "${_wildfly_res_path}/standalone/configuration/${_container_truststore}" "${_container_root}/standalone/configuration"
 
@@ -467,10 +467,11 @@ function startContainerScreen() {
     prepareTruststore
     echo "Starting J2EE Container..."
     [ ! -z "${WILDFLY_HOME}" ] || WILDFLY_HOME="${_container_root}"
-    CMD="${WILDFLY_HOME}/bin/standalone.sh"
+		WILDFLY_HOME="${_base}/server/wildfly"
+    CMD="${_base}/server/wildfly/bin/standalone.sh"
     RDF=" -Dinfo.aduna.platform.appdata.basedir=../sesame"
     [ -x "${CMD}" ] || { echo "Please set WILDFLY_HOME first "; exit 2; }
-    cd "${WILDFLY_HOME}"
+    cd "${_base}/server/wildfly"
     screen -S wildfly -dm ${CMD}${RDF} -b 0.0.0.0 -c "${_container_config}" -Djava.security.egd=file:/dev/./urandom ${WILDFLY_ARGS}
     echo "Now running in background, to show it run:"
     echo "screen -R wildfly"
@@ -519,18 +520,20 @@ function startContainerDebug() {
     echo "Starting J2EE Container in debug mode (port: 8787)..."
     echo "HOME: $HOME user: $USERNAME"
 
-    [ ! -z "${WILDFLY_HOME}" ] || WILDFLY_HOME="${_container_root}"
-    CMD="${WILDFLY_HOME}/bin/standalone.sh"
+
+		WILDFLY_HOME="${_base}/server/wildfly"
+    CMD="${_base}/server/wildfly/bin/standalone.sh"
     RDF=" -Dinfo.aduna.platform.appdata.basedir=../sesame"
-    [ -x "${CMD}" ] || { echo "Please set WILDFLY_HOME first "; exit 2; }
-    cd "${WILDFLY_HOME}"
+
+    cd "${_base}/server/wildfly"
     ${CMD}${RDF} --debug 8787 -b 0.0.0.0 -Djava.security.egd=file:/dev/./urandom -c "${_container_config}" ${WILDFLY_ARGS}
 }
 
 function stopContainer() {
     echo "Stopping J2EE Container..."
     [ ! -z "${WILDFLY_HOME}" ] || WILDFLY_HOME="${_container_root}"
-    CMD="${WILDFLY_HOME}/bin/jboss-cli.sh"
+			WILDFLY_HOME="${_base}/server/wildfly"
+    CMD="${_base}/server/wildfly/bin/jboss-cli.sh"
     [ -x "${CMD}" ] || { echo "Please set WILDFLY_HOME first "; exit 2; }
     ${CMD} --connect command=:shutdown
 }

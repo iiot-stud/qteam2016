@@ -27,6 +27,9 @@ public class Datacenter {
 			jo.put("name", name);
 			jo.put("location", location);
 			jo.put("price", price);
+			jo.put("country", country);
+			jo.put("continent", continent);
+
 			jsonResponse = jo.toString();
 		} catch (JSONException e) {
 			e.printStackTrace();
@@ -42,6 +45,8 @@ public class Datacenter {
 			jo.put("name", name);
 			jo.put("location", location);
 			jo.put("price", price);
+			jo.put("country", country);
+			jo.put("continent", continent);
 			return jo;
 		} catch (JSONException e) {
 			e.printStackTrace();
@@ -54,51 +59,6 @@ public class Datacenter {
 
 
 
-	protected String getCountry() {
-		return country;
-	}
-
-
-
-	protected void setCountry(String country) {
-		this.country = country;
-	}
-
-
-
-	protected String getContinent() {
-		return continent;
-	}
-
-
-
-	protected void setContinent(String continent) {
-		this.continent = continent;
-	}
-
-
-
-	protected String getName() {
-		return name;
-	}
-
-
-
-	protected void setName(String name) {
-		this.name = name;
-	}
-
-
-
-	protected String getPrice() {
-		return price;
-	}
-
-
-
-	protected void setPrice(String price) {
-		this.price = price;
-	}
 
 	public String getLocation() {
 		return location;
@@ -106,5 +66,37 @@ public class Datacenter {
 
 	public void setLocation(String location) {
 		this.location = location;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	public String getContinent() {
+		return continent;
+	}
+
+	public void setContinent(String continent) {
+		this.continent = continent;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPrice() {
+		return price;
+	}
+
+	public void setPrice(String price) {
+		this.price = price;
 	}
 }

@@ -30,9 +30,18 @@ import org.qTeam.api.tripletStoreAccessor.TripletStoreAccessor;
 import org.qTeam.api.tripletStoreAccessor.TripletStoreAccessor.ResourceRepositoryException;
 import org.qTeam.core.federationManager.dm.FederationManagerREST;
 
+import com.hp.hpl.jena.rdf.model.InfModel;
 import com.hp.hpl.jena.rdf.model.Model;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.ResIterator;
+import com.hp.hpl.jena.rdf.model.Resource;
+import com.hp.hpl.jena.reasoner.Reasoner;
+import com.hp.hpl.jena.reasoner.ReasonerFactory;
+import com.hp.hpl.jena.reasoner.ReasonerRegistry;
+import com.hp.hpl.jena.reasoner.rulesys.RDFSRuleReasonerFactory;
+import com.hp.hpl.jena.util.FileManager;
 import com.hp.hpl.jena.vocabulary.RDF;
+import com.hp.hpl.jena.vocabulary.ReasonerVocabulary;
 
 @Startup
 @Singleton
@@ -66,42 +75,57 @@ public class FederationManager extends Application {
 		manager = this;
 		initialized = false;
 		failureCounter =0;
+		
+		Reasoner reasoner = ReasonerRegistry.getOWLReasoner();
+		Model schema = FileManager.get().loadModel("file:/home/home/Dokumente/qteam2016/PoliceEngine-Server/ontology/Q-Team.ttl");
+		Model data = FileManager.get().loadModel("file:/home/home/Dokumente/qteam2016/PoliceEngine-Server/ontology/Q-Team-database.ttl");
+		reasoner.bindSchema(schema);
+		InfModel infmodel = ModelFactory.createInfModel(reasoner, data);
 
 		// TODO Make it not so confusing (Maybe Switch-Case)
-		File federationOntologie = Paths.get(System.getProperty("user.home"))
-				.resolve(".q-team").resolve("Q-Team.ttl").toFile();
-		if (federationOntologie.exists()) {
-			if (federationModel == null) {
-				federationModel = OntologyModelUtil.loadModel(
-						federationOntologie.toString(),
-						IMessageBus.SERIALIZATION_TURTLE);
-
-				if (federationModel.isEmpty()) {
-					federationModel = OntologyModelUtil.loadModel(
-							"ontologies/defaultFederation.ttl",
-							IMessageBus.SERIALIZATION_TURTLE);
-					LOGGER.log(
-							Level.SEVERE,
-							"Please add your Federation-Ontology to the '/home/User/.fiteagle/Federation.ttl' File and Re-Deploy the FederationManager ");
-				}
-			}
-
-		} else {
-			try {
-				federationOntologie.createNewFile();
-			} catch (IOException e) {
-				LOGGER.log(
-						Level.SEVERE,
-						"Couldn't load Federation-Ontology. Tried to create new file '/home/User/.fiteagle/Federation.ttl' but Errored");
-			}
-			federationModel = OntologyModelUtil.loadModel(
-					"ontologies/defaultFederation.ttl",
-					IMessageBus.SERIALIZATION_TURTLE);
-			LOGGER.log(
-					Level.SEVERE,
-					"Please add your Federation-Ontology to the '/home/User/.fiteagle/Federation.ttl' File and Re-Deploy the FederationManager ");
+//		File federationOntologie = Paths.get(System.getProperty("user.home"))
+//				.resolve(".q-team").resolve("Q-Team.ttl").toFile();
+//		if (federationOntologie.exists()) {
+//			if (federationModel == null) {
+//				federationModel = OntologyModelUtil.loadModel(
+//						federationOntologie.toString(),
+//						IMessageBus.SERIALIZATION_TURTLE);
+//
+//				if (federationModel.isEmpty()) {
+//					federationModel = OntologyModelUtil.loadModel(
+//							"ontologies/defaultFederation.ttl",
+//							IMessageBus.SERIALIZATION_TURTLE);
+//					LOGGER.log(
+//							Level.SEVERE,
+//							"Please add your Federation-Ontology to the '/home/User/.fiteagle/Federation.ttl' File and Re-Deploy the FederationManager ");
+//				}
+//			}
+//
+//		} else {
+//			try {
+//				federationOntologie.createNewFile();
+//			} catch (IOException e) {
+//				LOGGER.log(
+//						Level.SEVERE,
+//						"Couldn't load Federation-Ontology. Tried to create new file '/home/User/.fiteagle/Federation.ttl' but Errored");
+//			}
+//			federationModel = OntologyModelUtil.loadModel(
+//					"ontologies/defaultFederation.ttl",
+//					IMessageBus.SERIALIZATION_TURTLE);
+//			LOGGER.log(
+//					Level.SEVERE,
+//					"Please add your Federation-Ontology to the '/home/User/.fiteagle/Federation.ttl' File and Re-Deploy the FederationManager ");
+//		}
+		try {
+			TripletStoreAccessor.addModel(infmodel);
+		} catch (ResourceRepositoryException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InvalidModelException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		runSetup();
+//		runSetup();
 
 	}
 
@@ -121,6 +145,15 @@ public class FederationManager extends Application {
 			config.setPersistent(false);
 			timerService.createIntervalTimer(0, 5000, config);
 		}
+		
+		
+		Resource config = ModelFactory.createDefaultModel()
+                .createResource()
+                .addProperty(ReasonerVocabulary.PROPsetRDFSLevel, "default");
+//ReasonerFactory reasonerFactory = RDFSRuleReasonerFactory.theInstance();
+//	Reasoner 	reasoner = reasonerFactory.create(config);
+
+
 	}
 
 	public static FederationManager getManager() {
