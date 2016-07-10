@@ -77,8 +77,8 @@ public class FederationManager extends Application {
 		failureCounter =0;
 		
 		Reasoner reasoner = ReasonerRegistry.getOWLReasoner();
-		Model schema = FileManager.get().loadModel("file:~/Dokumente/qteam2016/PoliceEngine-Server/ontology/Q-Team.ttl");
-		Model data = FileManager.get().loadModel("file:~/Dokumente/qteam2016/PoliceEngine-Server/ontology/Q-Team-database.ttl");
+		Model schema = FileManager.get().loadModel("file:../../ontology/Q-Team.ttl");
+		Model data = FileManager.get().loadModel("file:../../ontology/Q-Team-database.ttl");
 		reasoner.bindSchema(schema);
 		InfModel infmodel = ModelFactory.createInfModel(reasoner, data);
 
