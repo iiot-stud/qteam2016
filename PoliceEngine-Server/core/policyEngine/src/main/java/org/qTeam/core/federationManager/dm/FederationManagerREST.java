@@ -47,7 +47,7 @@ public class FederationManagerREST{
 		  // Taking the Json-Body and handling it to the PolicyEngine 
 		  Response response = engine.handleRequest(jsonRequest);
 		  String responseString = response.parseToJsonString();
-		  return javax.ws.rs.core.Response.status(200).entity("").header("Access-Control-Allow-Origin", "*").build();
+		  return javax.ws.rs.core.Response.status(200).entity(responseString).header("Access-Control-Allow-Origin", "*").build();
 //		  return javax.ws.rs.core.Response.ok(responseString).header("Access-Control-Allow-Origin", "*").build();	  
 		  
 	  }
@@ -64,7 +64,7 @@ public class FederationManagerREST{
 		  try{
 			  Response response = engine.handleRequest(jsonRequest);
 			  String responseString = response.parseToJsonString();
-			  return javax.ws.rs.core.Response.status(200).entity("").header("Access-Control-Allow-Origin", "*").build();
+			  return javax.ws.rs.core.Response.status(200).entity(responseString).header("Access-Control-Allow-Origin", "*").build();
 		  }catch(Exception e){
 			  Response response = new Response();
 			  response.setName("Q-Team");
