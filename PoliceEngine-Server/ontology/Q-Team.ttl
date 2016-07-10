@@ -12,27 +12,27 @@
 <http://www.q-team.org/Ontology#> a owl:Ontology ;
 	rdfs:label "Q-Team Communication Testbed"@en ;
 	rdfs:seeAlso "Q-Team Communication Testbed"@en .
-# 
-# 
+#
+#
 # #################################################################
 # #
 # #    Annotation properties
 # #
 # #################################################################
-# 
-# 
+#
+#
 # http://purl.org/dc/elements/1.1/date
 
 dc:date a owl:AnnotationProperty .
-# 
+#
 # http://purl.org/dc/elements/1.1/description
 
 dc:description a owl:AnnotationProperty .
-# 
+#
 # http://purl.org/dc/elements/1.1/title
 
 dc:title a owl:AnnotationProperty .
-# 
+#
 # http://www.w3.org/2003/01/geo/wgs84_pos#alt
 
 wgs84_pos:alt a owl:AnnotationProperty ;
@@ -40,47 +40,47 @@ wgs84_pos:alt a owl:AnnotationProperty ;
 above the local reference ellipsoid).""" ;
 	rdfs:label "altitude" ;
 	rdfs:domain wgs84_pos:SpatialThing .
-# 
+#
 # http://www.w3.org/2003/01/geo/wgs84_pos#lat
 
 wgs84_pos:lat a owl:AnnotationProperty ;
 	rdfs:comment "The WGS84 latitude of a SpatialThing (decimal degrees)." ;
 	rdfs:label "latitude" ;
 	rdfs:domain wgs84_pos:SpatialThing .
-# 
+#
 # http://www.w3.org/2003/01/geo/wgs84_pos#location
 
 wgs84_pos:location a owl:AnnotationProperty ;
 	rdfs:subPropertyOf foaf:based_near ;
 	rdfs:range wgs84_pos:SpatialThing .
-# 
+#
 # http://www.w3.org/2003/01/geo/wgs84_pos#long
 
 wgs84_pos:long a owl:AnnotationProperty ;
 	rdfs:comment "The WGS84 longitude of a SpatialThing (decimal degrees)." ;
 	rdfs:label "longitude" ;
 	rdfs:domain wgs84_pos:SpatialThing .
-# 
+#
 # http://xmlns.com/foaf/0.1/based_near
 
 foaf:based_near a owl:AnnotationProperty .
-# 
-# 
-# 
+#
+#
+#
 # #################################################################
 # #
 # #    Object Properties
 # #
 # #################################################################
-# 
-# 
+#
+#
 # http://www.q-team.org/Ontology#appliedIn
 
 :appliedIn a owl:ObjectProperty ;
 	owl:inverseOf :hasAct ;
 	rdfs:domain :Act ;
 	rdfs:range :LegalArea .
-# 
+#
 # http://www.q-team.org/Ontology#complyWithRule
 
 :complyWithRule a owl:ObjectProperty ;
@@ -125,103 +125,103 @@ _:genid6 a rdf:List ;
 _:genid5 a rdf:List ;
 	rdf:first :containsRule ;
 	rdf:rest rdf:nil .
-# 
+#
 # http://www.q-team.org/Ontology#containsRule
 
 :containsRule a owl:ObjectProperty ;
 	owl:inverseOf :partOfAct ;
 	rdfs:domain :Act .
-# 
+#
 # http://www.q-team.org/Ontology#hasAct
 
 :hasAct a owl:ObjectProperty ;
 	rdfs:domain :LegalArea ;
 	rdfs:range :Act .
-# 
+#
 # http://www.q-team.org/Ontology#hasDataCenter
 
 :hasDataCenter a owl:ObjectProperty ;
 	owl:inverseOf :locatedIn ;
 	rdfs:domain :Country ;
 	rdfs:range :DataCenter .
-# 
+#
 # http://www.q-team.org/Ontology#hasMember
 
 :hasMember a owl:ObjectProperty ;
 	owl:inverseOf :memberOf ;
 	rdfs:domain :LawAlliance ;
 	rdfs:range :Country .
-# 
+#
 # http://www.q-team.org/Ontology#hostedInDataCenter
 
 :hostedInDataCenter a owl:ObjectProperty ;
 	owl:inverseOf :hosts ;
 	rdfs:domain :Slot ;
 	rdfs:range :DataCenter .
-# 
+#
 # http://www.q-team.org/Ontology#hosts
 
 :hosts a owl:ObjectProperty ;
 	rdfs:domain :DataCenter ;
 	rdfs:range :Slot .
-# 
+#
 # http://www.q-team.org/Ontology#locatedIn
 
 :locatedIn a owl:ObjectProperty ;
 	rdfs:domain :DataCenter ;
 	rdfs:range :Country .
-# 
+#
 # http://www.q-team.org/Ontology#memberOf
 
 :memberOf a owl:ObjectProperty ;
 	rdfs:domain :Country ;
 	rdfs:range :LawAlliance .
-# 
+#
 # http://www.q-team.org/Ontology#partOfAct
 
 :partOfAct a owl:ObjectProperty ;
 	rdfs:range :Act .
-# 
+#
 # http://www.w3.org/2003/01/geo/wgs84_pos#location
 
 wgs84_pos:location a owl:ObjectProperty .
-# 
-# 
-# 
+#
+#
+#
 # #################################################################
 # #
 # #    Data properties
 # #
 # #################################################################
-# 
-# 
+#
+#
 # http://www.q-team.org/Ontology#latitude
 
 :latitude a owl:DatatypeProperty .
-# 
+#
 # http://www.q-team.org/Ontology#longitude
 
 :longitude a owl:DatatypeProperty .
-# 
+#
 # http://www.q-team.org/Ontology#minAge
 
 :minAge a owl:DatatypeProperty ;
 	rdfs:range xsd:integer .
-# 
-# 
-# 
+#
+#
+#
 # #################################################################
 # #
 # #    Classes
 # #
 # #################################################################
-# 
-# 
+#
+#
 # http://www.q-team.org/Ontology#Act
 
 :Act a owl:Class ;
 	owl:disjointWith :DataCenter , :Rule , :Slot .
-# 
+#
 # http://www.q-team.org/Ontology#Country
 
 :Country a owl:Class ;
@@ -251,40 +251,40 @@ _:genid11 a rdf:List ;
 	rdf:rest rdf:nil .
 
 :Country rdfs:subClassOf :LegalArea .
-# 
+#
 # http://www.q-team.org/Ontology#DataCenter
 
 :DataCenter a owl:Class ;
 	owl:disjointWith :Rule , :Slot .
-# 
+#
 # http://www.q-team.org/Ontology#EinwilligungZurDatensammlung
 
 :EinwilligungZurDatensammlung a owl:Class ;
 	rdfs:subClassOf :RuleWithMinAge .
-# 
+#
 # http://www.q-team.org/Ontology#LawAlliance
 
 :LawAlliance a owl:Class ;
 	rdfs:subClassOf :LegalArea .
-# 
+#
 # http://www.q-team.org/Ontology#LegalArea
 
 :LegalArea a owl:Class .
-# 
+#
 # http://www.q-team.org/Ontology#Rule
 
 :Rule a owl:Class ;
 	owl:disjointWith :Slot .
-# 
+#
 # http://www.q-team.org/Ontology#RuleWithMinAge
 
 :RuleWithMinAge a owl:Class ;
 	rdfs:subClassOf :Rule .
-# 
+#
 # http://www.q-team.org/Ontology#Slot
 
 :Slot a owl:Class .
-# 
+#
 # http://www.w3.org/2003/01/geo/wgs84_pos#Point
 
 wgs84_pos:Point a owl:Class ;
@@ -299,7 +299,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
   """ , """A point, typically described using a coordinate system relative to Earth, such as WGS84.
   """ ;
 	rdfs:label "point" .
-# 
+#
 # http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
 
 wgs84_pos:SpatialThing a owl:Class ;
@@ -307,176 +307,26 @@ wgs84_pos:SpatialThing a owl:Class ;
  e.g. people, places, bowling balls, as well as abstract areas like cubes.
 """ ;
 	rdfs:label "SpatialThing" .
-# 
-# 
-# 
+#
+#
+#
 # #################################################################
 # #
 # #    Individuals
 # #
 # #################################################################
-# 
-# 
-# http://www.q-team.org/Ontology#China
+#
+#
 
-:China a owl:NamedIndividual , :Country .
-# 
-# http://www.q-team.org/Ontology#EU
-
-:EU a owl:NamedIndividual , :LawAlliance ;
-	:hasMember :France , :Germany .
-# 
-# http://www.q-team.org/Ontology#Einwilligung_Zur_Datensammlung_eu
-
-:Einwilligung_Zur_Datensammlung_eu a owl:NamedIndividual , :EinwilligungZurDatensammlung ;
-	:partOfAct :dsgvo ;
-	:minAge "16"^^xsd:integer .
-# 
-# http://www.q-team.org/Ontology#Einwilligung_Zur_Datensammlung_ger
-
-:Einwilligung_Zur_Datensammlung_ger a owl:NamedIndividual , :EinwilligungZurDatensammlung ;
-	:partOfAct :bdsg ;
-	:minAge "12"^^xsd:integer .
-# 
-# http://www.q-team.org/Ontology#England
-
-:England a owl:NamedIndividual , :Country ;
-	:memberOf :EU .
-# 
-# http://www.q-team.org/Ontology#France
-
-:France a owl:NamedIndividual , :Country .
-# 
-# http://www.q-team.org/Ontology#Germany
-
-:Germany a owl:NamedIndividual , :Country .
-# 
-# http://www.q-team.org/Ontology#Italy
-
-:Italy a owl:NamedIndividual , :Country ;
-	:memberOf :EU .
-# 
-# http://www.q-team.org/Ontology#Meldepflicht_bei_Verletzung
-
-:Meldepflicht_bei_Verletzung a owl:NamedIndividual , :Rule ;
-	:partOfAct :dsgvo .
-# 
-# http://www.q-team.org/Ontology#Recht_auf_Vergessen
-
-:Recht_auf_Vergessen a owl:NamedIndividual , :Rule ;
-	:partOfAct :dsgvo .
-# 
-# http://www.q-team.org/Ontology#Slot_fr_1
-
-:Slot_fr_1 a owl:NamedIndividual , :Slot ;
-	:hostedInDataCenter :dc_fr_1 .
-# 
-# http://www.q-team.org/Ontology#Slot_gb_1
-
-:Slot_gb_1 a owl:NamedIndividual , :Slot ;
-	:hostedInDataCenter :dc_gb_1 .
-# 
-# http://www.q-team.org/Ontology#Slot_ger_1
-
-:Slot_ger_1 a owl:NamedIndividual , :Slot ;
-	:hostedInDataCenter :dc_ger_1 .
-# 
-# http://www.q-team.org/Ontology#Slot_ger_2
-
-:Slot_ger_2 a owl:NamedIndividual , :Slot ;
-	:hostedInDataCenter :dc_ger_2 .
-# 
-# http://www.q-team.org/Ontology#Slot_ger_3
-
-:Slot_ger_3 a owl:NamedIndividual , :Slot ;
-	:hostedInDataCenter :dc_ger_1 .
-# 
-# http://www.q-team.org/Ontology#Slot_ger_4
-
-:Slot_ger_4 a owl:NamedIndividual , :Slot ;
-	:hostedInDataCenter :dc_ger_2 .
-# 
-# http://www.q-team.org/Ontology#Slot_usa_1
-
-:Slot_usa_1 a owl:NamedIndividual , :Slot ;
-	:hostedInDataCenter :dc_usa_1 .
-# 
-# http://www.q-team.org/Ontology#Slot_usa_2
-
-:Slot_usa_2 a owl:NamedIndividual , :Slot ;
-	:hostedInDataCenter :dc_usa_1 .
-# 
-# http://www.q-team.org/Ontology#Slot_usa_3
-
-:Slot_usa_3 a owl:NamedIndividual , :Slot ;
-	:hostedInDataCenter :dc_usa_1 .
-# 
-# http://www.q-team.org/Ontology#USA
-
-:USA a owl:NamedIndividual , :Country .
-# 
-# http://www.q-team.org/Ontology#bdsg
-
-:bdsg a owl:NamedIndividual , :Act ;
-	:appliedIn :Germany .
-# 
-# http://www.q-team.org/Ontology#dc_chn_1
-
-:dc_chn_1 a owl:NamedIndividual , :DataCenter ;
-	:locatedIn :China ;
-	:latitude "39.915802"^^xsd:decimal ;
-	:longitude "116.396919"^^xsd:decimal .
-# 
-# http://www.q-team.org/Ontology#dc_fr_1
-
-:dc_fr_1 a owl:NamedIndividual , :DataCenter ;
-	:locatedIn :France ;
-	:latitude "48.870289"^^xsd:decimal ;
-	:longitude "2.316667"^^xsd:decimal .
-# 
-# http://www.q-team.org/Ontology#dc_gb_1
-
-:dc_gb_1 a owl:NamedIndividual , :DataCenter ;
-	:locatedIn :England ;
-	:latitude "51.451269"^^xsd:decimal ;
-	:longitude "-0.175781"^^xsd:decimal .
-# 
-# http://www.q-team.org/Ontology#dc_ger_1
-
-:dc_ger_1 a owl:NamedIndividual , :DataCenter ;
-	:locatedIn :Germany ;
-	:latitude "52.473412"^^xsd:decimal ;
-	:longitude "13.390961"^^xsd:decimal .
-# 
-# http://www.q-team.org/Ontology#dc_ger_2
-
-:dc_ger_2 a owl:NamedIndividual , :DataCenter ;
-	:locatedIn :Germany ;
-	:latitude "48.105964"^^xsd:decimal ;
-	:longitude "11.612549"^^xsd:decimal .
-# 
-# http://www.q-team.org/Ontology#dc_usa_1
-
-:dc_usa_1 a owl:NamedIndividual , :DataCenter ;
-	:locatedIn :USA ;
-	:latitude "39.107939"^^xsd:decimal ;
-	:longitude "-76.744652"^^xsd:decimal .
-# 
-# http://www.q-team.org/Ontology#dsgvo
-
-:dsgvo a owl:NamedIndividual , :Act ;
-	:appliedIn :EU ;
-	:containsRule :Meldepflicht_bei_Verletzung , :Recht_auf_Vergessen .
-# 
-# 
-# 
+#
+#
 # #################################################################
 # #
 # #    Annotations
 # #
 # #################################################################
-# 
-# 
+#
+#
 
 <http://www.w3.org/2003/01/geo/wgs84_pos#> dc:date "$Date: 2009/04/20 15:00:30 $" ;
 	rdfs:label "geo" ;
@@ -568,11 +418,11 @@ basic geo vocab
  altitude information in the WGS84 geodetic reference datum.
  Version $Id: wgs84_pos.rdf,v 1.22 2009/04/20 15:00:30 timbl Exp $. See http://www.w3.org/2003/01/geo/ for more details.""" ;
 	dc:title "WGS84 Geo Positioning: an RDF vocabulary" .
-# 
+#
 
 wgs84_pos:lat_long rdfs:comment "A comma-separated representation of a latitude, longitude coordinate." ;
 	rdfs:label "lat/long" .
-# 
+#
 
 wgs84_pos:location rdfs:label "location" ;
 	rdfs:comment """The relation between something and the point,
@@ -583,16 +433,16 @@ wgs84_pos:location rdfs:label "location" ;
  Clearly in practice there will be limit to the accuracy of any such statement, but one would expect
  an accuracy appropriate for the size of the object and uses such as mapping .
  """ .
-# 
-# 
-# 
+#
+#
+#
 # #################################################################
 # #
 # #    General axioms
 # #
 # #################################################################
-# 
-# 
+#
+#
 
 _:genid16 a owl:AllDisjointClasses ;
 	owl:members _:genid21 .
@@ -616,5 +466,5 @@ _:genid18 a rdf:List ;
 _:genid17 a rdf:List ;
 	rdf:first :Slot ;
 	rdf:rest rdf:nil .
-# 
+#
 # Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
