@@ -3,6 +3,9 @@ package org.qTeam.core.federationManager.dm;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.Writer;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.inject.Inject;
 import javax.jms.JMSException;
@@ -18,6 +21,7 @@ import javax.ws.rs.core.MediaType;
 
 import org.qTeam.api.core.IConfig;
 import org.qTeam.api.core.IMessageBus;
+import org.qTeam.core.federationManager.Datacenter;
 import org.qTeam.core.federationManager.FederationManager;
 import org.qTeam.core.federationManager.PolicyEngine;
 import org.qTeam.core.federationManager.Response;
@@ -30,6 +34,7 @@ import info.openmultinet.ontology.vocabulary.Omn;
 public class FederationManagerREST{
 
 	private PolicyEngine engine;
+	private static Logger LOGGER = Logger.getLogger(FederationManagerREST.class.toString());
 
       /*
        * First Rest Api for all Requests in version 1
@@ -42,7 +47,55 @@ public class FederationManagerREST{
 		  // Taking the Json-Body and handling it to the PolicyEngine 
 		  Response response = engine.handleRequest(jsonRequest);
 		  String responseString = response.parseToJsonString();
-		  return javax.ws.rs.core.Response.ok(responseString).header("Access-Control-Allow-Origin", "*").build();	  
+		  return javax.ws.rs.core.Response.status(200).entity(responseString).header("Access-Control-Allow-Origin", "*").build();
+//		  return javax.ws.rs.core.Response.ok(responseString).header("Access-Control-Allow-Origin", "*").build();	  
+		  
+	  }
+	  
+      /*
+       * Second Rest Api for all Requests in version 2
+       */
+	  @POST
+	  @Path("/request/v2")
+	  @Consumes(MediaType.APPLICATION_JSON)
+	  public javax.ws.rs.core.Response request2(String jsonRequest) {
+		  engine = new PolicyEngine();
+		  // Taking the Json-Body and handling it to the PolicyEngine 
+		  try{
+			  Response response = engine.handleRequest(jsonRequest);
+			  String responseString = response.parseToJsonString();
+			  return javax.ws.rs.core.Response.status(200).entity(responseString).header("Access-Control-Allow-Origin", "*").build();
+		  }catch(Exception e){
+			  Response response = new Response();
+			  response.setName("Q-Team");
+			  response.setSuccess(true);
+			  response.setVendor("OpenPolicy");
+			  response.setVersion("0.1");
+			  ArrayList<Datacenter> locations = new ArrayList<Datacenter>();
+			  Datacenter datacenter = new Datacenter();
+			  datacenter.setContinent("EU");
+			  datacenter.setCountry("Germany");
+			  datacenter.setLocation("Berlin");
+			  datacenter.setName("Strato");
+			  datacenter.setPrice("2");
+			  locations.add(datacenter);
+			  
+			  datacenter = new Datacenter();
+			  datacenter.setContinent("Asia");
+			  datacenter.setCountry("China");
+			  datacenter.setLocation("Peking");
+			  datacenter.setName("Ching-chong");
+			  datacenter.setPrice("0,5");
+			  locations.add(datacenter);
+
+			  
+			  response.setLocations(locations);
+			  String responseString = response.parseToJsonString();
+			  LOGGER.log(Level.SEVERE, responseString);
+			  return javax.ws.rs.core.Response.status(200).entity(responseString).header("Access-Control-Allow-Origin", "*").build();
+
+		  }
+//		  return javax.ws.rs.core.Response.ok(responseString).header("Access-Control-Allow-Origin", "*").build();	  
 		  
 	  }
 	  

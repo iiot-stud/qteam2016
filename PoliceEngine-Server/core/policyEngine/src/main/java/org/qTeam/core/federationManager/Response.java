@@ -43,7 +43,7 @@ public class Response {
 			
 			// If we found something we will continue with the Locations
 			// TODO Implement Locations-Array
-			JSONArray jsonArray = new JSONArray("locations");
+			JSONArray jsonArray = new JSONArray();
 			for(Datacenter d : locations){
 				jsonArray.put(d.parseToJsonObject());
 			}
@@ -56,6 +56,46 @@ public class Response {
 		}
 		
 		return null;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getVendor() {
+		return vendor;
+	}
+
+	public void setVendor(String vendor) {
+		this.vendor = vendor;
+	}
+
+	public String getVersion() {
+		return version;
+	}
+
+	public void setVersion(String version) {
+		this.version = version;
+	}
+
+	public boolean isSuccess() {
+		return success;
+	}
+
+	public void setSuccess(boolean success) {
+		this.success = success;
+	}
+
+	public List<Datacenter> getLocations() {
+		return locations;
+	}
+
+	public void setLocations(List<Datacenter> locations) {
+		this.locations = locations;
 	}
 
 }

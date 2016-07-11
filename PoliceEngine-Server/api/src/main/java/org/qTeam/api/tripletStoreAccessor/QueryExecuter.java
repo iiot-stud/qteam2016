@@ -26,7 +26,7 @@ public class QueryExecuter {
   
   private static Map<String, String> missedNsPrefixes = new HashMap<>();
 
-  protected static final String SESAME_SERVICE = "http://localhost:8080/openrdf-sesame/repositories/fiteagle";
+  protected static final String SESAME_SERVICE = "http://localhost:8080/openrdf-sesame/repositories/QTeam";
   protected static final String SESAME_SERVICE_DATA = SESAME_SERVICE + "/statements";
 
   static {
