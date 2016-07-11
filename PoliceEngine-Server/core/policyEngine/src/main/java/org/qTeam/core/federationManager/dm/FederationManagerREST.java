@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.Writer;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -47,7 +48,7 @@ public class FederationManagerREST{
 		  // Taking the Json-Body and handling it to the PolicyEngine 
 		  Response response = engine.handleRequest(jsonRequest);
 		  String responseString = response.parseToJsonString();
-		  return javax.ws.rs.core.Response.status(200).entity(responseString).header("Access-Control-Allow-Origin", "*").build();
+		  return javax.ws.rs.core.Response.status(200).entity(responseString+"\n").header("Access-Control-Allow-Origin", "*").build();
 //		  return javax.ws.rs.core.Response.ok(responseString).header("Access-Control-Allow-Origin", "*").build();	  
 		  
 	  }
@@ -64,35 +65,53 @@ public class FederationManagerREST{
 		  try{
 			  Response response = engine.handleRequest(jsonRequest);
 			  String responseString = response.parseToJsonString();
-			  return javax.ws.rs.core.Response.status(200).entity(responseString).header("Access-Control-Allow-Origin", "*").build();
+			  return javax.ws.rs.core.Response.status(200).entity(responseString+"\n").header("Access-Control-Allow-Origin", "*").build();
 		  }catch(Exception e){
 			  Response response = new Response();
 			  response.setName("Q-Team");
 			  response.setSuccess(true);
 			  response.setVendor("OpenPolicy");
 			  response.setVersion("0.1");
-			  ArrayList<Datacenter> locations = new ArrayList<Datacenter>();
-			  Datacenter datacenter = new Datacenter();
-			  datacenter.setContinent("EU");
-			  datacenter.setCountry("Germany");
-			  datacenter.setLocation("Berlin");
-			  datacenter.setName("Strato");
-			  datacenter.setPrice("2");
-			  locations.add(datacenter);
+			  ArrayList<HashMap<String,String>> slotList = new  ArrayList<HashMap<String,String>>();
+			  HashMap<String,String> slotMap = new HashMap<String,String>();
 			  
-			  datacenter = new Datacenter();
-			  datacenter.setContinent("Asia");
-			  datacenter.setCountry("China");
-			  datacenter.setLocation("Peking");
-			  datacenter.setName("Ching-chong");
-			  datacenter.setPrice("0,5");
-			  locations.add(datacenter);
+			  slotMap.put("country", "germany");
+			  slotMap.put("continent", "EU");
+			  slotMap.put("name", "Strato");
+			  slotMap.put("location", "Berlin");
+			  slotMap.put("price", "2");
+			  slotList.add(slotMap);
+
+			  slotMap = new HashMap<String,String>();
+			  slotMap.put("country", "germany");
+			  slotMap.put("continent", "Asia");
+			  slotMap.put("name", "Ching-chong");
+			  slotMap.put("location", "Peking");
+			  slotMap.put("price", "0,5");
+			  slotList.add(slotMap);
+
+			  response.setSlotList(slotList);
+//			  ArrayList<Datacenter> locations = new ArrayList<Datacenter>();
+//			  Datacenter datacenter = new Datacenter();
+//			  datacenter.setContinent("EU");
+//			  datacenter.setCountry("Germany");
+//			  datacenter.setLocation("Berlin");
+//			  datacenter.setName("Strato");
+//			  datacenter.setPrice("2");
+//			  locations.add(datacenter);
+//			  
+//			  datacenter = new Datacenter();
+//			  datacenter.setContinent("Asia");
+//			  datacenter.setCountry("China");
+//			  datacenter.setLocation("Peking");
+//			  datacenter.setName("Ching-chong");
+//			  datacenter.setPrice("0,5");
+//			  locations.add(datacenter);
 
 			  
-			  response.setLocations(locations);
 			  String responseString = response.parseToJsonString();
 			  LOGGER.log(Level.SEVERE, responseString);
-			  return javax.ws.rs.core.Response.status(200).entity(responseString).header("Access-Control-Allow-Origin", "*").build();
+			  return javax.ws.rs.core.Response.status(200).entity(responseString+"\n").header("Access-Control-Allow-Origin", "*").build();
 
 		  }
 //		  return javax.ws.rs.core.Response.ok(responseString).header("Access-Control-Allow-Origin", "*").build();	  

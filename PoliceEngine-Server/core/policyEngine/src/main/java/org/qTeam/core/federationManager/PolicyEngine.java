@@ -1,6 +1,8 @@
 package org.qTeam.core.federationManager;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.logging.Logger;
 
 import org.hornetq.utils.json.JSONArray;
@@ -9,7 +11,13 @@ import org.hornetq.utils.json.JSONObject;
 import org.qTeam.api.tripletStoreAccessor.TripletStoreAccessor;
 import org.qTeam.api.tripletStoreAccessor.TripletStoreAccessor.ResourceRepositoryException;
 
+import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.rdf.model.Model;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.rdf.model.Property;
+import com.hp.hpl.jena.rdf.model.ResIterator;
+import com.hp.hpl.jena.rdf.model.Resource;
+import org.qTeam.core.federationManager.Request;
 
 public class PolicyEngine {
 
@@ -17,47 +25,81 @@ public class PolicyEngine {
 
 	public Response handleRequest(String jsonRequest) {
 		// Parsing the JSON String to an Java Class
-		Request request = parseFromJSON(jsonRequest);
+		Request request = parseFromJSONString(jsonRequest);
 
-		// Finding all countrys that are suitable for the given attributes
-		ArrayList<String> countryList = findSlots(request);
+		// Finding all Slots that are suitable for the given attributes
+		Model slotModel = findSlots(request);
 
 		// Check if one of our prefered Locations is in the ArrayList
-		ArrayList<String> favoriteCountrys = new ArrayList<String>();
-		for (String s : request.getPreferences()) {
-			if (countryList.contains(s)) {
-				favoriteCountrys.add(s);
-			}
+		
+		Model newSlotModel = filterPreferredCountrys(slotModel);
+		
+		if (newSlotModel == null){
+			Response response = createResponse(request, slotModel);
+
+			return response;
+		}else{
+			Response response = createResponse(request, newSlotModel);
+
+			return response;
 		}
+		
+//		ArrayList<String> favoriteCountrys = new ArrayList<String>();
+//		for (String s : request.getPreferences()) {
+//			if (countryList.contains(s)) {
+//				favoriteCountrys.add(s);
+//			}
+//		}
 
-		// Get all Datacenters for the possible Countrys
-		ArrayList<Datacenter> datacenterArray = new ArrayList<Datacenter>();
-		if (!favoriteCountrys.isEmpty()) {
-			datacenterArray = getDatacentersForCountrys(favoriteCountrys);
-		} else {
-			datacenterArray = getDatacentersForCountrys(countryList);
-		}
-
-		Response response = createResponse(request, datacenterArray);
-
-		return response;
+		
+		
+//		// Get all Datacenters for the possible Countrys
+//		ArrayList<Datacenter> datacenterArray = new ArrayList<Datacenter>();
+//		if (!favoriteCountrys.isEmpty()) {
+//			datacenterArray = getDatacentersForCountrys(favoriteCountrys);
+//		} else {
+//			datacenterArray = getDatacentersForCountrys(countryList);
+//		}
 	}
 
-	private ArrayList<String> findSlots(Request request) {
-		Model slutModel /* ;-) */= TripletStoreAccessor.getAllSlots();
-//		slutModel.listResourcesWithProperty(p, o)
-		
-		
+	private Model filterPreferredCountrys(Model slotModel) {
+		// TODO Auto-generated method stub
 		return null;
 	}
 
-	private Response createResponse(Request request, ArrayList<Datacenter> datacenterArray) {
+	private Model findSlots(Request request) {
+		Model slutModel /* ;-) */= TripletStoreAccessor.getAllSlots();
+		HashMap<String, String> attributes = request.getAttributes();
+		for(String s : attributes.keySet()){
+			if(!attributes.get(s).equals("false")){
+				slutModel = filterModel(s,slutModel);
+			}
+		}
+		
+		return slutModel;
+	}
+
+	private Model filterModel(String s,Model model){
+		try{
+			Property property = model.getProperty("http://www.q-team.org/Ontology#complyWithRule");		
+			ResIterator iterator = model.listResourcesWithProperty(property);
+			Model newModel = ModelFactory.createDefaultModel();
+			for(Resource r : iterator.toList()){
+				newModel.add(r.getModel());
+			}
+			return newModel;
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		return null;
+	}
+	private Response createResponse(Request request, Model slotModel) {
 		Response response = null;
-		if (datacenterArray.isEmpty()) {
+		if (slotModel.isEmpty()) {
 			response = new Response(request.getName(), request.getVendor(), request.getVersion(), false, null);
 		} else {
 			response = new Response(request.getName(), request.getVendor(), request.getVersion(), true,
-					datacenterArray);
+					slotModel);
 		}
 
 		return response;
@@ -119,7 +161,7 @@ public class PolicyEngine {
 
 	}
 
-	private Request parseFromJSON(String jsonString) {
+	private Request parseFromJSONString(String jsonString) {
 		Request request = new Request();
 		JSONObject tmpJson = null;
 		try {
@@ -141,10 +183,19 @@ public class PolicyEngine {
 				request.getPreferences().add(tmpArray.getString(i));
 			}
 
+			HashMap<String,String> attributesMap = request.getAttributes();
 			tmpArray = tmpJson.getJSONArray("attributes");
 			for (int i = 0; i < tmpArray.length(); i++) {
-				request.getAttributes().add(tmpArray.getString(i));
-				String a;
+				
+				JSONObject attributeJsonObject =(JSONObject) tmpArray.get(i);
+				Iterator it = attributeJsonObject.keys();
+				
+				while(it.hasNext()){
+					String jsonKey = it.next().toString();
+					attributesMap.put(jsonKey, attributeJsonObject.get(jsonKey).toString());
+//					attributesMap.put(, value)
+//					String a;
+				}
 			}
 
 			return request;

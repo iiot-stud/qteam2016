@@ -1,16 +1,19 @@
 package org.qTeam.core.federationManager;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+
+import org.hornetq.utils.json.JSONObject;
 
 public class Request {
 	private String name;
 	private String vendor;
 	private String version;
 	private List<String> preferences;
-	private List<String> attributes;
+	private HashMap<String, String> attributes;
 	
-	public Request(String name, String vendor, String version, List<String> preferences, List<String> attributes){
+	public Request(String name, String vendor, String version, List<String> preferences, HashMap<String, String> attributes){
 		this.name = name;
 		this.vendor = vendor;
 		this.version = version;
@@ -19,7 +22,7 @@ public class Request {
 	}
 	
 	public Request(){
-		attributes =new ArrayList<String>();
+		attributes =new HashMap<String, String>();
 		preferences = new ArrayList<String>();
 	}
 	
@@ -41,10 +44,10 @@ public class Request {
 	protected void setPreferences(List<String> preferences) {
 		this.preferences = preferences;
 	}
-	protected List<String> getAttributes() {
+	protected HashMap<String, String> getAttributes() {
 		return attributes;
 	}
-	protected void setAttributes(List<String> attributes) {
+	protected void setAttributes(HashMap<String, String> attributes) {
 		this.attributes = attributes;
 	}
 	public String getVersion() {

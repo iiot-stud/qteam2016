@@ -25,11 +25,14 @@ import javax.ws.rs.core.Application;
 
 import org.apache.jena.atlas.web.HttpException;
 import org.qTeam.api.core.IMessageBus;
+import org.qTeam.api.core.MessageUtil;
 import org.qTeam.api.core.OntologyModelUtil;
 import org.qTeam.api.tripletStoreAccessor.TripletStoreAccessor;
 import org.qTeam.api.tripletStoreAccessor.TripletStoreAccessor.ResourceRepositoryException;
 import org.qTeam.core.federationManager.dm.FederationManagerREST;
 
+import com.hp.hpl.jena.ontology.OntModel;
+import com.hp.hpl.jena.ontology.OntModelSpec;
 import com.hp.hpl.jena.rdf.model.InfModel;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
@@ -79,8 +82,12 @@ public class FederationManager extends Application {
 		Reasoner reasoner = ReasonerRegistry.getOWLReasoner();
 		Model schema = FileManager.get().loadModel("file:../../ontology/Q-Team.ttl");
 		Model data = FileManager.get().loadModel("file:../../ontology/Q-Team-database.ttl");
-		reasoner.bindSchema(schema);
-		InfModel infmodel = ModelFactory.createInfModel(reasoner, data);
+//		reasoner.bindSchema(schema);
+//		InfModel infmodel = ModelFactory.createInfModel(reasoner, data);
+		
+		OntModel model = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MICRO_RULE_INF);
+		model.read("file:../../ontology/Q-Team.ttl",null,"TURTLE");
+		InfModel infmodel = ModelFactory.createInfModel(reasoner, model);
 
 		// TODO Make it not so confusing (Maybe Switch-Case)
 //		File federationOntologie = Paths.get(System.getProperty("user.home"))
@@ -117,6 +124,12 @@ public class FederationManager extends Application {
 //					"Please add your Federation-Ontology to the '/home/User/.fiteagle/Federation.ttl' File and Re-Deploy the FederationManager ");
 //		}
 		try {
+	       	LOGGER.log(Level.SEVERE,"Original Model ----------");
+			LOGGER.log(Level.SEVERE, MessageUtil.serializeModel(model, IMessageBus.SERIALIZATION_TURTLE));
+
+	       	LOGGER.log(Level.SEVERE,"Adding ----------");
+			LOGGER.log(Level.SEVERE, MessageUtil.serializeModel(infmodel, IMessageBus.SERIALIZATION_TURTLE));
+
 			TripletStoreAccessor.addModel(infmodel);
 		} catch (ResourceRepositoryException e) {
 			// TODO Auto-generated catch block

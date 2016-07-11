@@ -327,7 +327,7 @@ public class TripletStoreAccessor {
         query.setQueryDescribeType();
         query.addResultVar("resource");
         Triple tripleForPattern = new Triple(new Node_Variable("resource"),new Node_Variable("o"),new Node_Variable("p"));
-        Node node = ModelFactory.createDefaultModel().getResource("http://www.semanticweb.org/bschumacher/ontologies/2016/5/untitled-ontology-4#Slot").asNode();
+        Node node = ModelFactory.createDefaultModel().getResource("http://www.q-team.org/Ontology#Slot").asNode();
         ElementGroup whereClause = new ElementGroup();
         whereClause.addTriplePattern(new Triple(new Node_Variable("resource"), RDF.type.asNode(), node));
         whereClause.addTriplePattern(tripleForPattern);
