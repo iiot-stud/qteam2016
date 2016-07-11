@@ -15,24 +15,36 @@
 	
 	<!--	<button class="btn btn-success" onclick="$(this).hide();"> Click me! </button> -->
 
+   <!-- <button class="btn btn-success" onclick='logFunction()'> Click me! </button>  -->
+
+
 	<div class="container">
   <h2>IOSL-Q-Team</h2>
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#map">Map</a></li>
-    <li><a data-toggle="tab" href="#upload">Upload</a></li>
-    <li><a data-toggle="tab" href="#settings">Settings</a></li>
+    <li class="active"><a data-toggle="tab" href="#map">Kartenansicht</a></li>
+ <!--   <li><a data-toggle="tab" href="#upload">Upload</a></li> -->
+    <li><a data-toggle="tab" href="#settings">Einstellungen</a></li>
   </ul>
 
  
 
   <div class="tab-content">
 
+    <div id="result" style="color:red"></div>
+
   	 <div id="lol" class="tab-pane fade" w3-include-html="page.html"> </div>
 
     <div id="map" class="tab-pane fade in active">
-      <h3>Map</h3>
-      <p>This map can highlight where our settings are deployed(green) and where not (red) countries that does not affect us are gray</p>
-      <iframe src="page.html" width="1000" height="1000" frameBorder="0" scrolling="no"></iframe>
+      <h3>Kartenansicht</h3>
+      <p> Diese Kartenansicht in hebt alle die Länder hervor, in denen unter den ausgewerteten Datenschutz-Einstellungen Datencenter verfügbar sind.</p>
+
+      <div>      
+        <iframe src="page.html" width="1000" height="1000" frameBorder="0" scrolling="no"></iframe>
+      </div>
+
+      <div>
+            <iframe src="secMap.html" width="1000" height="1000" frameBorder="0" scrolling="no"></iframe>
+      </div>
     </div>
 
 
@@ -42,7 +54,7 @@
     <div id="upload" class="tab-pane fade">
       <h3>Upload</h3>
       <p>Example Upload form if we choose to upload one or several files</p>
-          <iframe src="upload.html" width="1000" height="500" frameBorder="0" scrolling="no"></iframe>
+        <!--  <iframe src="upload.html" width="1000" height="500" frameBorder="0" scrolling="no"></iframe> -->
     </div>
 
     <div id="settings" class="tab-pane fade">

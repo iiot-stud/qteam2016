@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <title>Bootstrap Q-Team</title>
+    <title>Q-Team</title>
 
     <!-- link cdn files here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -16,68 +16,59 @@
 <div class="container" style="margin-top:20px;">
   <form>
   <fieldset class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-    <small class="text-muted">We'll never share your email with anyone else.</small>
+    <label for="exampleInputEmail1">Name der Applikation </label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name der Applikation">
+    <small class="text-muted">Dies hilft anderen Ihre Applikation wieder zu erkennen.</small>
   </fieldset>
+
+  
+
   <fieldset class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </fieldset>
-  <fieldset class="form-group">
-    <label for="exampleSelect1">Example select</label>
+    <label for="exampleSelect1">Datenschutz Mindestalter</label>
     <select class="form-control" id="exampleSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
+      <option>mindestens 13 Jahre</option>
+      <option>mindestens 14 Jahre</option>
+      <option>mindestens 16 Jahre</option>
+      <option>mindestens 18 Jahre</option>
+      <option> + 21 Jahre</option>
     </select>
   </fieldset>
-  <fieldset class="form-group">
-    <label for="exampleSelect2">Example multiple select</label>
-    <select multiple class="form-control" id="exampleSelect2">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </fieldset>
-  <fieldset class="form-group">
-    <label for="exampleTextarea">Example textarea</label>
-    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-  </fieldset>
-  <fieldset class="form-group">
-    <label for="exampleInputFile">File input</label>
-    <input type="file" class="form-control-file" id="exampleInputFile">
-    <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-  </fieldset>
-  <div class="radio">
-    <label>
-      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-      Option one is this and that&mdash;be sure to include why it's great
-    </label>
-  </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-      Option two can be something else and selecting it will deselect option one
-    </label>
-  </div>
-  <div class="radio disabled">
-    <label>
-      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-      Option three is disabled
-    </label>
-  </div>
+
+
+
+    <label for="exampleSelect1">Weitere Datenschutzeinstellungen</label>
+
   <div class="checkbox">
     <label>
-      <input type="checkbox"> Check me out
+      <input type="checkbox"> Recht auf Vergessen
+  </div>
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Meldepflicht bei Verletzung
     </label>
   </div>
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Einwilligung zur Datensammlung
+    </label>
+  </div>
+
+  <fieldset class="form-group">
+    <label for="exampleTextarea">Zusätzliche Informationen (Optional)</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="exampleInputFile">Konfigurationsdatei hochladen (Optional)</label>
+    <input type="file" class="form-control-file" id="exampleInputFile">
+    <small class="text-muted">Laden Sie ihre Konfigurationsdatei hoch.</small>
+  </fieldset>
+
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
     <!-- JavaScriptfiles-->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
