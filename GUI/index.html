@@ -9,11 +9,35 @@
 		<link rel="stylesheet" href="css/layout.css">
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
+<!-- TEST DUMMY FILE SCRIPTS-->
+
+<!--   <script src="data.js" ></script> -->
+ <!--  <script src="main.js" ></script> -->
+
+
+  <!--     <script src="testjsn.js" ></script> -->
+
+
+
+<script>
+
+var request = new XMLHttpRequest();  
+request.open('GET', 'http://jsonplaceholder.typicode.com/users', false);   
+request.send(null);  
+
+if (request.status == 0)  
+    console.log(request.responseText); 
+
+</script>
+
 	</head>
 	<body>
 
 	
 	<!--	<button class="btn btn-success" onclick="$(this).hide();"> Click me! </button> -->
+
+   <!-- <button class="btn btn-success" onclick='logFunction()'> Click me! </button>  -->
+
 
 	<div class="container">
   <h2>IOSL-Q-Team</h2>
@@ -27,12 +51,21 @@
 
   <div class="tab-content">
 
+    <div id="result" style="color:red"></div>
+
   	 <div id="lol" class="tab-pane fade" w3-include-html="page.html"> </div>
 
     <div id="map" class="tab-pane fade in active">
       <h3>Map</h3>
       <p>This map can highlight where our settings are deployed(green) and where not (red) countries that does not affect us are gray</p>
-      <iframe src="page.html" width="1000" height="1000" frameBorder="0" scrolling="no"></iframe>
+
+      <div>      
+        <iframe src="page.html" width="1000" height="1000" frameBorder="0" scrolling="no"></iframe>
+      </div>
+
+      <div>
+            <iframe src="secMap.html" width="1000" height="1000" frameBorder="0" scrolling="no"></iframe>
+      </div>
     </div>
 
 
