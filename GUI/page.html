@@ -74,7 +74,7 @@ var randomnumber; // to simulate number of Datacenters
 
 for (var i = 0; i < locations.length; i++) {
 
-  randomnumber = Math.floor(Math.random() * (20 - 0 + 1)) + 0;
+  randomnumber = Math.floor(Math.random() * (50 - 0 + 1)) + 0;
   googleDataTable.push([locations[i].country, randomnumber]);
   console.log(locations[i].country);
 };
@@ -89,7 +89,7 @@ console.log(googleDataTable);
         var data = google.visualization.arrayToDataTable(googleDataTable);
 
         var options = {
-          colorAxis: {colors: ['#e31b23', 'white', '#00853f']},
+          colorAxis: {colors: ['#5cffa9','#00c25c','#007638']},
           backgroundColor: '#81d4fa', //water #00853f
           datalessRegionColor: '#fafafa', // gray for all countries that are not deployed.
           defaultColor: '#f5f5f5', //90ee90
