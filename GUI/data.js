@@ -28,3 +28,26 @@ var RESPONSE = {
     }
 ]
 }
+
+
+var REQUEST = {
+	"name":"alex",
+	"vendor":"OpenPolicy",
+	"version":"0.1",
+	"preferences":["germany"],
+
+"attributes":[
+	{
+		"#http://www.q-team.org/Ontology#Einwilligung_Zur_Datensammlung":true
+	},
+	{
+		"#http://www.q-team.org/Ontology#minAge":12
+	},
+	{
+		"#http://www.q-team.org/Ontology#Recht_auf_Vergessen":false
+	},
+	{
+		"#http://www.q-team.org/Ontology#Meldepflicht_bei_Verletzung":true
+	}
+]
+}
