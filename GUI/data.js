@@ -23,7 +23,25 @@ var RESPONSE = {
     },
     {
       "name": "2kjd",
-      "country": "Great Britain",
+      "country": "Russland",
+      "price": "2€"
+    },
+
+    {
+      "name": "2kjd",
+      "country": "Indien",
+      "price": "2€"
+    },
+
+    {
+      "name": "2kjd",
+      "country": "Island",
+      "price": "2€"
+    },
+
+    {
+      "name": "2kjd",
+      "country": "Canada",
       "price": "2€"
     }
 ]
