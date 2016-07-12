@@ -19,9 +19,10 @@
 
      selects = document.getElementById("minAgeSelect"),
      inputs = form.getElementsByTagName("input"),
+
      age = selects.options[selects.selectedIndex].value,
      ageEntry = { "http://www.q-team.org/Ontology#minAge":age};
-     attributes.push(ageEntry);
+      attributes.push(ageEntry);
 
     //console.log(selects.options[selects.selectedIndex].value);
 
@@ -61,7 +62,7 @@
         };  
       };
 
-    console.log(attributes);
+   // console.log(attributes);
 
     /*
       ### POST TO SERVER
@@ -79,7 +80,17 @@
     };
 
     xmlhttp.open("POST", url, true);
-    xmlhttp.send();
+
+      var name = {"name":"Webseite"};
+      var vendor = {"vendor":"OpenPolicy"};
+      var version = {"version":"0.1"};
+      var preferences = {"preferences":["germany"]};
+
+      var myRequest = {name,vendor,version,preferences,attributes};
+      console.log(myRequest);
+
+
+    xmlhttp.send(myRequest);
 
     
 }
@@ -146,6 +157,7 @@
   <fieldset class="form-group">
     <label for="exampleSelect1">Datenschutz Mindestalter</label>
     <select class="form-control" name="minAge" id="minAgeSelect">
+      <option value="12">mindestens 12 Jahre</option>
       <option value="13">mindestens 13 Jahre</option>
       <option value="14">mindestens 14 Jahre</option>
       <option value="16">mindestens 16 Jahre</option>
@@ -155,8 +167,26 @@
   </fieldset>
 
 
+  <fieldset class="form-group">
 
-    <label for="exampleSelect1">Weitere Datenschutzeinstellungen</label>
+    <label for="exampleSelect1">Datenschutzgesetze</label>
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" name="bdsg">Bundesdatenschutzgesetz
+  </div>
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" name="grundverordnung"> Datenschutz-Grundverordnung
+    </label>
+  </div>
+  </fieldset>
+
+
+  <fieldset class="form-group">
+
+    <label for="exampleSelect1">Weitere Datenschutzregeln</label>
 
   <div class="checkbox">
     <label>
@@ -174,6 +204,7 @@
       <input type="checkbox" name="einwilligung"> Einwilligung zur Datensammlung
     </label>
   </div>
+  </fieldset>
 
   <fieldset class="form-group">
     <label for="exampleTextarea">Zusätzliche Informationen (Optional)</label>
