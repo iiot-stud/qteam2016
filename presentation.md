@@ -5,21 +5,15 @@ Dinge umgesetzt. An den entsprechenden Stellen im Ansatz auf related work eingeh
 
 Inhalt:
 - Motivation: policy engine für container orchestration mit Datenschutz (Jan)
-  + ua Docker, Kubernetes, Ubernetes, container orchestration
+  + U.a. Docker, Kubernetes, Ubernetes, container orchestration
 - Problemstellung: policy engine proof of concept (Jan)
 - Ansatz (ab 16.06.)
-  + Architektur: Schnittstellen (AlexO)
-  + Techniken zB wildfly, rdf4j, jena,(ist bekannt), Jena Reasoner (AlexO) gui (Eridy)
-  + policy engine generell (Eridy) zB zum Thema policy enforcement vgl optional zb Congress 
-    * Thematik an sich kann in der Problemstellung erklärt werden
-  + reasoning/ontologies (Ben)
-    * Herangehensweise zur Generierung unserer Test-Ontologie, Wie stellen wir uns das vor, wie andere damit umgehen können?
-    * wir machen nichts Neues. Nur unser Ansatz.
-    * Bilder von der Ontologie zeigen oder live aus Protege
-  + privacy/Datenschutz (Ben)
-    * Nur kurz mündlich
-    * EU Grundverordnung als einheitlicher Ausgangspunkt
+ + Datenschutz (Ben)
+    * BDSG als einheitlicher Ausgangspunkt
+    * EU Grundverordnung
+ + Reasoning/Ontologies (Ben)
+   * Herangehensweise zur Generierung unserer Test-Ontologie, Wie stellen wir uns das vor, wie andere damit umgehen können?
+   * Bilder live aus Protege
+- Architektur: Schnittstellen (AlexO)
+- Techniken (Alexo)
 - Demo (Eridy)
-
-Quellen:
-- zB ngni folien
