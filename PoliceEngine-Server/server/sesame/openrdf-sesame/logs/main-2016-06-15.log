@@ -1,0 +1,8 @@
+[INFO ] 2016-06-15 19:23:06,349 [ServerService Thread Pool -- 73] Logback logging API implementation is configured.
+[INFO ] 2016-06-15 19:23:08,450 [default task-1] CompressingFilter has initialized
+[INFO ] 2016-06-15 19:23:09,083 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-06-15 19:23:09,102 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-06-15 19:23:09,155 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-06-15 22:32:01,118 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-06-15 22:32:01,120 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-06-15 22:32:01,123 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)

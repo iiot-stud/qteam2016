@@ -1,0 +1,1270 @@
+2016-04-22 11:01:31,558 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.1.Final
+2016-04-22 11:01:31,889 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-04-22 11:01:31,992 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: WildFly Full 10.0.0.Final (WildFly Core 2.0.10.Final) starting
+2016-04-22 11:01:31,993 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	info.aduna.platform.appdata.basedir = ../sesame
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/home/Dokumente/workspace/server/wildfly/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /opt/java/jre/lib/endorsed
+	java.ext.dirs = /opt/java/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /opt/java/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_72-b15
+	java.security.egd = file:/dev/./urandom
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_72
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.72-b15
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = /home/home/Dokumente/workspace/server/wildfly
+	jboss.host.name = home
+	jboss.modules.dir = /home/home/Dokumente/workspace/server/wildfly/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = home
+	jboss.qualified.host.name = home
+	jboss.server.base.dir = /home/home/Dokumente/workspace/server/wildfly/standalone
+	jboss.server.config.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/configuration
+	jboss.server.data.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/data
+	jboss.server.deploy.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/data/content
+	jboss.server.log.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/log
+	jboss.server.name = home
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/home/Dokumente/workspace/server/wildfly/standalone/configuration/logging.properties
+	module.path = /home/home/Dokumente/workspace/server/wildfly/modules
+	org.jboss.boot.log.file = /home/home/Dokumente/workspace/server/wildfly/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.5.0-040500rc5-generic
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/java/jre/lib/resources.jar:/opt/java/jre/lib/rt.jar:/opt/java/jre/lib/sunrsasign.jar:/opt/java/jre/lib/jsse.jar:/opt/java/jre/lib/jce.jar:/opt/java/jre/lib/charsets.jar:/opt/java/jre/lib/jfr.jar:/opt/java/jre/classes
+	sun.boot.library.path = /opt/java/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/home/Dokumente/workspace/server/wildfly/jboss-modules.jar -mp /home/home/Dokumente/workspace/server/wildfly/modules org.jboss.as.standalone -Djboss.home.dir=/home/home/Dokumente/workspace/server/wildfly -Djboss.server.base.dir=/home/home/Dokumente/workspace/server/wildfly/standalone -Dinfo.aduna.platform.appdata.basedir=../sesame -b 0.0.0.0 -Djava.security.egd=file:/dev/./urandom -c standalone-fiteagle.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = DE
+	user.dir = /home/home/Dokumente/workspace/server/wildfly
+	user.home = /home/home
+	user.language = de
+	user.name = home
+	user.timezone = Europe/Berlin
+2016-04-22 11:01:31,994 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -agentlib:jdwp=transport=dt_socket,address=8787,server=y,suspend=n -Dorg.jboss.boot.log.file=/home/home/Dokumente/workspace/server/wildfly/standalone/log/server.log -Dlogging.configuration=file:/home/home/Dokumente/workspace/server/wildfly/standalone/configuration/logging.properties 
+2016-04-22 11:01:33,951 WARN  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 20) WFLYMSGAMQ0071: There is no resource matching the expiry-address jms.queue.ExpiryQueue for the address-settings #, expired messages from destinations matching this address-setting will be lost!
+2016-04-22 11:01:33,953 WARN  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 20) WFLYMSGAMQ0072: There is no resource matching the dead-letter-address jms.queue.DLQ for the address-settings #, undelivered messages from destinations matching this address-setting will be lost!
+2016-04-22 11:01:34,614 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-04-22 11:01:34,649 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.3.4.Final
+2016-04-22 11:01:34,668 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.3.4.Final
+2016-04-22 11:01:34,750 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 39) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2016-04-22 11:01:34,814 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 56) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-04-22 11:01:34,825 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 45) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-04-22 11:01:34,836 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 55) WFLYSEC0002: Activating Security Subsystem
+2016-04-22 11:01:34,853 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 48) WFLYNAM0001: Activating Naming Subsystem
+2016-04-22 11:01:34,909 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=4.9.4.Final
+2016-04-22 11:01:34,916 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.2.Final)
+2016-04-22 11:01:34,960 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 58) WFLYWS0002: Activating WebServices Extension
+2016-04-22 11:01:34,963 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 35) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-04-22 11:01:34,987 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-04-22 11:01:35,113 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 1.3.15.Final starting
+2016-04-22 11:01:35,127 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 4.0.18.Final
+2016-04-22 11:01:35,122 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 57) WFLYUT0003: Undertow 1.3.15.Final starting
+2016-04-22 11:01:35,326 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2016-04-22 11:01:35,326 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-04-22 11:01:35,701 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 57) WFLYUT0014: Creating file handler for path '/home/home/Dokumente/workspace/server/wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2016-04-22 11:01:35,732 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2016-04-22 11:01:35,736 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2016-04-22 11:01:35,779 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 57) WFLYUT0014: Creating file handler for path '/home/home/Dokumente/workspace/server/wildfly/../../unifi/src/main/webapp' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2016-04-22 11:01:35,963 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTP listener default listening on 0.0.0.0:8080
+2016-04-22 11:01:36,103 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-04-22 11:01:36,105 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/usersDS]
+2016-04-22 11:01:36,237 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory /home/home/Dokumente/workspace/server/wildfly/standalone/deployments
+2016-04-22 11:01:36,265 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "usercerts.war" (runtime-name: "usercerts.war")
+2016-04-22 11:01:36,269 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "OpenBaton.war" (runtime-name: "OpenBaton.war")
+2016-04-22 11:01:36,270 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "reservation.war" (runtime-name: "reservation.war")
+2016-04-22 11:01:36,271 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "federationManager.war" (runtime-name: "federationManager.war")
+2016-04-22 11:01:36,272 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "bus.war" (runtime-name: "bus.war")
+2016-04-22 11:01:36,274 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "openrdf-workbench.war" (runtime-name: "openrdf-workbench.war")
+2016-04-22 11:01:36,274 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "orchestrator.war" (runtime-name: "orchestrator.war")
+2016-04-22 11:01:36,277 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "motor.war" (runtime-name: "motor.war")
+2016-04-22 11:01:36,278 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "openrdf-sesame.war" (runtime-name: "openrdf-sesame.war")
+2016-04-22 11:01:36,268 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "sfa.war" (runtime-name: "sfa.war")
+2016-04-22 11:01:36,281 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "resourceAdapterManager.war" (runtime-name: "resourceAdapterManager.war")
+2016-04-22 11:01:45,047 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry xml-apis.jar in /content/federationManager.war/WEB-INF/lib/serializer-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,085 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry xercesImpl.jar in /content/federationManager.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,102 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry xml-apis.jar in /content/federationManager.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,103 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry serializer.jar in /content/federationManager.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,108 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry httpclient-4.2.6.jar in /content/federationManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,131 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry httpcore-4.2.5.jar in /content/federationManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,139 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry commons-logging-1.1.1.jar in /content/federationManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,140 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry jena-arq-2.13.0.jar in /content/federationManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,140 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry jsonld-java-0.5.1.jar in /content/federationManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,141 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry jackson-core-2.3.3.jar in /content/federationManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,141 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry jackson-databind-2.3.3.jar in /content/federationManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,141 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry jackson-annotations-2.3.0.jar in /content/federationManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,142 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry httpclient-cache-4.2.6.jar in /content/federationManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,144 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry libthrift-0.9.2.jar in /content/federationManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,145 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry jcl-over-slf4j-1.7.6.jar in /content/federationManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,152 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry commons-csv-1.0.jar in /content/federationManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,201 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry commons-lang3-3.3.2.jar in /content/federationManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,202 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry log4j-1.2.17.jar in /content/federationManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,203 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry jena-core-2.13.0.jar in /content/federationManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,203 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry jena-iri-1.1.2.jar in /content/federationManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,353 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry xml-apis.jar in /content/reservation.war/WEB-INF/lib/serializer-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,464 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry xercesImpl.jar in /content/reservation.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,465 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry xml-apis.jar in /content/reservation.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,465 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry serializer.jar in /content/reservation.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,483 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry httpclient-4.2.6.jar in /content/reservation.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,485 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry httpcore-4.2.5.jar in /content/reservation.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,486 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry commons-logging-1.1.1.jar in /content/reservation.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,487 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry jena-arq-2.13.0.jar in /content/reservation.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,487 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry jsonld-java-0.5.1.jar in /content/reservation.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,503 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry jackson-core-2.3.3.jar in /content/reservation.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,504 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry jackson-databind-2.3.3.jar in /content/reservation.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,511 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry jackson-annotations-2.3.0.jar in /content/reservation.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,511 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry httpclient-cache-4.2.6.jar in /content/reservation.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,511 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry libthrift-0.9.2.jar in /content/reservation.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,512 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry jcl-over-slf4j-1.7.6.jar in /content/reservation.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,513 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry commons-csv-1.0.jar in /content/reservation.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,514 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry commons-lang3-3.3.2.jar in /content/reservation.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,515 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry log4j-1.2.17.jar in /content/reservation.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,520 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry jena-core-2.13.0.jar in /content/reservation.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,520 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry jena-iri-1.1.2.jar in /content/reservation.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,563 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry xml-apis.jar in /content/bus.war/WEB-INF/lib/serializer-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,581 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry xercesImpl.jar in /content/bus.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,595 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry xml-apis.jar in /content/bus.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,596 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry serializer.jar in /content/bus.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,606 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry httpclient-4.2.6.jar in /content/bus.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,607 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry httpcore-4.2.5.jar in /content/bus.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,619 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry commons-logging-1.1.1.jar in /content/bus.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,619 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry jena-arq-2.13.0.jar in /content/bus.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,619 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry jsonld-java-0.5.1.jar in /content/bus.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,620 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry jackson-core-2.3.3.jar in /content/bus.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,620 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry jackson-databind-2.3.3.jar in /content/bus.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,620 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry jackson-annotations-2.3.0.jar in /content/bus.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,620 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry httpclient-cache-4.2.6.jar in /content/bus.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,620 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry libthrift-0.9.2.jar in /content/bus.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,621 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry jcl-over-slf4j-1.7.6.jar in /content/bus.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,621 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry commons-csv-1.0.jar in /content/bus.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,621 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry commons-lang3-3.3.2.jar in /content/bus.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,621 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry log4j-1.2.17.jar in /content/bus.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,621 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry jena-core-2.13.0.jar in /content/bus.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,622 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry jena-iri-1.1.2.jar in /content/bus.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,659 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry xml-apis.jar in /content/orchestrator.war/WEB-INF/lib/serializer-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,684 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry xercesImpl.jar in /content/orchestrator.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,685 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry xml-apis.jar in /content/orchestrator.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,685 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry serializer.jar in /content/orchestrator.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,698 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry httpclient-4.2.6.jar in /content/orchestrator.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,699 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry httpcore-4.2.5.jar in /content/orchestrator.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,700 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-logging-1.1.1.jar in /content/orchestrator.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,700 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry jena-arq-2.13.0.jar in /content/orchestrator.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,701 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry jsonld-java-0.5.1.jar in /content/orchestrator.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,701 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry jackson-core-2.3.3.jar in /content/orchestrator.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,701 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry jackson-databind-2.3.3.jar in /content/orchestrator.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,701 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry jackson-annotations-2.3.0.jar in /content/orchestrator.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,702 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry httpclient-cache-4.2.6.jar in /content/orchestrator.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,702 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry libthrift-0.9.2.jar in /content/orchestrator.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,702 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry jcl-over-slf4j-1.7.6.jar in /content/orchestrator.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,702 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-csv-1.0.jar in /content/orchestrator.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,703 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-lang3-3.3.2.jar in /content/orchestrator.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,703 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry log4j-1.2.17.jar in /content/orchestrator.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,703 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry jena-core-2.13.0.jar in /content/orchestrator.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,703 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry jena-iri-1.1.2.jar in /content/orchestrator.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,754 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry xml-apis.jar in /content/motor.war/WEB-INF/lib/serializer-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,775 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry xercesImpl.jar in /content/motor.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,783 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry xml-apis.jar in /content/motor.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,796 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry serializer.jar in /content/motor.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,810 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry httpclient-4.2.6.jar in /content/motor.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,821 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry httpcore-4.2.5.jar in /content/motor.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,823 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-logging-1.1.1.jar in /content/motor.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,834 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry jena-arq-2.13.0.jar in /content/motor.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,835 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry jsonld-java-0.5.1.jar in /content/motor.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,835 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry jackson-core-2.3.3.jar in /content/motor.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,835 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry jackson-databind-2.3.3.jar in /content/motor.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,836 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry jackson-annotations-2.3.0.jar in /content/motor.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,836 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry httpclient-cache-4.2.6.jar in /content/motor.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,836 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry libthrift-0.9.2.jar in /content/motor.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,838 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry jcl-over-slf4j-1.7.6.jar in /content/motor.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,838 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-csv-1.0.jar in /content/motor.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,839 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-lang3-3.3.2.jar in /content/motor.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,840 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry log4j-1.2.17.jar in /content/motor.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,856 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry jena-core-2.13.0.jar in /content/motor.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,856 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry jena-iri-1.1.2.jar in /content/motor.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,975 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry xml-apis.jar in /content/OpenBaton.war/WEB-INF/lib/serializer-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,984 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry xercesImpl.jar in /content/OpenBaton.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,984 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry xml-apis.jar in /content/OpenBaton.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:45,985 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry serializer.jar in /content/OpenBaton.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:46,021 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry httpclient-4.2.6.jar in /content/OpenBaton.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:46,021 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry httpcore-4.2.5.jar in /content/OpenBaton.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:46,021 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-logging-1.1.1.jar in /content/OpenBaton.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:46,022 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry jena-arq-2.13.0.jar in /content/OpenBaton.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:46,022 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry jsonld-java-0.5.1.jar in /content/OpenBaton.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:46,022 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry jackson-core-2.3.3.jar in /content/OpenBaton.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:46,024 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry jackson-databind-2.3.3.jar in /content/OpenBaton.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:46,024 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry jackson-annotations-2.3.0.jar in /content/OpenBaton.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:46,025 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry httpclient-cache-4.2.6.jar in /content/OpenBaton.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:46,025 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry libthrift-0.9.2.jar in /content/OpenBaton.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:46,026 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry jcl-over-slf4j-1.7.6.jar in /content/OpenBaton.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:46,028 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-csv-1.0.jar in /content/OpenBaton.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:46,029 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-lang3-3.3.2.jar in /content/OpenBaton.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:46,030 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry slf4j-api-1.7.6.jar in /content/OpenBaton.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:46,030 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry log4j-1.2.17.jar in /content/OpenBaton.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:46,031 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry jena-core-2.13.0.jar in /content/OpenBaton.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:46,031 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry jena-iri-1.1.2.jar in /content/OpenBaton.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:46,164 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 61) AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=true,journalDirectory=/home/home/Dokumente/workspace/server/wildfly/standalone/data/activemq/journal,bindingsDirectory=/home/home/Dokumente/workspace/server/wildfly/standalone/data/activemq/bindings,largeMessagesDirectory=/home/home/Dokumente/workspace/server/wildfly/standalone/data/activemq/largemessages,pagingDirectory=/home/home/Dokumente/workspace/server/wildfly/standalone/data/activemq/paging)
+2016-04-22 11:01:46,298 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 61) AMQ221012: Using AIO Journal
+2016-04-22 11:01:46,495 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener xmlrpc-listener listening on 0.0.0.0:8089
+2016-04-22 11:01:47,017 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.1.3.Final (Apache CXF 3.1.4) 
+2016-04-22 11:01:47,415 WARN  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0119: [EJB3.1 spec, section 4.9.2] Session bean implementation class MUST be public, not abstract and not final - org.fiteagle.adapters.motor.dm.MotorAdapterEJB won't be considered as a session bean, since it doesn't meet that requirement
+2016-04-22 11:01:48,194 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 61) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2016-04-22 11:01:48,274 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 61) AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+2016-04-22 11:01:48,331 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 61) AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+2016-04-22 11:01:48,334 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 61) AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+2016-04-22 11:01:48,685 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry xml-apis.jar in /content/usercerts.war/WEB-INF/lib/serializer-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,715 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry xercesImpl.jar in /content/usercerts.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,715 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry xml-apis.jar in /content/usercerts.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,716 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry serializer.jar in /content/usercerts.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,758 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry httpclient-4.2.6.jar in /content/usercerts.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,758 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry httpcore-4.2.5.jar in /content/usercerts.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,759 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry commons-logging-1.1.1.jar in /content/usercerts.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,760 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry jena-arq-2.13.0.jar in /content/usercerts.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,760 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry jsonld-java-0.5.1.jar in /content/usercerts.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,761 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry jackson-core-2.3.3.jar in /content/usercerts.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,761 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry jackson-databind-2.3.3.jar in /content/usercerts.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,768 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry jackson-annotations-2.3.0.jar in /content/usercerts.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,778 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry httpclient-cache-4.2.6.jar in /content/usercerts.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,779 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry libthrift-0.9.2.jar in /content/usercerts.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,782 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry jcl-over-slf4j-1.7.6.jar in /content/usercerts.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,783 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry commons-csv-1.0.jar in /content/usercerts.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,783 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry commons-lang3-3.3.2.jar in /content/usercerts.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,783 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry log4j-1.2.17.jar in /content/usercerts.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,783 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry jena-core-2.13.0.jar in /content/usercerts.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,790 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry jena-iri-1.1.2.jar in /content/usercerts.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:48,790 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry commons-io-2.4.jar in /content/usercerts.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:50,342 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2016-04-22 11:01:50,360 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-4) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2016-04-22 11:01:50,367 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2016-04-22 11:01:50,444 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2016-04-22 11:01:50,983 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment OpenBaton.war
+2016-04-22 11:01:50,983 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment federationManager.war
+2016-04-22 11:01:51,027 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment motor.war
+2016-04-22 11:01:51,060 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry xml-apis.jar in /content/resourceAdapterManager.war/WEB-INF/lib/serializer-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,085 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry xercesImpl.jar in /content/resourceAdapterManager.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,086 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry xml-apis.jar in /content/resourceAdapterManager.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,086 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry serializer.jar in /content/resourceAdapterManager.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,101 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry httpclient-4.2.6.jar in /content/resourceAdapterManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,101 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry httpcore-4.2.5.jar in /content/resourceAdapterManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,102 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry commons-logging-1.1.1.jar in /content/resourceAdapterManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,102 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry jena-arq-2.13.0.jar in /content/resourceAdapterManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,119 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry jsonld-java-0.5.1.jar in /content/resourceAdapterManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,119 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry jackson-core-2.3.3.jar in /content/resourceAdapterManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,119 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry jackson-databind-2.3.3.jar in /content/resourceAdapterManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,119 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry jackson-annotations-2.3.0.jar in /content/resourceAdapterManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,120 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry httpclient-cache-4.2.6.jar in /content/resourceAdapterManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,123 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry libthrift-0.9.2.jar in /content/resourceAdapterManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,123 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry jcl-over-slf4j-1.7.6.jar in /content/resourceAdapterManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,124 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry commons-csv-1.0.jar in /content/resourceAdapterManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,132 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry commons-lang3-3.3.2.jar in /content/resourceAdapterManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,133 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry log4j-1.2.17.jar in /content/resourceAdapterManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,134 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry jena-core-2.13.0.jar in /content/resourceAdapterManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,134 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry jena-iri-1.1.2.jar in /content/resourceAdapterManager.war/WEB-INF/lib/omnlib-0.0.1-SNAPSHOT.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:51,344 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment bus.war
+2016-04-22 11:01:51,453 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-5) HV000001: Hibernate Validator 5.2.3.Final
+2016-04-22 11:01:51,558 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 61) AMQ221020: Started Acceptor at localhost:5672 for protocols [AMQP]
+2016-04-22 11:01:51,561 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 61) AMQ221007: Server is now live
+2016-04-22 11:01:51,561 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 61) AMQ221001: Apache ActiveMQ Artemis Message Broker version 1.1.0.wildfly-011 [nodeID=12463af9-f433-11e5-b72a-0bd9450d96f4] 
+2016-04-22 11:01:51,574 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment orchestrator.war
+2016-04-22 11:01:51,729 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment reservation.war
+2016-04-22 11:01:51,989 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'RequestHandler' in deployment unit 'deployment "orchestrator.war"' are as follows:
+
+	java:global/orchestrator/RequestHandler!org.fiteagle.core.orchestrator.RequestHandler
+	java:app/orchestrator/RequestHandler!org.fiteagle.core.orchestrator.RequestHandler
+	java:module/RequestHandler!org.fiteagle.core.orchestrator.RequestHandler
+	java:global/orchestrator/RequestHandler
+	java:app/orchestrator/RequestHandler
+	java:module/RequestHandler
+
+2016-04-22 11:01:51,990 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'MessageBusBean' in deployment unit 'deployment "bus.war"' are as follows:
+
+	java:global/bus/MessageBusBean!org.fiteagle.core.bus.dm.MessageBusBean
+	java:app/bus/MessageBusBean!org.fiteagle.core.bus.dm.MessageBusBean
+	java:module/MessageBusBean!org.fiteagle.core.bus.dm.MessageBusBean
+	java:global/bus/MessageBusBean
+	java:app/bus/MessageBusBean
+	java:module/MessageBusBean
+
+2016-04-22 11:01:51,992 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'OrchestratorStateKeeper' in deployment unit 'deployment "orchestrator.war"' are as follows:
+
+	java:global/orchestrator/OrchestratorStateKeeper!org.fiteagle.core.orchestrator.dm.OrchestratorStateKeeper
+	java:app/orchestrator/OrchestratorStateKeeper!org.fiteagle.core.orchestrator.dm.OrchestratorStateKeeper
+	java:module/OrchestratorStateKeeper!org.fiteagle.core.orchestrator.dm.OrchestratorStateKeeper
+	java:global/orchestrator/OrchestratorStateKeeper
+	java:app/orchestrator/OrchestratorStateKeeper
+	java:module/OrchestratorStateKeeper
+
+2016-04-22 11:01:52,000 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'FederationManager' in deployment unit 'deployment "federationManager.war"' are as follows:
+
+	java:global/federationManager/FederationManager!org.fiteagle.core.federationManager.FederationManager
+	java:app/federationManager/FederationManager!org.fiteagle.core.federationManager.FederationManager
+	java:module/FederationManager!org.fiteagle.core.federationManager.FederationManager
+	java:global/federationManager/FederationManager
+	java:app/federationManager/FederationManager
+	java:module/FederationManager
+
+2016-04-22 11:01:52,001 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'MotorAdapterMDBSender' in deployment unit 'deployment "motor.war"' are as follows:
+
+	java:global/motor/MotorAdapterMDBSender!org.fiteagle.adapters.motor.dm.MotorAdapterMDBSender
+	java:app/motor/MotorAdapterMDBSender!org.fiteagle.adapters.motor.dm.MotorAdapterMDBSender
+	java:module/MotorAdapterMDBSender!org.fiteagle.adapters.motor.dm.MotorAdapterMDBSender
+	java:global/motor/MotorAdapterMDBSender
+	java:app/motor/MotorAdapterMDBSender
+	java:module/MotorAdapterMDBSender
+
+2016-04-22 11:01:52,003 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'MotorAdapterControl' in deployment unit 'deployment "motor.war"' are as follows:
+
+	java:global/motor/MotorAdapterControl!org.fiteagle.adapters.motor.MotorAdapterControl
+	java:app/motor/MotorAdapterControl!org.fiteagle.adapters.motor.MotorAdapterControl
+	java:module/MotorAdapterControl!org.fiteagle.adapters.motor.MotorAdapterControl
+	java:global/motor/MotorAdapterControl
+	java:app/motor/MotorAdapterControl
+	java:module/MotorAdapterControl
+
+2016-04-22 11:01:52,004 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'OpenBatonAdapterControl' in deployment unit 'deployment "OpenBaton.war"' are as follows:
+
+	java:global/OpenBaton/OpenBatonAdapterControl!org.fiteagle.adapters.OpenBaton.OpenBatonAdapterControl
+	java:app/OpenBaton/OpenBatonAdapterControl!org.fiteagle.adapters.OpenBaton.OpenBatonAdapterControl
+	java:module/OpenBatonAdapterControl!org.fiteagle.adapters.OpenBaton.OpenBatonAdapterControl
+	java:global/OpenBaton/OpenBatonAdapterControl
+	java:app/OpenBaton/OpenBatonAdapterControl
+	java:module/OpenBatonAdapterControl
+
+2016-04-22 11:01:52,005 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'OpenBatonAdapterMDBSender' in deployment unit 'deployment "OpenBaton.war"' are as follows:
+
+	java:global/OpenBaton/OpenBatonAdapterMDBSender!org.fiteagle.adapters.OpenBaton.dm.OpenBatonAdapterMDBSender
+	java:app/OpenBaton/OpenBatonAdapterMDBSender!org.fiteagle.adapters.OpenBaton.dm.OpenBatonAdapterMDBSender
+	java:module/OpenBatonAdapterMDBSender!org.fiteagle.adapters.OpenBaton.dm.OpenBatonAdapterMDBSender
+	java:global/OpenBaton/OpenBatonAdapterMDBSender
+	java:app/OpenBaton/OpenBatonAdapterMDBSender
+	java:module/OpenBatonAdapterMDBSender
+
+2016-04-22 11:01:52,777 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 61) AMQ221003: trying to deploy queue jms.topic.core
+2016-04-22 11:01:52,807 INFO  [org.apache.activemq.artemis.jms.server] (ServerService Thread Pool -- 62) AMQ121005: Invalid "host" value "0.0.0.0" detected for "http-connector" connector. Switching to "home". If this new address is incorrect please manually configure the connector to use the proper one.
+2016-04-22 11:01:52,973 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 62) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2016-04-22 11:01:52,974 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 63) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+2016-04-22 11:01:53,412 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0006: Starting Services for CDI deployment: reservation.war
+2016-04-22 11:01:53,437 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0006: Starting Services for CDI deployment: federationManager.war
+2016-04-22 11:01:53,440 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0006: Starting Services for CDI deployment: OpenBaton.war
+2016-04-22 11:01:53,469 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0006: Starting Services for CDI deployment: orchestrator.war
+2016-04-22 11:01:53,494 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0006: Starting Services for CDI deployment: bus.war
+2016-04-22 11:01:53,597 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 2.3.2 (Final)
+2016-04-22 11:01:53,660 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment usercerts.war
+2016-04-22 11:01:53,663 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0006: Starting Services for CDI deployment: motor.war
+2016-04-22 11:01:53,790 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-4) WFLYJCA0007: Registered connection factory java:/JmsXA
+2016-04-22 11:01:53,883 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0009: Starting weld service for deployment reservation.war
+2016-04-22 11:01:53,883 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0009: Starting weld service for deployment bus.war
+2016-04-22 11:01:53,912 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0009: Starting weld service for deployment federationManager.war
+2016-04-22 11:01:53,922 INFO  [org.apache.activemq.artemis.ra] (MSC service thread 1-4) Resource adaptor started
+2016-04-22 11:01:53,923 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-4) IJ020002: Deployed: file://RaActivatoractivemq-ra
+2016-04-22 11:01:53,919 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0009: Starting weld service for deployment orchestrator.war
+2016-04-22 11:01:53,940 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0009: Starting weld service for deployment OpenBaton.war
+2016-04-22 11:01:54,044 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0009: Starting weld service for deployment motor.war
+2016-04-22 11:01:54,201 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0006: Starting Services for CDI deployment: usercerts.war
+2016-04-22 11:01:54,294 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry httpclient-4.2.6.jar in /content/sfa.war/WEB-INF/lib/omnlib-0.0.1-20160322.160156-363.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,294 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry httpcore-4.2.5.jar in /content/sfa.war/WEB-INF/lib/omnlib-0.0.1-20160322.160156-363.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,294 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry commons-logging-1.1.1.jar in /content/sfa.war/WEB-INF/lib/omnlib-0.0.1-20160322.160156-363.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,295 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry commons-codec-1.6.jar in /content/sfa.war/WEB-INF/lib/omnlib-0.0.1-20160322.160156-363.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,295 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry jena-arq-2.13.0.jar in /content/sfa.war/WEB-INF/lib/omnlib-0.0.1-20160322.160156-363.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,295 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry jsonld-java-0.5.1.jar in /content/sfa.war/WEB-INF/lib/omnlib-0.0.1-20160322.160156-363.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,295 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry jackson-core-2.3.3.jar in /content/sfa.war/WEB-INF/lib/omnlib-0.0.1-20160322.160156-363.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,296 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry jackson-databind-2.3.3.jar in /content/sfa.war/WEB-INF/lib/omnlib-0.0.1-20160322.160156-363.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,296 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry jackson-annotations-2.3.0.jar in /content/sfa.war/WEB-INF/lib/omnlib-0.0.1-20160322.160156-363.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,296 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry httpclient-cache-4.2.6.jar in /content/sfa.war/WEB-INF/lib/omnlib-0.0.1-20160322.160156-363.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,296 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry libthrift-0.9.2.jar in /content/sfa.war/WEB-INF/lib/omnlib-0.0.1-20160322.160156-363.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,296 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry jcl-over-slf4j-1.7.6.jar in /content/sfa.war/WEB-INF/lib/omnlib-0.0.1-20160322.160156-363.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,296 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry commons-csv-1.0.jar in /content/sfa.war/WEB-INF/lib/omnlib-0.0.1-20160322.160156-363.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,296 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry commons-lang3-3.3.2.jar in /content/sfa.war/WEB-INF/lib/omnlib-0.0.1-20160322.160156-363.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,297 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry slf4j-api-1.7.6.jar in /content/sfa.war/WEB-INF/lib/omnlib-0.0.1-20160322.160156-363.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,297 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry log4j-1.2.17.jar in /content/sfa.war/WEB-INF/lib/omnlib-0.0.1-20160322.160156-363.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,297 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry jena-core-2.13.0.jar in /content/sfa.war/WEB-INF/lib/omnlib-0.0.1-20160322.160156-363.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,297 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry jena-iri-1.1.2.jar in /content/sfa.war/WEB-INF/lib/omnlib-0.0.1-20160322.160156-363.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,412 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0042: Started message driven bean 'FederationManagerMDBListener' with 'activemq-ra.rar' resource adapter
+2016-04-22 11:01:54,422 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0042: Started message driven bean 'OpenBatonAdapterMDBListener' with 'activemq-ra.rar' resource adapter
+2016-04-22 11:01:54,445 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0042: Started message driven bean 'LoggerMDB' with 'activemq-ra.rar' resource adapter
+2016-04-22 11:01:54,456 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry xml-apis.jar in /content/sfa.war/WEB-INF/lib/serializer-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,457 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0042: Started message driven bean 'MotorAdapterMDBListener' with 'activemq-ra.rar' resource adapter
+2016-04-22 11:01:54,478 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0042: Started message driven bean 'ReservationMDBListener' with 'activemq-ra.rar' resource adapter
+2016-04-22 11:01:54,488 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0009: Starting weld service for deployment usercerts.war
+2016-04-22 11:01:54,493 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry xercesImpl.jar in /content/sfa.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,494 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry xml-apis.jar in /content/sfa.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,494 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry serializer.jar in /content/sfa.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2016-04-22 11:01:54,507 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-5) WFLYJCA0002: Bound JCA ConnectionFactory [java:/JmsXA]
+2016-04-22 11:01:54,512 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0042: Started message driven bean 'OrchestratorMDBListener' with 'activemq-ra.rar' resource adapter
+2016-04-22 11:01:54,519 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2016-04-22 11:01:54,572 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment resourceAdapterManager.war
+2016-04-22 11:01:54,617 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'ResourceAdapterManager' in deployment unit 'deployment "resourceAdapterManager.war"' are as follows:
+
+	java:global/resourceAdapterManager/ResourceAdapterManager!org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager
+	java:app/resourceAdapterManager/ResourceAdapterManager!org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager
+	java:module/ResourceAdapterManager!org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager
+	java:global/resourceAdapterManager/ResourceAdapterManager
+	java:app/resourceAdapterManager/ResourceAdapterManager
+	java:module/ResourceAdapterManager
+
+2016-04-22 11:01:54,916 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0006: Starting Services for CDI deployment: resourceAdapterManager.war
+2016-04-22 11:01:56,047 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0042: Started message driven bean 'ResourceAdapterManagerMDBListener' with 'activemq-ra.rar' resource adapter
+2016-04-22 11:01:56,124 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0009: Starting weld service for deployment resourceAdapterManager.war
+2016-04-22 11:01:56,837 WARN  [org.jboss.as.ee] (MSC service thread 1-1) WFLYEE0007: Not installing optional component org.springframework.http.server.ServletServerHttpAsyncRequestControl due to an exception (enable DEBUG log level to see the cause)
+2016-04-22 11:01:56,837 WARN  [org.jboss.as.ee] (MSC service thread 1-1) WFLYEE0007: Not installing optional component org.springframework.web.context.request.async.StandardServletAsyncWebRequest due to an exception (enable DEBUG log level to see the cause)
+2016-04-22 11:01:57,214 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 64) WFLYUT0021: Registered web context: /openrdf-workbench
+2016-04-22 11:01:57,366 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment sfa.war
+2016-04-22 11:01:57,378 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'SFA_AM_MDBSender' in deployment unit 'deployment "sfa.war"' are as follows:
+
+	java:global/sfa/SFA_AM_MDBSender!org.fiteagle.north.sfa.am.dm.SFA_AM_MDBSender
+	java:app/sfa/SFA_AM_MDBSender!org.fiteagle.north.sfa.am.dm.SFA_AM_MDBSender
+	java:module/SFA_AM_MDBSender!org.fiteagle.north.sfa.am.dm.SFA_AM_MDBSender
+	java:global/sfa/SFA_AM_MDBSender
+	java:app/sfa/SFA_AM_MDBSender
+	java:module/SFA_AM_MDBSender
+
+2016-04-22 11:01:57,383 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'StartUp' in deployment unit 'deployment "sfa.war"' are as follows:
+
+	java:global/sfa/StartUp!org.fiteagle.north.sfa.StartUp
+	java:app/sfa/StartUp!org.fiteagle.north.sfa.StartUp
+	java:module/StartUp!org.fiteagle.north.sfa.StartUp
+	java:global/sfa/StartUp
+	java:app/sfa/StartUp
+	java:module/StartUp
+
+2016-04-22 11:01:57,549 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 64) No Spring WebApplicationInitializer types detected on classpath
+2016-04-22 11:01:57,713 INFO  [io.undertow.websockets.jsr] (ServerService Thread Pool -- 74) UT026003: Adding annotated server endpoint class org.fiteagle.core.bus.dm.MessageBusLoggerWS for path /api/logger
+2016-04-22 11:01:57,716 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 64) Mojarra 2.2.12-jbossorg-2 20150729-1131 für Kontext '/openrdf-sesame' wird initialisiert.
+2016-04-22 11:01:57,780 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0006: Starting Services for CDI deployment: sfa.war
+2016-04-22 11:01:57,807 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0009: Starting weld service for deployment sfa.war
+2016-04-22 11:01:57,805 INFO  [org.fiteagle.adapters.motor.MotorAdapterControl] (ServerService Thread Pool -- 81) Starting MotorAdapter
+2016-04-22 11:01:57,811 INFO  [org.fiteagle.adapters.OpenBaton.OpenBatonAdapterControl] (ServerService Thread Pool -- 69) Starting OpenBatonAdapter
+2016-04-22 11:01:57,867 INFO  [io.undertow.websockets.jsr] (ServerService Thread Pool -- 74) UT026003: Adding annotated server endpoint class org.fiteagle.core.bus.dm.MessageBusCommanderWS for path /api/commander
+2016-04-22 11:01:57,902 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 72) Mojarra 2.2.12-jbossorg-2 20150729-1131 für Kontext '/usercerts' wird initialisiert.
+2016-04-22 11:01:57,908 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 71) Mojarra 2.2.12-jbossorg-2 20150729-1131 für Kontext '/reservation' wird initialisiert.
+2016-04-22 11:01:57,909 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 66) Mojarra 2.2.12-jbossorg-2 20150729-1131 für Kontext '/orchestrator' wird initialisiert.
+2016-04-22 11:01:57,969 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 74) Mojarra 2.2.12-jbossorg-2 20150729-1131 für Kontext '/bus' wird initialisiert.
+2016-04-22 11:01:59,913 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 80) Mojarra 2.2.12-jbossorg-2 20150729-1131 für Kontext '/resourceAdapterManager' wird initialisiert.
+2016-04-22 11:02:01,412 SEVERE [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 1) Database is not ready and noone is searching for it - Please check the deployment of FederationManager!
+2016-04-22 11:02:05,433 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 71) WFLYUT0021: Registered web context: /reservation
+2016-04-22 11:02:05,433 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 66) WFLYUT0021: Registered web context: /orchestrator
+2016-04-22 11:02:05,429 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 80) WFLYUT0021: Registered web context: /resourceAdapterManager
+2016-04-22 11:02:05,440 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 74) WFLYUT0021: Registered web context: /bus
+2016-04-22 11:02:05,634 WARN  [org.jboss.as.weld] (ServerService Thread Pool -- 72) WFLYWELD0052: Using deployment classloader to load proxy classes for module org.jboss.resteasy.resteasy-jaxrs:main. Package-private access will not work. To fix this the module should declare dependencies on [org.jboss.weld.core, org.jboss.weld.spi]
+2016-04-22 11:02:06,004 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 64) Initializing Spring FrameworkServlet 'openrdf-http-server'
+2016-04-22 11:02:06,006 INFO  [org.springframework.web.servlet.DispatcherServlet] (ServerService Thread Pool -- 64) FrameworkServlet 'openrdf-http-server': initialization started
+2016-04-22 11:02:06,012 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 72) RESTEASY002225: Deploying javax.ws.rs.core.Application: class org.fiteagle.core.usercerts.UserCertApp
+2016-04-22 11:02:06,029 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 72) RESTEASY002200: Adding class resource org.fiteagle.core.usercerts.UserCertService from Application class org.fiteagle.core.usercerts.UserCertApp
+2016-04-22 11:02:06,089 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] (ServerService Thread Pool -- 64) Refreshing WebApplicationContext for namespace 'openrdf-http-server-servlet': startup date [Fri Apr 22 11:02:06 CEST 2016]; root of context hierarchy
+2016-04-22 11:02:06,198 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] (ServerService Thread Pool -- 64) Loading XML bean definitions from ServletContext resource [/WEB-INF/aduna-webapp-servlet.xml]
+2016-04-22 11:02:06,247 SEVERE [org.fiteagle.adapters.OpenBaton.OpenBatonAdapterControl] (ServerService Thread Pool -- 69) {5b1a57b2-a3e5-47e1-85e5-af01ae6db219=org.fiteagle.adapters.OpenBaton.OpenBatonAdapter@c388546}
+2016-04-22 11:02:06,348 INFO  [class org.fiteagle.abstractAdapter.dm.AbstractAdapterMDBSender] (ServerService Thread Pool -- 81) MotorAdapterMDBSender: Registering http://localhost/resource/MotorGarage-3
+2016-04-22 11:02:06,354 WARNING [class org.fiteagle.adapters.motor.MotorAdapter] (ServerService Thread Pool -- 81) Not implemented.
+2016-04-22 11:02:06,361 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 72) WFLYUT0021: Registered web context: /usercerts
+2016-04-22 11:02:06,434 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] (ServerService Thread Pool -- 64) Loading XML bean definitions from ServletContext resource [/WEB-INF/aduna-webapp-system-servlet.xml]
+2016-04-22 11:02:06,497 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] (ServerService Thread Pool -- 64) Overriding bean definition for bean 'messageSource': replacing [Generic bean: class [org.springframework.context.support.ResourceBundleMessageSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/aduna-webapp-servlet.xml]] with [Generic bean: class [org.springframework.context.support.ResourceBundleMessageSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/aduna-webapp-system-servlet.xml]]
+2016-04-22 11:02:06,498 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] (ServerService Thread Pool -- 64) Overriding bean definition for bean 'adunaWebappNavigation': replacing [Generic bean: class [info.aduna.webapp.navigation.NavigationModel]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/aduna-webapp-servlet.xml]] with [Generic bean: class [info.aduna.webapp.navigation.NavigationModel]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/aduna-webapp-system-servlet.xml]]
+2016-04-22 11:02:06,504 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] (ServerService Thread Pool -- 64) Loading XML bean definitions from ServletContext resource [/WEB-INF/openrdf-http-server-servlet.xml]
+2016-04-22 11:02:06,549 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 67) Mojarra 2.2.12-jbossorg-2 20150729-1131 für Kontext '/sfa' wird initialisiert.
+2016-04-22 11:02:06,556 SEVERE [org.fiteagle.north.sfa.StartUp] (EJB default - 2) Database is not ready and noone is searching for it - Please check the deployment of FederationManager!
+2016-04-22 11:02:06,592 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] (ServerService Thread Pool -- 64) Overriding bean definition for bean 'messageSource': replacing [Generic bean: class [org.springframework.context.support.ResourceBundleMessageSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/aduna-webapp-system-servlet.xml]] with [Generic bean: class [org.springframework.context.support.ResourceBundleMessageSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/openrdf-http-server-servlet.xml]]
+2016-04-22 11:02:06,592 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] (ServerService Thread Pool -- 64) Overriding bean definition for bean 'adunaAppConfig': replacing [Generic bean: class [info.aduna.app.AppConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=init; destroyMethodName=destroy; defined in ServletContext resource [/WEB-INF/aduna-webapp-servlet.xml]] with [Generic bean: class [info.aduna.app.AppConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=init; destroyMethodName=destroy; defined in ServletContext resource [/WEB-INF/openrdf-http-server-servlet.xml]]
+2016-04-22 11:02:06,593 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] (ServerService Thread Pool -- 64) Overriding bean definition for bean 'adunaWebappNavigation': replacing [Generic bean: class [info.aduna.webapp.navigation.NavigationModel]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/aduna-webapp-system-servlet.xml]] with [Generic bean: class [info.aduna.webapp.navigation.NavigationModel]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/openrdf-http-server-servlet.xml]]
+2016-04-22 11:02:07,599 INFO  [class org.fiteagle.abstractAdapter.dm.AbstractAdapterMDBSender] (ServerService Thread Pool -- 81) MotorAdapterMDBSender: Registering http://localhost/resource/MotorGarage-2
+2016-04-22 11:02:07,599 WARNING [class org.fiteagle.adapters.motor.MotorAdapter] (ServerService Thread Pool -- 81) Not implemented.
+2016-04-22 11:02:07,719 INFO  [io.undertow.websockets.jsr] (ServerService Thread Pool -- 81) UT026003: Adding annotated server endpoint class org.fiteagle.adapters.motor.dm.MotorAdapterWebsocket for path /websocket
+2016-04-22 11:02:07,753 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 81) Mojarra 2.2.12-jbossorg-2 20150729-1131 für Kontext '/motor' wird initialisiert.
+2016-04-22 11:02:08,610 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 67) WFLYUT0021: Registered web context: /sfa
+2016-04-22 11:02:09,173 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 81) RESTEASY002225: Deploying javax.ws.rs.core.Application: class org.fiteagle.adapters.motor.dm.MotorApp$Proxy$_$$_WeldClientProxy
+2016-04-22 11:02:09,180 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 81) RESTEASY002200: Adding class resource org.fiteagle.adapters.motor.dm.MotorAdapterREST from Application class org.fiteagle.adapters.motor.dm.MotorApp$Proxy$_$$_WeldClientProxy
+2016-04-22 11:02:09,283 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 81) WFLYUT0021: Registered web context: /motor
+2016-04-22 11:02:09,437 ERROR [stderr] (ServerService Thread Pool -- 69) org.openbaton.sdk.api.exception.SDKException: Could not http-get properly
+2016-04-22 11:02:09,442 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.openbaton.sdk.api.util.RestRequest.requestGetAll(RestRequest.java:306)
+2016-04-22 11:02:09,443 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.openbaton.sdk.api.util.RestRequest.requestGet(RestRequest.java:260)
+2016-04-22 11:02:09,444 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.openbaton.sdk.api.util.AbstractRestAgent.findAll(AbstractRestAgent.java:61)
+2016-04-22 11:02:09,444 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.fiteagle.adapters.OpenBaton.OpenBatonClient.init(OpenBatonClient.java:74)
+2016-04-22 11:02:09,445 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.fiteagle.adapters.OpenBaton.OpenBatonAdapter.init(OpenBatonAdapter.java:100)
+2016-04-22 11:02:09,445 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.fiteagle.adapters.OpenBaton.OpenBatonAdapterControl.parseConfig(OpenBatonAdapterControl.java:98)
+2016-04-22 11:02:09,445 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.fiteagle.abstractAdapter.AdapterControl.createAdapterInstances(AdapterControl.java:65)
+2016-04-22 11:02:09,446 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.fiteagle.adapters.OpenBaton.OpenBatonAdapterControl.init(OpenBatonAdapterControl.java:49)
+2016-04-22 11:02:09,446 ERROR [stderr] (ServerService Thread Pool -- 69) 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2016-04-22 11:02:09,446 ERROR [stderr] (ServerService Thread Pool -- 69) 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2016-04-22 11:02:09,446 ERROR [stderr] (ServerService Thread Pool -- 69) 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2016-04-22 11:02:09,447 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.lang.reflect.Method.invoke(Method.java:498)
+2016-04-22 11:02:09,452 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ee.component.ManagedReferenceLifecycleMethodInterceptor.processInvocation(ManagedReferenceLifecycleMethodInterceptor.java:96)
+2016-04-22 11:02:09,461 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:09,461 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.doLifecycleInterception(Jsr299BindingsInterceptor.java:114)
+2016-04-22 11:02:09,462 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:103)
+2016-04-22 11:02:09,462 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:09,462 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:437)
+2016-04-22 11:02:09,462 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.weld.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:73)
+2016-04-22 11:02:09,462 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:83)
+2016-04-22 11:02:09,462 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:09,462 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.weld.injection.WeldInjectionInterceptor.processInvocation(WeldInjectionInterceptor.java:53)
+2016-04-22 11:02:09,463 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:09,463 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ee.component.ManagedReferenceFieldInjectionInterceptorFactory$ManagedReferenceFieldInjectionInterceptor.processInvocation(ManagedReferenceFieldInjectionInterceptorFactory.java:107)
+2016-04-22 11:02:09,463 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:09,463 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ee.component.AroundConstructInterceptorFactory$1.processInvocation(AroundConstructInterceptorFactory.java:28)
+2016-04-22 11:02:09,463 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:09,463 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.weld.injection.WeldInterceptorInjectionInterceptor.processInvocation(WeldInterceptorInjectionInterceptor.java:56)
+2016-04-22 11:02:09,463 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:09,464 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.weld.ejb.Jsr299BindingsCreateInterceptor.processInvocation(Jsr299BindingsCreateInterceptor.java:100)
+2016-04-22 11:02:09,464 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:09,464 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
+2016-04-22 11:02:09,464 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:09,464 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:275)
+2016-04-22 11:02:09,464 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ejb3.tx.CMTTxInterceptor.requiresNew(CMTTxInterceptor.java:349)
+2016-04-22 11:02:09,464 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ejb3.tx.LifecycleCMTTxInterceptor.processInvocation(LifecycleCMTTxInterceptor.java:66)
+2016-04-22 11:02:09,465 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:09,465 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.weld.injection.WeldInjectionContextInterceptor.processInvocation(WeldInjectionContextInterceptor.java:43)
+2016-04-22 11:02:09,465 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:09,465 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)
+2016-04-22 11:02:09,465 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:09,465 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45)
+2016-04-22 11:02:09,466 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:09,466 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:64)
+2016-04-22 11:02:09,466 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:09,466 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:356)
+2016-04-22 11:02:09,466 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.PrivilegedWithCombinerInterceptor.processInvocation(PrivilegedWithCombinerInterceptor.java:80)
+2016-04-22 11:02:09,466 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:09,466 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+2016-04-22 11:02:09,467 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ee.component.BasicComponent.constructComponentInstance(BasicComponent.java:161)
+2016-04-22 11:02:09,467 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ee.component.BasicComponent.constructComponentInstance(BasicComponent.java:134)
+2016-04-22 11:02:09,467 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ee.component.BasicComponent.createInstance(BasicComponent.java:88)
+2016-04-22 11:02:09,467 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ejb3.component.singleton.SingletonComponent.getComponentInstance(SingletonComponent.java:124)
+2016-04-22 11:02:09,467 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ejb3.component.singleton.SingletonComponent.start(SingletonComponent.java:138)
+2016-04-22 11:02:09,467 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ee.component.ComponentStartService$1.run(ComponentStartService.java:54)
+2016-04-22 11:02:09,474 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+2016-04-22 11:02:09,474 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+2016-04-22 11:02:09,474 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+2016-04-22 11:02:09,475 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+2016-04-22 11:02:09,475 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.lang.Thread.run(Thread.java:745)
+2016-04-22 11:02:09,475 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+2016-04-22 11:02:09,483 ERROR [stderr] (ServerService Thread Pool -- 69) Caused by: com.mashape.unirest.http.exceptions.UnirestException: org.apache.http.conn.HttpHostConnectException: Connect to 193.175.132.242:8080 [/193.175.132.242] failed: Verbindungsaufbau abgelehnt
+2016-04-22 11:02:09,484 ERROR [stderr] (ServerService Thread Pool -- 69) 	at com.mashape.unirest.http.HttpClientHelper.request(HttpClientHelper.java:146)
+2016-04-22 11:02:09,484 ERROR [stderr] (ServerService Thread Pool -- 69) 	at com.mashape.unirest.request.BaseRequest.asJson(BaseRequest.java:68)
+2016-04-22 11:02:09,484 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.openbaton.sdk.api.util.RestRequest.requestGetAll(RestRequest.java:284)
+2016-04-22 11:02:09,484 ERROR [stderr] (ServerService Thread Pool -- 69) 	... 60 more
+2016-04-22 11:02:09,486 ERROR [stderr] (ServerService Thread Pool -- 69) Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 193.175.132.242:8080 [/193.175.132.242] failed: Verbindungsaufbau abgelehnt
+2016-04-22 11:02:09,486 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:142)
+2016-04-22 11:02:09,487 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+2016-04-22 11:02:09,487 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+2016-04-22 11:02:09,487 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+2016-04-22 11:02:09,487 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+2016-04-22 11:02:09,487 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+2016-04-22 11:02:09,488 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+2016-04-22 11:02:09,499 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+2016-04-22 11:02:09,499 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+2016-04-22 11:02:09,500 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+2016-04-22 11:02:09,500 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+2016-04-22 11:02:09,500 ERROR [stderr] (ServerService Thread Pool -- 69) 	at com.mashape.unirest.http.HttpClientHelper.request(HttpClientHelper.java:141)
+2016-04-22 11:02:09,500 ERROR [stderr] (ServerService Thread Pool -- 69) 	... 62 more
+2016-04-22 11:02:09,501 ERROR [stderr] (ServerService Thread Pool -- 69) Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt
+2016-04-22 11:02:09,501 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.net.PlainSocketImpl.socketConnect(Native Method)
+2016-04-22 11:02:09,501 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+2016-04-22 11:02:09,501 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+2016-04-22 11:02:09,501 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+2016-04-22 11:02:09,501 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+2016-04-22 11:02:09,502 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.net.Socket.connect(Socket.java:589)
+2016-04-22 11:02:09,502 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+2016-04-22 11:02:09,502 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+2016-04-22 11:02:09,518 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 78) Mojarra 2.2.12-jbossorg-2 20150729-1131 für Kontext '/federationManager' wird initialisiert.
+2016-04-22 11:02:09,539 ERROR [stderr] (ServerService Thread Pool -- 69) 	... 73 more
+2016-04-22 11:02:09,543 SEVERE [org.fiteagle.core.federationManager.FederationManager] (EJB default - 3) Will try to find Database now
+2016-04-22 11:02:09,850 SEVERE [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 4) Someone is allready searching for Database - I'll drink a coffe
+2016-04-22 11:02:10,263 ERROR [org.openbaton.sdk.api.rest.NetworkServiceDescriptorRestAgent] (ServerService Thread Pool -- 69) org.apache.http.conn.HttpHostConnectException: Connect to 193.175.132.242:8080 [/193.175.132.242] failed: Verbindungsaufbau abgelehnt: com.mashape.unirest.http.exceptions.UnirestException: org.apache.http.conn.HttpHostConnectException: Connect to 193.175.132.242:8080 [/193.175.132.242] failed: Verbindungsaufbau abgelehnt
+	at com.mashape.unirest.http.HttpClientHelper.request(HttpClientHelper.java:146)
+	at com.mashape.unirest.request.BaseRequest.asJson(BaseRequest.java:68)
+	at org.openbaton.sdk.api.util.RestRequest.requestPost(RestRequest.java:156)
+	at org.openbaton.sdk.api.util.RestRequest.requestPost(RestRequest.java:130)
+	at org.openbaton.sdk.api.util.AbstractRestAgent.create(AbstractRestAgent.java:40)
+	at org.fiteagle.adapters.OpenBaton.OpenBatonClient.createNetworkServiceDescriptor(OpenBatonClient.java:117)
+	at org.fiteagle.adapters.OpenBaton.OpenBatonClient.init(OpenBatonClient.java:82)
+	at org.fiteagle.adapters.OpenBaton.OpenBatonAdapter.init(OpenBatonAdapter.java:100)
+	at org.fiteagle.adapters.OpenBaton.OpenBatonAdapterControl.parseConfig(OpenBatonAdapterControl.java:98)
+	at org.fiteagle.abstractAdapter.AdapterControl.createAdapterInstances(AdapterControl.java:65)
+	at org.fiteagle.adapters.OpenBaton.OpenBatonAdapterControl.init(OpenBatonAdapterControl.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.as.ee.component.ManagedReferenceLifecycleMethodInterceptor.processInvocation(ManagedReferenceLifecycleMethodInterceptor.java:96)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.doLifecycleInterception(Jsr299BindingsInterceptor.java:114)
+	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:103)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:437)
+	at org.jboss.weld.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:73)
+	at org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:83)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.weld.injection.WeldInjectionInterceptor.processInvocation(WeldInjectionInterceptor.java:53)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ee.component.ManagedReferenceFieldInjectionInterceptorFactory$ManagedReferenceFieldInjectionInterceptor.processInvocation(ManagedReferenceFieldInjectionInterceptorFactory.java:107)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ee.component.AroundConstructInterceptorFactory$1.processInvocation(AroundConstructInterceptorFactory.java:28)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.weld.injection.WeldInterceptorInjectionInterceptor.processInvocation(WeldInterceptorInjectionInterceptor.java:56)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.weld.ejb.Jsr299BindingsCreateInterceptor.processInvocation(Jsr299BindingsCreateInterceptor.java:100)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:275)
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.requiresNew(CMTTxInterceptor.java:349)
+	at org.jboss.as.ejb3.tx.LifecycleCMTTxInterceptor.processInvocation(LifecycleCMTTxInterceptor.java:66)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.weld.injection.WeldInjectionContextInterceptor.processInvocation(WeldInjectionContextInterceptor.java:43)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:64)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:356)
+	at org.jboss.invocation.PrivilegedWithCombinerInterceptor.processInvocation(PrivilegedWithCombinerInterceptor.java:80)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+	at org.jboss.as.ee.component.BasicComponent.constructComponentInstance(BasicComponent.java:161)
+	at org.jboss.as.ee.component.BasicComponent.constructComponentInstance(BasicComponent.java:134)
+	at org.jboss.as.ee.component.BasicComponent.createInstance(BasicComponent.java:88)
+	at org.jboss.as.ejb3.component.singleton.SingletonComponent.getComponentInstance(SingletonComponent.java:124)
+	at org.jboss.as.ejb3.component.singleton.SingletonComponent.start(SingletonComponent.java:138)
+	at org.jboss.as.ee.component.ComponentStartService$1.run(ComponentStartService.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 193.175.132.242:8080 [/193.175.132.242] failed: Verbindungsaufbau abgelehnt
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at com.mashape.unirest.http.HttpClientHelper.request(HttpClientHelper.java:141)
+	... 63 more
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 74 more
+
+2016-04-22 11:02:10,267 ERROR [stderr] (ServerService Thread Pool -- 69) org.openbaton.sdk.api.exception.SDKException: Could not http-post or open the object properly
+2016-04-22 11:02:10,267 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.openbaton.sdk.api.util.RestRequest.requestPost(RestRequest.java:188)
+2016-04-22 11:02:10,268 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.openbaton.sdk.api.util.RestRequest.requestPost(RestRequest.java:130)
+2016-04-22 11:02:10,268 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.openbaton.sdk.api.util.AbstractRestAgent.create(AbstractRestAgent.java:40)
+2016-04-22 11:02:10,268 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.fiteagle.adapters.OpenBaton.OpenBatonClient.createNetworkServiceDescriptor(OpenBatonClient.java:117)
+2016-04-22 11:02:10,268 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.fiteagle.adapters.OpenBaton.OpenBatonClient.init(OpenBatonClient.java:82)
+2016-04-22 11:02:10,268 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.fiteagle.adapters.OpenBaton.OpenBatonAdapter.init(OpenBatonAdapter.java:100)
+2016-04-22 11:02:10,268 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.fiteagle.adapters.OpenBaton.OpenBatonAdapterControl.parseConfig(OpenBatonAdapterControl.java:98)
+2016-04-22 11:02:10,269 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.fiteagle.abstractAdapter.AdapterControl.createAdapterInstances(AdapterControl.java:65)
+2016-04-22 11:02:10,269 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.fiteagle.adapters.OpenBaton.OpenBatonAdapterControl.init(OpenBatonAdapterControl.java:49)
+2016-04-22 11:02:10,269 ERROR [stderr] (ServerService Thread Pool -- 69) 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2016-04-22 11:02:10,269 ERROR [stderr] (ServerService Thread Pool -- 69) 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2016-04-22 11:02:10,269 ERROR [stderr] (ServerService Thread Pool -- 69) 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2016-04-22 11:02:10,269 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.lang.reflect.Method.invoke(Method.java:498)
+2016-04-22 11:02:10,269 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ee.component.ManagedReferenceLifecycleMethodInterceptor.processInvocation(ManagedReferenceLifecycleMethodInterceptor.java:96)
+2016-04-22 11:02:10,270 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:10,270 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.doLifecycleInterception(Jsr299BindingsInterceptor.java:114)
+2016-04-22 11:02:10,270 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:103)
+2016-04-22 11:02:10,270 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:10,270 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:437)
+2016-04-22 11:02:10,270 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.weld.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:73)
+2016-04-22 11:02:10,270 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:83)
+2016-04-22 11:02:10,271 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:10,271 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.weld.injection.WeldInjectionInterceptor.processInvocation(WeldInjectionInterceptor.java:53)
+2016-04-22 11:02:10,271 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:10,271 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ee.component.ManagedReferenceFieldInjectionInterceptorFactory$ManagedReferenceFieldInjectionInterceptor.processInvocation(ManagedReferenceFieldInjectionInterceptorFactory.java:107)
+2016-04-22 11:02:10,271 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:10,271 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ee.component.AroundConstructInterceptorFactory$1.processInvocation(AroundConstructInterceptorFactory.java:28)
+2016-04-22 11:02:10,271 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:10,272 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.weld.injection.WeldInterceptorInjectionInterceptor.processInvocation(WeldInterceptorInjectionInterceptor.java:56)
+2016-04-22 11:02:10,272 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:10,272 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.weld.ejb.Jsr299BindingsCreateInterceptor.processInvocation(Jsr299BindingsCreateInterceptor.java:100)
+2016-04-22 11:02:10,272 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:10,272 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
+2016-04-22 11:02:10,272 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:10,272 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:275)
+2016-04-22 11:02:10,273 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ejb3.tx.CMTTxInterceptor.requiresNew(CMTTxInterceptor.java:349)
+2016-04-22 11:02:10,273 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ejb3.tx.LifecycleCMTTxInterceptor.processInvocation(LifecycleCMTTxInterceptor.java:66)
+2016-04-22 11:02:10,273 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:10,274 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.weld.injection.WeldInjectionContextInterceptor.processInvocation(WeldInjectionContextInterceptor.java:43)
+2016-04-22 11:02:10,274 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:10,274 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)
+2016-04-22 11:02:10,275 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:10,275 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45)
+2016-04-22 11:02:10,275 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:10,275 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:64)
+2016-04-22 11:02:10,276 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:10,276 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:356)
+2016-04-22 11:02:10,276 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.PrivilegedWithCombinerInterceptor.processInvocation(PrivilegedWithCombinerInterceptor.java:80)
+2016-04-22 11:02:10,276 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:10,276 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+2016-04-22 11:02:10,276 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ee.component.BasicComponent.constructComponentInstance(BasicComponent.java:161)
+2016-04-22 11:02:10,276 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ee.component.BasicComponent.constructComponentInstance(BasicComponent.java:134)
+2016-04-22 11:02:10,277 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ee.component.BasicComponent.createInstance(BasicComponent.java:88)
+2016-04-22 11:02:10,277 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ejb3.component.singleton.SingletonComponent.getComponentInstance(SingletonComponent.java:124)
+2016-04-22 11:02:10,277 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ejb3.component.singleton.SingletonComponent.start(SingletonComponent.java:138)
+2016-04-22 11:02:10,277 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.as.ee.component.ComponentStartService$1.run(ComponentStartService.java:54)
+2016-04-22 11:02:10,278 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+2016-04-22 11:02:10,278 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+2016-04-22 11:02:10,278 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+2016-04-22 11:02:10,278 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+2016-04-22 11:02:10,278 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.lang.Thread.run(Thread.java:745)
+2016-04-22 11:02:10,279 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+2016-04-22 11:02:10,279 ERROR [stderr] (ServerService Thread Pool -- 69) Caused by: com.mashape.unirest.http.exceptions.UnirestException: org.apache.http.conn.HttpHostConnectException: Connect to 193.175.132.242:8080 [/193.175.132.242] failed: Verbindungsaufbau abgelehnt
+2016-04-22 11:02:10,279 ERROR [stderr] (ServerService Thread Pool -- 69) 	at com.mashape.unirest.http.HttpClientHelper.request(HttpClientHelper.java:146)
+2016-04-22 11:02:10,279 ERROR [stderr] (ServerService Thread Pool -- 69) 	at com.mashape.unirest.request.BaseRequest.asJson(BaseRequest.java:68)
+2016-04-22 11:02:10,280 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.openbaton.sdk.api.util.RestRequest.requestPost(RestRequest.java:156)
+2016-04-22 11:02:10,280 ERROR [stderr] (ServerService Thread Pool -- 69) 	... 61 more
+2016-04-22 11:02:10,280 ERROR [stderr] (ServerService Thread Pool -- 69) Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 193.175.132.242:8080 [/193.175.132.242] failed: Verbindungsaufbau abgelehnt
+2016-04-22 11:02:10,319 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:142)
+2016-04-22 11:02:10,320 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+2016-04-22 11:02:10,320 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+2016-04-22 11:02:10,320 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+2016-04-22 11:02:10,320 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+2016-04-22 11:02:10,321 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+2016-04-22 11:02:10,321 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+2016-04-22 11:02:10,321 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+2016-04-22 11:02:10,321 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+2016-04-22 11:02:10,321 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+2016-04-22 11:02:10,321 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+2016-04-22 11:02:10,321 ERROR [stderr] (ServerService Thread Pool -- 69) 	at com.mashape.unirest.http.HttpClientHelper.request(HttpClientHelper.java:141)
+2016-04-22 11:02:10,322 ERROR [stderr] (ServerService Thread Pool -- 69) 	... 63 more
+2016-04-22 11:02:10,322 ERROR [stderr] (ServerService Thread Pool -- 69) Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt
+2016-04-22 11:02:10,322 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.net.PlainSocketImpl.socketConnect(Native Method)
+2016-04-22 11:02:10,322 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+2016-04-22 11:02:10,322 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+2016-04-22 11:02:10,323 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+2016-04-22 11:02:10,323 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+2016-04-22 11:02:10,323 ERROR [stderr] (ServerService Thread Pool -- 69) 	at java.net.Socket.connect(Socket.java:589)
+2016-04-22 11:02:10,323 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+2016-04-22 11:02:10,324 ERROR [stderr] (ServerService Thread Pool -- 69) 	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+2016-04-22 11:02:10,324 ERROR [stderr] (ServerService Thread Pool -- 69) 	... 74 more
+2016-04-22 11:02:11,113 INFO  [class org.fiteagle.abstractAdapter.dm.AbstractAdapterMDBSender] (ServerService Thread Pool -- 69) OpenBatonAdapterMDBSender: Registering http://localhost/resource/OpenBaton-Server-1
+2016-04-22 11:02:11,161 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 78) RESTEASY002225: Deploying javax.ws.rs.core.Application: class org.fiteagle.core.federationManager.FederationManager$Proxy$_$$_Weld$EnterpriseProxy$
+2016-04-22 11:02:11,398 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 69) Mojarra 2.2.12-jbossorg-2 20150729-1131 für Kontext '/OpenBaton' wird initialisiert.
+2016-04-22 11:02:11,595 SEVERE [org.fiteagle.north.sfa.StartUp] (EJB default - 5) Someone is allready searching for Database - I'll drink a coffe
+2016-04-22 11:02:11,931 ERROR [stderr] (EJB default - 3) org.fiteagle.api.tripletStoreAccessor.TripletStoreAccessor$ResourceRepositoryException: 404 - Not Found
+2016-04-22 11:02:11,935 ERROR [stderr] (EJB default - 3) 	at org.fiteagle.api.tripletStoreAccessor.TripletStoreAccessor.addModel(TripletStoreAccessor.java:328)
+2016-04-22 11:02:11,949 ERROR [stderr] (EJB default - 3) 	at org.fiteagle.core.federationManager.FederationManager.timerMethod(FederationManager.java:147)
+2016-04-22 11:02:11,950 ERROR [stderr] (EJB default - 3) 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2016-04-22 11:02:11,950 ERROR [stderr] (EJB default - 3) 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2016-04-22 11:02:11,950 ERROR [stderr] (EJB default - 3) 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2016-04-22 11:02:11,951 ERROR [stderr] (EJB default - 3) 	at java.lang.reflect.Method.invoke(Method.java:498)
+2016-04-22 11:02:11,951 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ee.component.ManagedReferenceMethodInterceptor.processInvocation(ManagedReferenceMethodInterceptor.java:52)
+2016-04-22 11:02:11,951 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:11,951 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.WeavedInterceptor.processInvocation(WeavedInterceptor.java:57)
+2016-04-22 11:02:11,952 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:61)
+2016-04-22 11:02:11,952 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:11,952 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:437)
+2016-04-22 11:02:11,953 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.doMethodInterception(Jsr299BindingsInterceptor.java:82)
+2016-04-22 11:02:11,954 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:95)
+2016-04-22 11:02:11,955 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:61)
+2016-04-22 11:02:11,960 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:11,965 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.WeavedInterceptor.processInvocation(WeavedInterceptor.java:57)
+2016-04-22 11:02:11,967 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:61)
+2016-04-22 11:02:11,967 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:11,967 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ejb3.component.invocationmetrics.ExecutionTimeInterceptor.processInvocation(ExecutionTimeInterceptor.java:43)
+2016-04-22 11:02:11,967 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:11,967 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:437)
+2016-04-22 11:02:11,967 ERROR [stderr] (EJB default - 3) 	at org.jboss.weld.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:73)
+2016-04-22 11:02:11,968 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:83)
+2016-04-22 11:02:11,968 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:11,968 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45)
+2016-04-22 11:02:11,968 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:11,968 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:21)
+2016-04-22 11:02:11,968 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:11,968 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+2016-04-22 11:02:11,968 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:52)
+2016-04-22 11:02:11,969 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:11,969 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ejb3.component.singleton.SingletonComponentInstanceAssociationInterceptor.processInvocation(SingletonComponentInstanceAssociationInterceptor.java:53)
+2016-04-22 11:02:11,969 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:11,969 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:275)
+2016-04-22 11:02:11,969 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:327)
+2016-04-22 11:02:11,969 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:239)
+2016-04-22 11:02:11,969 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:11,969 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)
+2016-04-22 11:02:11,970 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:11,984 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ejb3.security.SecurityContextInterceptor.processInvocation(SecurityContextInterceptor.java:100)
+2016-04-22 11:02:11,984 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:11,985 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:437)
+2016-04-22 11:02:11,992 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (ServerService Thread Pool -- 64) Mapped URL path [/system/info/overview.view] onto handler 'adunaWebappSystemInfoController'
+2016-04-22 11:02:11,999 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ejb3.concurrency.ContainerManagedConcurrencyInterceptor.processInvocation(ContainerManagedConcurrencyInterceptor.java:110)
+2016-04-22 11:02:12,005 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:12,005 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64)
+2016-04-22 11:02:12,005 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:12,005 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
+2016-04-22 11:02:12,006 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:12,006 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:54)
+2016-04-22 11:02:12,006 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:12,006 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:64)
+2016-04-22 11:02:12,007 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (ServerService Thread Pool -- 64) Mapped URL path [/system/overview.view] onto handler 'adunaWebappSystemOverviewController'
+2016-04-22 11:02:12,007 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:12,008 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:356)
+2016-04-22 11:02:12,008 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (ServerService Thread Pool -- 64) Mapped URL path [/system/info/debug.view] onto handler 'filenameViewController'
+2016-04-22 11:02:12,008 ERROR [stderr] (EJB default - 3) 	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:636)
+2016-04-22 11:02:12,008 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:61)
+2016-04-22 11:02:12,008 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:12,008 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:356)
+2016-04-22 11:02:12,008 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.PrivilegedWithCombinerInterceptor.processInvocation(PrivilegedWithCombinerInterceptor.java:80)
+2016-04-22 11:02:12,008 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+2016-04-22 11:02:12,009 ERROR [stderr] (EJB default - 3) 	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+2016-04-22 11:02:12,009 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ejb3.timerservice.TimedObjectInvokerImpl.callTimeout(TimedObjectInvokerImpl.java:104)
+2016-04-22 11:02:12,009 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ejb3.timerservice.TimedObjectInvokerImpl.callTimeout(TimedObjectInvokerImpl.java:114)
+2016-04-22 11:02:12,009 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ejb3.timerservice.TimerTask.invokeBeanMethod(TimerTask.java:185)
+2016-04-22 11:02:12,009 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ejb3.timerservice.TimerTask.callTimeout(TimerTask.java:181)
+2016-04-22 11:02:12,009 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ejb3.timerservice.TimerTask.run(TimerTask.java:155)
+2016-04-22 11:02:12,009 ERROR [stderr] (EJB default - 3) 	at org.jboss.as.ejb3.timerservice.TimerServiceImpl$Task$1.run(TimerServiceImpl.java:1221)
+2016-04-22 11:02:12,009 ERROR [stderr] (EJB default - 3) 	at org.wildfly.extension.requestcontroller.RequestController$QueuedTask$1.run(RequestController.java:497)
+2016-04-22 11:02:12,010 ERROR [stderr] (EJB default - 3) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+2016-04-22 11:02:12,010 ERROR [stderr] (EJB default - 3) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+2016-04-22 11:02:12,010 ERROR [stderr] (EJB default - 3) 	at java.lang.Thread.run(Thread.java:745)
+2016-04-22 11:02:12,010 ERROR [stderr] (EJB default - 3) 	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+2016-04-22 11:02:12,011 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 78) RESTEASY002200: Adding class resource org.fiteagle.core.federationManager.dm.FederationManagerREST from Application class org.fiteagle.core.federationManager.FederationManager$Proxy$_$$_Weld$EnterpriseProxy$
+2016-04-22 11:02:12,017 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (ServerService Thread Pool -- 64) Mapped URL path [/system/logging/overview.view] onto handler 'adunaWebappLoggingOverviewController'
+2016-04-22 11:02:12,027 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 78) WFLYUT0021: Registered web context: /federationManager
+2016-04-22 11:02:12,401 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0021: Registered web context: /OpenBaton
+2016-04-22 11:02:12,729 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (ServerService Thread Pool -- 64) Mapped URL path [/protocol] onto handler 'openrdfProtocolController'
+2016-04-22 11:02:12,736 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (ServerService Thread Pool -- 64) Mapped URL path [/repositories] onto handler 'openrdfRepositoryListController'
+2016-04-22 11:02:12,738 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (ServerService Thread Pool -- 64) Mapped URL path [/repositories/*/namespaces] onto handler 'openrdfRepositoryNamespacesController'
+2016-04-22 11:02:12,742 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (ServerService Thread Pool -- 64) Mapped URL path [/repositories/*/transactions/*] onto handler 'openrdfRepositoryTransactionController'
+2016-04-22 11:02:12,743 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (ServerService Thread Pool -- 64) Mapped URL path [/repositories/*/size] onto handler 'openrdfRepositorySizeController'
+2016-04-22 11:02:12,744 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (ServerService Thread Pool -- 64) Mapped URL path [/repositories/*/transactions] onto handler 'openrdfRepositoryTransactionStartController'
+2016-04-22 11:02:12,744 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (ServerService Thread Pool -- 64) Mapped URL path [/repositories/*/contexts] onto handler 'openrdfRepositoryContextsController'
+2016-04-22 11:02:12,748 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (ServerService Thread Pool -- 64) Mapped URL path [/repositories/*] onto handler 'openrdfRepositoryController'
+2016-04-22 11:02:12,750 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (ServerService Thread Pool -- 64) Mapped URL path [/repositories/*/namespaces/*] onto handler 'openrdfRepositoryNamespaceController'
+2016-04-22 11:02:12,752 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (ServerService Thread Pool -- 64) Mapped URL path [/repositories/*/statements] onto handler 'openrdfRepositoryStatementsController'
+2016-04-22 11:02:12,753 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (ServerService Thread Pool -- 64) Mapped URL path [/repositories/*/rdf-graphs/*] onto handler 'openrdfRepositoryGraphController'
+2016-04-22 11:02:12,753 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (ServerService Thread Pool -- 64) Mapped URL path [/repositories/*/rdf-graphs] onto handler 'openrdfRepositoryContextsController'
+2016-04-22 11:02:12,755 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (ServerService Thread Pool -- 64) Mapped URL path [/home/overview.view] onto handler 'filenameViewController'
+2016-04-22 11:02:12,755 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (ServerService Thread Pool -- 64) Mapped URL path [/overview.view] onto handler 'filenameViewController'
+2016-04-22 11:02:12,909 INFO  [org.springframework.web.servlet.DispatcherServlet] (ServerService Thread Pool -- 64) FrameworkServlet 'openrdf-http-server': initialization completed in 6903 ms
+2016-04-22 11:02:12,910 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 64) WFLYUT0021: Registered web context: /openrdf-sesame
+2016-04-22 11:02:12,962 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "OpenBaton.war" (runtime-name : "OpenBaton.war")
+2016-04-22 11:02:12,963 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "usercerts.war" (runtime-name : "usercerts.war")
+2016-04-22 11:02:12,963 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "resourceAdapterManager.war" (runtime-name : "resourceAdapterManager.war")
+2016-04-22 11:02:12,964 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "federationManager.war" (runtime-name : "federationManager.war")
+2016-04-22 11:02:12,964 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "orchestrator.war" (runtime-name : "orchestrator.war")
+2016-04-22 11:02:12,964 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "reservation.war" (runtime-name : "reservation.war")
+2016-04-22 11:02:12,964 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "bus.war" (runtime-name : "bus.war")
+2016-04-22 11:02:12,964 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "sfa.war" (runtime-name : "sfa.war")
+2016-04-22 11:02:12,964 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "motor.war" (runtime-name : "motor.war")
+2016-04-22 11:02:12,965 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 36) WFLYSRV0010: Deployed "openrdf-workbench.war" (runtime-name : "openrdf-workbench.war")
+2016-04-22 11:02:12,966 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 36) WFLYSRV0010: Deployed "openrdf-sesame.war" (runtime-name : "openrdf-sesame.war")
+2016-04-22 11:02:13,293 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2016-04-22 11:02:13,294 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2016-04-22 11:02:13,294 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.0.0.Final (WildFly Core 2.0.10.Final) started in 42222ms - Started 1965 of 2066 services (222 services are lazy, passive or on-demand)
+2016-04-22 11:02:14,477 SEVERE [org.fiteagle.core.federationManager.FederationManager] (EJB default - 6) Will try to find Database now
+2016-04-22 11:02:14,803 SEVERE [org.fiteagle.core.federationManager.FederationManager] (EJB default - 6) Found Database
+2016-04-22 11:02:14,803 SEVERE [org.fiteagle.core.federationManager.FederationManager] (EJB default - 6) End
+2016-04-22 11:02:16,504 SEVERE [org.fiteagle.north.sfa.StartUp] (EJB default - 7) Someone found Database
+2016-04-22 11:02:19,687 SEVERE [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 8) Someone found Database
+2016-04-22 11:02:20,186 INFO  [class org.fiteagle.api.tripletStoreAccessor.TripletStoreAccessor] (EJB default - 8) CONSTRUCT 
+  { ?infrastructure ?o ?p .}
+WHERE
+  { ?infrastructure
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://open-multinet.info/ontology/omn-federation#Infrastructure> ;
+              ?o                    ?p .
+  }
+
+2016-04-22 11:02:20,596 INFO  [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 8) Received a CREATE message
+2016-04-22 11:02:20,628 INFO  [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 8) START: Adding adapter
+2016-04-22 11:02:20,635 INFO  [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 8) Looking for GEO information
+2016-04-22 11:02:20,635 INFO  [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 8) Checking: http://open-multinet.info/ontology/resource/openbaton#OpenBatonAdapter
+2016-04-22 11:02:20,636 INFO  [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 8) Adding: 52.516377^^http://www.w3.org/2001/XMLSchema#string, 13.323732^^http://www.w3.org/2001/XMLSchema#string
+2016-04-22 11:02:20,698 INFO  [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 8) END: Adding adapter
+2016-04-22 11:02:20,729 INFO  [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 8) Received a CREATE message
+2016-04-22 11:02:20,737 INFO  [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 8) START: Adding adapter
+2016-04-22 11:02:20,738 INFO  [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 8) Looking for GEO information
+2016-04-22 11:02:20,738 INFO  [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 8) Checking: http://open-multinet.info/ontology/resource/motorgarage#MotorGarage
+2016-04-22 11:02:20,738 INFO  [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 8) Adding: 52.516377^^http://www.w3.org/2001/XMLSchema#string, 13.323732^^http://www.w3.org/2001/XMLSchema#string
+2016-04-22 11:02:20,795 INFO  [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 8) END: Adding adapter
+2016-04-22 11:02:20,807 INFO  [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 8) Received a CREATE message
+2016-04-22 11:02:20,815 INFO  [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 8) START: Adding adapter
+2016-04-22 11:02:20,816 INFO  [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 8) Looking for GEO information
+2016-04-22 11:02:20,816 INFO  [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 8) Checking: http://open-multinet.info/ontology/resource/motorgarage#MotorGarage
+2016-04-22 11:02:20,816 INFO  [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 8) Adding: 52.516377^^http://www.w3.org/2001/XMLSchema#string, 13.323732^^http://www.w3.org/2001/XMLSchema#string
+2016-04-22 11:02:20,881 INFO  [org.fiteagle.core.resourceAdapterManager.ResourceAdapterManager] (EJB default - 8) END: Adding adapter
+2016-04-22 11:02:20,953 INFO  [class org.fiteagle.core.orchestrator.dm.OrchestratorMDBListener] (Thread-241 (ActiveMQ-client-global-threads-57352872)) Received a/an INFORM message
+2016-04-22 11:02:20,954 INFO  [class org.fiteagle.core.orchestrator.dm.OrchestratorMDBListener] (Thread-241 (ActiveMQ-client-global-threads-57352872)) Target: null
+2016-04-22 11:02:20,954 INFO  [class org.fiteagle.core.orchestrator.dm.OrchestratorMDBListener] (Thread-241 (ActiveMQ-client-global-threads-57352872)) CONTENT: <http://open-multinet.info/ontology/resource/motor#manufacturer>
+        a       <http://www.w3.org/2002/07/owl#FunctionalProperty> , <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://open-multinet.info/ontology/resource/motor#Motor> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "manufacturer"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://open-multinet.info/ontology/resource/motorgarage#MotorGarage>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "MotorGarage"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://open-multinet.info/ontology/omn#Adapter> ;
+        <http://open-multinet.info/ontology/omn-lifecycle#implements>
+                <http://open-multinet.info/ontology/resource/motor#Motor> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                "52.516377"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                "13.323732"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://open-multinet.info/ontology/resource/motor#throttle>
+        a       <http://www.w3.org/2002/07/owl#FunctionalProperty> , <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://open-multinet.info/ontology/resource/motor#Motor> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "throttle"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2001/XMLSchema#integer> .
+
+<http://open-multinet.info/ontology/resource/motor#isDynamic>
+        a       <http://www.w3.org/2002/07/owl#FunctionalProperty> , <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://open-multinet.info/ontology/resource/motor#Motor> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "dynamic"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2001/XMLSchema#boolean> .
+
+<http://open-multinet.info/ontology/resource/motor#Motor>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Motor"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://open-multinet.info/ontology/omn#Resource> ;
+        <http://open-multinet.info/ontology/omn-lifecycle#implementedBy>
+                <http://open-multinet.info/ontology/resource/motorgarage#MotorGarage> .
+
+<http://localhost/resource/MotorGarage-2>
+        a       <http://open-multinet.info/ontology/resource/motorgarage#MotorGarage> ;
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "A motor garage adapter that can simulate different dynamic motor resources." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "MotorGarage-2" ;
+        <http://open-multinet.info/ontology/omn#maxInstances>
+                "10"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        <http://open-multinet.info/ontology/omn-lifecycle#canImplement>
+                <http://open-multinet.info/ontology/resource/motor#Motor> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                "52.516377" ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                "13.323732" .
+
+<http://open-multinet.info/ontology/resource/motor#rpm>
+        a       <http://www.w3.org/2002/07/owl#FunctionalProperty> , <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://open-multinet.info/ontology/resource/motor#Motor> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "rounds per minutes"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2001/XMLSchema#integer> .
+
+<http://open-multinet.info/ontology/resource/motor#maxRpm>
+        a       <http://www.w3.org/2002/07/owl#FunctionalProperty> , <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://open-multinet.info/ontology/resource/motor#Motor> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "maximum rounds per minute"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2001/XMLSchema#integer> .
+
+2016-04-22 11:02:20,955 INFO  [class org.fiteagle.core.orchestrator.dm.OrchestratorMDBListener] (Thread-241 (ActiveMQ-client-global-threads-57352872)) Not for me: 5a32c560-0dca-4bbe-8403-d5aa9a441dbe
+2016-04-22 11:02:20,955 INFO  [class org.fiteagle.core.orchestrator.dm.OrchestratorMDBListener] (Thread-241 (ActiveMQ-client-global-threads-57352872)) Handling: 5a32c560-0dca-4bbe-8403-d5aa9a441dbe
+2016-04-22 11:02:20,956 INFO  [class org.fiteagle.core.orchestrator.dm.OrchestratorMDBListener] (Thread-238 (ActiveMQ-client-global-threads-57352872)) Received a/an INFORM message
+2016-04-22 11:02:20,956 INFO  [class org.fiteagle.core.orchestrator.dm.OrchestratorMDBListener] (Thread-238 (ActiveMQ-client-global-threads-57352872)) Target: null
+2016-04-22 11:02:20,956 INFO  [class org.fiteagle.core.orchestrator.dm.OrchestratorMDBListener] (Thread-238 (ActiveMQ-client-global-threads-57352872)) CONTENT: <http://localhost/resource/MotorGarage-3>
+        a       <http://open-multinet.info/ontology/resource/motorgarage#MotorGarage> ;
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "A motor garage adapter that can simulate different dynamic motor resources." ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "MotorGarage-3" ;
+        <http://open-multinet.info/ontology/omn#maxInstances>
+                "10"^^<http://www.w3.org/2001/XMLSchema#long> ;
+        <http://open-multinet.info/ontology/omn-lifecycle#canImplement>
+                <http://open-multinet.info/ontology/resource/motor#Motor> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                "52.516377" ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                "13.323732" .
+
+<http://open-multinet.info/ontology/resource/motor#manufacturer>
+        a       <http://www.w3.org/2002/07/owl#FunctionalProperty> , <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://open-multinet.info/ontology/resource/motor#Motor> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "manufacturer"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://open-multinet.info/ontology/resource/motorgarage#MotorGarage>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "MotorGarage"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://open-multinet.info/ontology/omn#Adapter> ;
+        <http://open-multinet.info/ontology/omn-lifecycle#implements>
+                <http://open-multinet.info/ontology/resource/motor#Motor> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                "52.516377"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                "13.323732"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://open-multinet.info/ontology/resource/motor#throttle>
+        a       <http://www.w3.org/2002/07/owl#FunctionalProperty> , <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://open-multinet.info/ontology/resource/motor#Motor> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "throttle"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2001/XMLSchema#integer> .
+
+<http://open-multinet.info/ontology/resource/motor#isDynamic>
+        a       <http://www.w3.org/2002/07/owl#FunctionalProperty> , <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://open-multinet.info/ontology/resource/motor#Motor> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "dynamic"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2001/XMLSchema#boolean> .
+
+<http://open-multinet.info/ontology/resource/motor#Motor>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Motor"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://open-multinet.info/ontology/omn#Resource> ;
+        <http://open-multinet.info/ontology/omn-lifecycle#implementedBy>
+                <http://open-multinet.info/ontology/resource/motorgarage#MotorGarage> .
+
+<http://open-multinet.info/ontology/resource/motor#rpm>
+        a       <http://www.w3.org/2002/07/owl#FunctionalProperty> , <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://open-multinet.info/ontology/resource/motor#Motor> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "rounds per minutes"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2001/XMLSchema#integer> .
+
+<http://open-multinet.info/ontology/resource/motor#maxRpm>
+        a       <http://www.w3.org/2002/07/owl#FunctionalProperty> , <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://open-multinet.info/ontology/resource/motor#Motor> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "maximum rounds per minute"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2001/XMLSchema#integer> .
+
+2016-04-22 11:02:20,956 INFO  [class org.fiteagle.core.orchestrator.dm.OrchestratorMDBListener] (Thread-238 (ActiveMQ-client-global-threads-57352872)) Not for me: ce0c58e5-8711-48b3-a3b2-42ec6a49a900
+2016-04-22 11:02:20,956 INFO  [class org.fiteagle.core.orchestrator.dm.OrchestratorMDBListener] (Thread-238 (ActiveMQ-client-global-threads-57352872)) Handling: ce0c58e5-8711-48b3-a3b2-42ec6a49a900
+2016-04-22 11:02:20,949 INFO  [class org.fiteagle.core.orchestrator.dm.OrchestratorMDBListener] (Thread-234 (ActiveMQ-client-global-threads-57352872)) Received a/an INFORM message
+2016-04-22 11:02:20,957 INFO  [class org.fiteagle.core.orchestrator.dm.OrchestratorMDBListener] (Thread-234 (ActiveMQ-client-global-threads-57352872)) Target: null
+2016-04-22 11:02:20,971 INFO  [class org.fiteagle.core.orchestrator.dm.OrchestratorMDBListener] (Thread-234 (ActiveMQ-client-global-threads-57352872)) CONTENT: <http://open-multinet.info/ontology/resource/openbaton#VirtualNetworkFunctionDescriptor>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://open-multinet.info/ontology/omn#Resource> ;
+        <http://open-multinet.info/ontology/omn-lifecycle#implementedBy>
+                <http://open-multinet.info/ontology/resource/openbaton#OpenBatonAdapter> .
+
+<http://open-multinet.info/ontology/resource/openbaton#VirtualNetworkFunctionPackage>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://open-multinet.info/ontology/omn#Resource> ;
+        <http://open-multinet.info/ontology/omn-lifecycle#implementedBy>
+                <http://open-multinet.info/ontology/resource/openbaton#OpenBatonAdapter> .
+
+<http://open-multinet.info/ontology/resource/openbaton#OpenBatonAdapter>
+        <http://open-multinet.info/ontology/omn-lifecycle#implements>
+                <http://open-multinet.info/ontology/resource/openbaton#VimInstance> , <http://open-multinet.info/ontology/resource/openbaton#VirtualDeploymentUnit> , <http://open-multinet.info/ontology/resource/openbaton#VirtualNetworkFunctionPackage> , <http://open-multinet.info/ontology/resource/openbaton#VirtualNetworkFunctionDescriptor> , <http://open-multinet.info/ontology/resource/openbaton#VirtualNetworkFunctionManager> , <http://open-multinet.info/ontology/resource/openbaton#NetworkServiceRecord> , <http://open-multinet.info/ontology/resource/openbaton#MME> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                "52.516377"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                "13.323732"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://open-multinet.info/ontology/resource/openbaton#VirtualNetworkFunctionManager>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://open-multinet.info/ontology/omn#Resource> ;
+        <http://open-multinet.info/ontology/omn-lifecycle#implementedBy>
+                <http://open-multinet.info/ontology/resource/openbaton#OpenBatonAdapter> .
+
+<http://open-multinet.info/ontology/resource/openbaton#MME>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://open-multinet.info/ontology/omn#Resource> ;
+        <http://open-multinet.info/ontology/omn-lifecycle#implementedBy>
+                <http://open-multinet.info/ontology/resource/openbaton#OpenBatonAdapter> .
+
+<http://open-multinet.info/ontology/resource/openbaton#VirtualDeploymentUnit>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://open-multinet.info/ontology/omn#Resource> ;
+        <http://open-multinet.info/ontology/omn-lifecycle#implementedBy>
+                <http://open-multinet.info/ontology/resource/openbaton#OpenBatonAdapter> .
+
+<http://open-multinet.info/ontology/resource/openbaton#VimInstance>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://open-multinet.info/ontology/omn#Resource> ;
+        <http://open-multinet.info/ontology/omn-lifecycle#implementedBy>
+                <http://open-multinet.info/ontology/resource/openbaton#OpenBatonAdapter> .
+
+<http://open-multinet.info/ontology/resource/openbaton#NetworkServiceRecord>
+        a       <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://open-multinet.info/ontology/omn#Resource> ;
+        <http://open-multinet.info/ontology/omn-lifecycle#implementedBy>
+                <http://open-multinet.info/ontology/resource/openbaton#OpenBatonAdapter> .
+
+<http://localhost/resource/OpenBaton-Server-1>
+        a       <http://open-multinet.info/ontology/resource/openbaton#OpenBatonAdapter> ;
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "OpenBaton Adapter" ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "OpenBaton-Server-1" ;
+        <http://open-multinet.info/ontology/omn-lifecycle#canImplement>
+                <http://open-multinet.info/ontology/resource/openbaton#VirtualNetworkFunctionDescriptor> , <http://open-multinet.info/ontology/resource/openbaton#NetworkServiceRecord> , <http://open-multinet.info/ontology/resource/openbaton#VirtualNetworkFunctionManager> , <http://open-multinet.info/ontology/resource/openbaton#VirtualDeploymentUnit> , <http://open-multinet.info/ontology/resource/openbaton#VimInstance> , <http://open-multinet.info/ontology/resource/openbaton#MME> , <http://open-multinet.info/ontology/resource/openbaton#VirtualNetworkFunctionPackage> .
+
+2016-04-22 11:02:20,972 INFO  [class org.fiteagle.core.orchestrator.dm.OrchestratorMDBListener] (Thread-234 (ActiveMQ-client-global-threads-57352872)) Not for me: f50d5f2f-9ab1-472d-bbff-016970bf794e
+2016-04-22 11:02:20,972 INFO  [class org.fiteagle.core.orchestrator.dm.OrchestratorMDBListener] (Thread-234 (ActiveMQ-client-global-threads-57352872)) Handling: f50d5f2f-9ab1-472d-bbff-016970bf794e
+2016-04-22 11:02:20,988 WARNING [class org.fiteagle.core.orchestrator.dm.OrchestratorMDBListener] (Thread-241 (ActiveMQ-client-global-threads-57352872)) State keeper had no match.
+2016-04-22 11:02:20,994 WARNING [class org.fiteagle.core.orchestrator.dm.OrchestratorMDBListener] (Thread-234 (ActiveMQ-client-global-threads-57352872)) State keeper had no match.
+2016-04-22 11:02:20,994 WARNING [class org.fiteagle.core.orchestrator.dm.OrchestratorMDBListener] (Thread-238 (ActiveMQ-client-global-threads-57352872)) State keeper had no match.
+2016-04-22 16:04:21,250 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested.
+2016-04-22 16:04:21,613 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/usersDS]
+2016-04-22 16:04:21,694 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 82) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:/ConnectionFactory
+2016-04-22 16:04:21,795 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 91) WFLYUT0022: Unregistered web context: /motor
+2016-04-22 16:04:21,796 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 97) WFLYUT0022: Unregistered web context: /openrdf-workbench
+2016-04-22 16:04:21,801 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 85) WFLYUT0022: Unregistered web context: /orchestrator
+2016-04-22 16:04:21,804 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0022: Unregistered web context: /bus
+2016-04-22 16:04:21,806 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 96) WFLYUT0022: Unregistered web context: /resourceAdapterManager
+2016-04-22 16:04:21,810 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0022: Unregistered web context: /reservation
+2016-04-22 16:04:21,808 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 83) WFLYUT0022: Unregistered web context: /federationManager
+2016-04-22 16:04:21,822 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 92) WFLYUT0022: Unregistered web context: /sfa
+2016-04-22 16:04:21,837 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 100) WFLYUT0022: Unregistered web context: /usercerts
+2016-04-22 16:04:21,841 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 99) WFLYUT0022: Unregistered web context: /openrdf-sesame
+2016-04-22 16:04:21,970 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 95) WFLYUT0022: Unregistered web context: /OpenBaton
+2016-04-22 16:04:21,973 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 99) Destroying Spring FrameworkServlet 'openrdf-http-server'
+2016-04-22 16:04:22,010 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] (ServerService Thread Pool -- 99) Closing WebApplicationContext for namespace 'openrdf-http-server-servlet': startup date [Fri Apr 22 11:02:06 CEST 2016]; root of context hierarchy
+2016-04-22 16:04:22,197 INFO  [org.fiteagle.north.sfa.StartUp] (ServerService Thread Pool -- 105) STOP
+2016-04-22 16:04:22,511 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0010: Stopping weld service for deployment usercerts.war
+2016-04-22 16:04:22,570 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0010: Stopping weld service for deployment sfa.war
+2016-04-22 16:04:22,602 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+2016-04-22 16:04:23,177 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0010: Stopping weld service for deployment OpenBaton.war
+2016-04-22 16:04:23,177 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0010: Stopping weld service for deployment federationManager.war
+2016-04-22 16:04:23,192 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0010: Stopping weld service for deployment reservation.war
+2016-04-22 16:04:23,192 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0010: Stopping weld service for deployment motor.war
+2016-04-22 16:04:23,206 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0010: Stopping weld service for deployment resourceAdapterManager.war
+2016-04-22 16:04:23,208 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0010: Stopping weld service for deployment bus.war
+2016-04-22 16:04:23,238 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0010: Stopping weld service for deployment orchestrator.war
+2016-04-22 16:04:23,257 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment sfa.war (runtime-name: sfa.war) in 1939ms
+2016-04-22 16:04:23,285 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment usercerts.war (runtime-name: usercerts.war) in 1969ms
+2016-04-22 16:04:23,363 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-7) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2016-04-22 16:04:23,363 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2016-04-22 16:04:23,367 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-1) WFLYJCA0011: Unbound JCA ConnectionFactory [java:/JmsXA]
+2016-04-22 16:04:23,391 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2016-04-22 16:04:23,437 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment openrdf-sesame.war (runtime-name: openrdf-sesame.war) in 2093ms
+2016-04-22 16:04:23,437 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) java.lang.InterruptedException
+2016-04-22 16:04:23,444 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+2016-04-22 16:04:23,444 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
+2016-04-22 16:04:23,445 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:492)
+2016-04-22 16:04:23,445 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:680)
+2016-04-22 16:04:23,445 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at sun.nio.fs.AbstractWatchService.take(AbstractWatchService.java:118)
+2016-04-22 16:04:23,445 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at org.fiteagle.abstractAdapter.AdapterControl$1.run(AdapterControl.java:91)
+2016-04-22 16:04:23,445 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at org.jboss.as.ee.concurrent.ControlPointUtils$ControlledRunnable.run(ControlPointUtils.java:105)
+2016-04-22 16:04:23,445 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+2016-04-22 16:04:23,445 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+2016-04-22 16:04:23,445 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at org.glassfish.enterprise.concurrent.internal.ManagedFutureTask.run(ManagedFutureTask.java:141)
+2016-04-22 16:04:23,446 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+2016-04-22 16:04:23,443 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment openrdf-workbench.war (runtime-name: openrdf-workbench.war) in 2151ms
+2016-04-22 16:04:23,446 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+2016-04-22 16:04:23,448 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at java.lang.Thread.run(Thread.java:745)
+2016-04-22 16:04:23,450 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at org.glassfish.enterprise.concurrent.ManagedThreadFactoryImpl$ManagedThread.run(ManagedThreadFactoryImpl.java:250)
+2016-04-22 16:04:23,452 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) java.lang.InterruptedException
+2016-04-22 16:04:23,454 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+2016-04-22 16:04:23,454 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
+2016-04-22 16:04:23,457 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:492)
+2016-04-22 16:04:23,457 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:680)
+2016-04-22 16:04:23,458 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at sun.nio.fs.AbstractWatchService.take(AbstractWatchService.java:118)
+2016-04-22 16:04:23,459 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at org.fiteagle.abstractAdapter.AdapterControl$1.run(AdapterControl.java:91)
+2016-04-22 16:04:23,460 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at org.jboss.as.ee.concurrent.ControlPointUtils$ControlledRunnable.run(ControlPointUtils.java:105)
+2016-04-22 16:04:23,462 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+2016-04-22 16:04:23,465 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+2016-04-22 16:04:23,467 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at org.glassfish.enterprise.concurrent.internal.ManagedFutureTask.run(ManagedFutureTask.java:141)
+2016-04-22 16:04:23,468 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+2016-04-22 16:04:23,470 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+2016-04-22 16:04:23,471 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at java.lang.Thread.run(Thread.java:745)
+2016-04-22 16:04:23,472 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at org.glassfish.enterprise.concurrent.ManagedThreadFactoryImpl$ManagedThread.run(ManagedThreadFactoryImpl.java:250)
+2016-04-22 16:04:23,554 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTPS listener xmlrpc-listener suspending
+2016-04-22 16:04:23,555 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTPS listener xmlrpc-listener stopped, was bound to 0.0.0.0:8089
+2016-04-22 16:04:23,558 INFO  [org.apache.activemq.artemis.ra] (ServerService Thread Pool -- 100) AMQ151003: resource adaptor stopped
+2016-04-22 16:04:23,716 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment bus.war (runtime-name: bus.war) in 2418ms
+2016-04-22 16:04:23,723 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment resourceAdapterManager.war (runtime-name: resourceAdapterManager.war) in 2384ms
+2016-04-22 16:04:23,727 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment orchestrator.war (runtime-name: orchestrator.war) in 2435ms
+2016-04-22 16:04:23,732 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment motor.war (runtime-name: motor.war) in 2394ms
+2016-04-22 16:04:23,734 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment reservation.war (runtime-name: reservation.war) in 2436ms
+2016-04-22 16:04:23,734 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment federationManager.war (runtime-name: federationManager.war) in 2391ms
+2016-04-22 16:04:23,817 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment OpenBaton.war (runtime-name: OpenBaton.war) in 2525ms
+2016-04-22 16:04:24,330 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 100) AMQ221002: Apache ActiveMQ Artemis Message Broker version 1.1.0.wildfly-011 [12463af9-f433-11e5-b72a-0bd9450d96f4] stopped
+2016-04-22 16:04:24,336 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2016-04-22 16:04:24,339 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:8080
+2016-04-22 16:04:24,341 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0004: Undertow 1.3.15.Final stopping
+2016-04-22 16:04:24,392 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: WildFly Full 10.0.0.Final (WildFly Core 2.0.10.Final) stopped in 3094ms

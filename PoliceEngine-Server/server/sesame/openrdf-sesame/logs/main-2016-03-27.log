@@ -1,0 +1,143 @@
+[INFO ] 2016-03-27 16:40:22,660 [ServerService Thread Pool -- 66] Logback logging API implementation is configured.
+[INFO ] 2016-03-27 17:46:39,818 [ServerService Thread Pool -- 69] Logback logging API implementation is configured.
+[INFO ] 2016-03-27 18:13:53,793 [ServerService Thread Pool -- 66] Logback logging API implementation is configured.
+[INFO ] 2016-03-27 18:15:21,799 [ServerService Thread Pool -- 78] Logback logging API implementation is configured.
+[INFO ] 2016-03-27 18:17:17,794 [ServerService Thread Pool -- 110] Logback logging API implementation is configured.
+[INFO ] 2016-03-27 18:25:34,341 [default task-1] CompressingFilter has initialized
+[INFO ] 2016-03-27 18:25:34,525 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-27 18:25:34,544 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-27 18:25:34,566 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-27 18:25:40,130 [repositories/fiteagle] GET query -439247579
+[INFO ] 2016-03-27 18:25:40,329 [repositories/fiteagle] Request for query -439247579 is finished
+[INFO ] 2016-03-27 18:26:41,445 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-27 18:26:41,445 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-27 18:26:41,446 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-27 18:28:52,972 [repositories/fiteagle] GET query -439247579
+[INFO ] 2016-03-27 18:28:52,994 [repositories/fiteagle] Request for query -439247579 is finished
+[INFO ] 2016-03-27 18:29:32,320 [repositories/fiteagle] GET query -1010771740
+[INFO ] 2016-03-27 18:29:32,335 [repositories/fiteagle] Request for query -1010771740 is finished
+[INFO ] 2016-03-27 18:29:32,378 [repositories/fiteagle] GET query 258073765
+[INFO ] 2016-03-27 18:29:32,381 [repositories/fiteagle] Request for query 258073765 is finished
+[INFO ] 2016-03-27 18:29:32,401 [repositories/fiteagle] GET statements
+[INFO ] 2016-03-27 18:30:30,033 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-27 18:30:30,035 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-27 18:30:30,037 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-27 18:30:30,172 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-27 18:30:30,172 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-27 18:30:30,173 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-27 18:30:30,353 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-27 18:30:30,353 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-27 18:30:30,354 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-27 18:30:30,372 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-27 18:30:30,373 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-27 18:30:30,374 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-27 18:30:54,777 [repositories/fiteagle] GET query -1010771740
+[INFO ] 2016-03-27 18:30:54,793 [repositories/fiteagle] Request for query -1010771740 is finished
+[INFO ] 2016-03-27 18:30:54,898 [repositories/fiteagle] GET query 258073765
+[INFO ] 2016-03-27 18:30:54,904 [repositories/fiteagle] Request for query 258073765 is finished
+[INFO ] 2016-03-27 18:30:54,929 [repositories/fiteagle] GET statements
+[INFO ] 2016-03-27 19:21:32,690 [repositories/SYSTEM] GET statements
+[INFO ] 2016-03-27 19:21:32,802 [default task-25] Request for query 3392903 is finished
+[INFO ] 2016-03-27 19:21:32,933 [repositories/fiteagle] GET namespace list
+[INFO ] 2016-03-27 19:21:32,937 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2016-03-27 19:21:32,955 [repositories/fiteagle] GET statements
+[INFO ] 2016-03-27 19:21:33,094 [repositories/SYSTEM] GET statements
+[INFO ] 2016-03-27 19:21:36,378 [repositories/SYSTEM] GET statements
+[INFO ] 2016-03-27 19:25:59,559 [repositories/SYSTEM] GET statements
+[INFO ] 2016-03-27 19:26:11,435 [repositories/fiteagle] GET query 3392903
+[INFO ] 2016-03-27 19:26:11,440 [repositories/fiteagle] Client sent bad request ( 400)
+org.openrdf.http.server.ClientHTTPException: Missing parameter: query
+	at org.openrdf.http.server.repository.RepositoryController.handleRequestInternal(RepositoryController.java:255)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:146)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:857)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at com.github.ziplet.filter.compression.CompressingFilter.doFilter(CompressingFilter.java:300)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:60)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[INFO ] 2016-03-27 19:26:14,978 [repositories/SYSTEM] GET statements
+[INFO ] 2016-03-27 19:29:00,026 [repositories/SYSTEM] GET statements
+[INFO ] 2016-03-27 19:29:38,736 [default task-64] Request for query 3392903 is finished
+[INFO ] 2016-03-27 19:29:49,077 [default task-13] Request for query 3392903 is finished
+[INFO ] 2016-03-27 19:29:50,387 [default task-19] Request for query 3392903 is finished
+[INFO ] 2016-03-27 19:29:50,509 [repositories/SYSTEM] Request for query 3392903 is finished
+[INFO ] 2016-03-27 19:29:50,572 [repositories/SYSTEM] GET statements
+[INFO ] 2016-03-27 19:29:54,859 [repositories/SYSTEM] GET statements
+[INFO ] 2016-03-27 19:34:51,147 [ServerService Thread Pool -- 72] Logback logging API implementation is configured.
+[INFO ] 2016-03-27 19:34:57,064 [default task-7] CompressingFilter has initialized
+[INFO ] 2016-03-27 19:34:57,339 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-27 19:34:57,365 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-27 19:34:57,402 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-27 19:34:58,987 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-27 19:34:58,988 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-27 19:34:58,989 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-27 19:34:59,263 [repositories/fiteagle] GET query -439247579
+[INFO ] 2016-03-27 19:34:59,430 [repositories/fiteagle] Request for query -439247579 is finished
+[INFO ] 2016-03-27 19:34:59,553 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-27 19:34:59,553 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-27 19:34:59,554 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-27 19:34:59,578 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-27 19:34:59,579 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-27 19:34:59,581 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-27 19:34:59,637 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-27 19:34:59,638 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-27 19:34:59,639 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-27 19:34:59,656 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-27 19:34:59,656 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-27 19:34:59,660 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-27 19:37:39,218 [repositories/SYSTEM] GET statements
+[INFO ] 2016-03-27 19:37:39,344 [default task-19] Request for query 3392903 is finished
+[INFO ] 2016-03-27 19:37:39,455 [repositories/fiteagle] GET namespace list
+[INFO ] 2016-03-27 19:37:39,460 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2016-03-27 19:37:39,483 [repositories/fiteagle] GET statements
+[INFO ] 2016-03-27 19:37:39,495 [repositories/fiteagle] GET statements
+[INFO ] 2016-03-27 19:37:39,503 [repositories/fiteagle] GET statements
+[INFO ] 2016-03-27 19:37:39,513 [repositories/fiteagle] GET statements
+[INFO ] 2016-03-27 19:37:39,522 [repositories/fiteagle] GET statements
+[INFO ] 2016-03-27 19:37:39,533 [repositories/fiteagle] GET statements
+[INFO ] 2016-03-27 19:37:39,543 [repositories/fiteagle] GET statements
+[INFO ] 2016-03-27 19:37:39,558 [repositories/fiteagle] GET statements
+[INFO ] 2016-03-27 19:37:39,681 [repositories/SYSTEM] GET statements
+[INFO ] 2016-03-27 19:37:47,650 [repositories/fiteagle] GET namespace list
+[INFO ] 2016-03-27 19:37:47,661 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2016-03-27 19:37:47,686 [repositories/fiteagle] GET statements
+[INFO ] 2016-03-27 19:37:47,830 [repositories/SYSTEM] GET statements
+[INFO ] 2016-03-27 19:37:50,933 [repositories/SYSTEM] GET statements
+[INFO ] 2016-03-27 19:38:06,269 [repositories/fiteagle] GET namespace list
+[INFO ] 2016-03-27 19:38:06,278 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2016-03-27 19:38:06,283 [repositories/fiteagle] GET statements
+[INFO ] 2016-03-27 19:38:06,377 [repositories/SYSTEM] GET statements

@@ -1,0 +1,98 @@
+[INFO ] 2016-07-01 20:01:01,827 [ServerService Thread Pool -- 71] Logback logging API implementation is configured.
+[INFO ] 2016-07-01 20:01:07,103 [default task-2] CompressingFilter has initialized
+[INFO ] 2016-07-01 20:01:07,245 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-07-01 20:01:07,255 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-07-01 20:01:07,272 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-07-01 20:01:37,998 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-07-01 20:01:38,000 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-07-01 20:01:38,003 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-07-01 20:03:54,347 [repositories/fiteagle] GET query -1010771740
+[INFO ] 2016-07-01 20:03:54,479 [repositories/fiteagle] Request for query -1010771740 is finished
+[INFO ] 2016-07-01 20:03:54,505 [repositories/fiteagle] GET query 258073765
+[INFO ] 2016-07-01 20:03:54,517 [repositories/fiteagle] Request for query 258073765 is finished
+[INFO ] 2016-07-01 20:03:54,523 [repositories/fiteagle] GET query -1485727469
+[INFO ] 2016-07-01 20:03:54,525 [repositories/fiteagle] Request for query -1485727469 is finished
+[INFO ] 2016-07-01 20:03:54,535 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:04:41,172 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-07-01 20:04:41,177 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-07-01 20:04:41,179 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-07-01 20:04:51,162 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-01 20:04:51,313 [default task-15] Request for query 3392903 is finished
+[INFO ] 2016-07-01 20:04:51,502 [repositories/fiteagle] GET namespace list
+[INFO ] 2016-07-01 20:04:51,504 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2016-07-01 20:04:51,529 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:04:51,718 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-01 20:05:11,962 [repositories/fiteagle] GET namespace list
+[INFO ] 2016-07-01 20:05:11,964 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2016-07-01 20:05:11,976 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:05:11,988 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:05:11,999 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:05:12,008 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:05:12,031 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:05:12,040 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:05:12,142 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-01 20:05:32,143 [repositories/fiteagle] GET namespace list
+[INFO ] 2016-07-01 20:05:32,146 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2016-07-01 20:05:32,155 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:05:32,256 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-01 20:11:22,945 [repositories/fiteagle] GET namespace list
+[INFO ] 2016-07-01 20:11:22,946 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2016-07-01 20:11:22,954 [repositories/fiteagle] GET namespace for prefix rdf
+[INFO ] 2016-07-01 20:11:22,959 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:11:22,968 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:11:22,979 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:11:22,985 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:11:22,994 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:11:23,001 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:11:23,030 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:11:23,036 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:11:23,138 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-01 20:11:55,441 [repositories/fiteagle] GET namespace list
+[INFO ] 2016-07-01 20:11:55,448 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2016-07-01 20:11:55,464 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:11:55,482 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:11:55,490 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:11:55,504 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:11:55,514 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:11:55,520 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:11:55,601 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-01 20:15:32,753 [ServerService Thread Pool -- 72] Logback logging API implementation is configured.
+[INFO ] 2016-07-01 20:15:35,214 [default task-1] CompressingFilter has initialized
+[INFO ] 2016-07-01 20:15:35,911 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-07-01 20:15:35,923 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-07-01 20:15:35,965 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-07-01 20:15:51,715 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-01 20:15:51,853 [default task-7] Request for query 3392903 is finished
+[INFO ] 2016-07-01 20:15:51,961 [repositories/fiteagle] GET namespace list
+[INFO ] 2016-07-01 20:15:51,964 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2016-07-01 20:15:51,975 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:15:52,148 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-01 20:16:01,698 [repositories/fiteagle] GET namespace list
+[INFO ] 2016-07-01 20:16:01,705 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2016-07-01 20:16:01,709 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:01,719 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:01,727 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:01,737 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:01,749 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:01,758 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:01,823 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-01 20:16:27,554 [repositories/fiteagle] GET namespace list
+[INFO ] 2016-07-01 20:16:27,557 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2016-07-01 20:16:27,567 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:27,581 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:27,591 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:27,599 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:27,607 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:27,614 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:27,621 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:27,631 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:27,732 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-01 20:16:39,873 [repositories/fiteagle] GET namespace list
+[INFO ] 2016-07-01 20:16:39,875 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2016-07-01 20:16:39,885 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:39,894 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:39,900 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:39,908 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:39,914 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:39,920 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-01 20:16:39,976 [repositories/SYSTEM] GET statements

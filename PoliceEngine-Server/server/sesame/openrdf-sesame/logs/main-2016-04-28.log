@@ -1,0 +1,41 @@
+[INFO ] 2016-04-28 15:20:40,653 [ServerService Thread Pool -- 72] Logback logging API implementation is configured.
+[INFO ] 2016-04-28 15:20:46,331 [default task-2] CompressingFilter has initialized
+[INFO ] 2016-04-28 15:20:46,505 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-04-28 15:20:46,516 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-04-28 15:20:46,541 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-04-28 15:20:48,898 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-04-28 15:20:48,902 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-04-28 15:20:48,904 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-04-28 15:20:52,802 [repositories/fiteagle] GET query -439247579
+[INFO ] 2016-04-28 15:20:52,932 [repositories/fiteagle] Request for query -439247579 is finished
+[INFO ] 2016-04-28 15:20:52,999 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-04-28 15:20:53,000 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-04-28 15:20:53,001 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-04-28 15:20:53,030 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-04-28 15:20:53,031 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-04-28 15:20:53,032 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-04-28 15:20:53,086 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-04-28 15:20:53,087 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-04-28 15:20:53,088 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-04-28 15:20:53,115 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-04-28 15:20:53,115 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-04-28 15:20:53,117 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-04-28 15:20:53,153 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-04-28 15:20:53,154 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-04-28 15:20:53,155 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-04-28 15:20:53,168 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-04-28 15:20:53,168 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-04-28 15:20:53,169 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-04-28 15:22:37,822 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-04-28 15:22:37,851 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-04-28 15:22:37,853 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-04-28 15:22:38,189 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-04-28 15:22:38,190 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-04-28 15:22:38,191 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-04-28 15:24:48,021 [repositories/fiteagle] GET query -1010771740
+[INFO ] 2016-04-28 15:24:48,057 [repositories/fiteagle] Request for query -1010771740 is finished
+[INFO ] 2016-04-28 15:24:48,117 [repositories/fiteagle] GET query 258073765
+[INFO ] 2016-04-28 15:24:48,127 [repositories/fiteagle] Request for query 258073765 is finished
+[INFO ] 2016-04-28 15:24:48,133 [repositories/fiteagle] GET query -1485727469
+[INFO ] 2016-04-28 15:24:48,136 [repositories/fiteagle] Request for query -1485727469 is finished
+[INFO ] 2016-04-28 15:24:48,152 [repositories/fiteagle] GET statements

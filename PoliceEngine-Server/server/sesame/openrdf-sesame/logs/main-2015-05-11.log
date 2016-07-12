@@ -1,0 +1,13 @@
+[INFO ] 2015-05-11 15:56:38,790 [MSC service thread 1-2] Logback logging API implementation is configured.
+[INFO ] 2015-05-11 15:56:42,272 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-05-11 15:56:42,284 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-05-11 15:56:42,306 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-05-11 15:56:42,612 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-05-11 15:56:42,613 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-05-11 15:56:42,614 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-05-11 16:00:08,912 [repositories/fiteagle] GET query -439247579
+[INFO ] 2015-05-11 16:00:09,969 [repositories/fiteagle] Request for query -439247579 is finished
+[INFO ] 2015-05-11 17:24:40,384 [repositories/fiteagle] GET query -439247579
+[INFO ] 2015-05-11 17:24:40,394 [repositories/fiteagle] Request for query -439247579 is finished
+[INFO ] 2015-05-11 17:28:45,598 [repositories/fiteagle] GET query -439247579
+[INFO ] 2015-05-11 17:28:45,618 [repositories/fiteagle] Request for query -439247579 is finished

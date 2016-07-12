@@ -1,0 +1,25 @@
+[INFO ] 2015-07-14 12:17:59,103 [MSC service thread 1-8] Logback logging API implementation is configured.
+[INFO ] 2015-07-14 12:18:01,396 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-14 12:18:01,413 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-07-14 12:18:01,438 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-07-14 12:18:48,456 [repositories/SYSTEM] GET statements
+[INFO ] 2015-07-14 12:18:48,577 [default task-7] Request for query 3392903 is finished
+[INFO ] 2015-07-14 12:18:48,670 [repositories/fiteagle] GET namespace list
+[INFO ] 2015-07-14 12:18:48,675 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2015-07-14 12:18:48,686 [repositories/fiteagle] GET statements
+[INFO ] 2015-07-14 12:18:48,994 [repositories/SYSTEM] GET statements
+[INFO ] 2015-07-14 12:18:51,541 [repositories/fiteagle] GET namespace list
+[INFO ] 2015-07-14 12:18:51,547 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2015-07-14 12:18:51,551 [repositories/fiteagle] GET statements
+[INFO ] 2015-07-14 12:18:51,851 [repositories/SYSTEM] GET statements
+[INFO ] 2015-07-14 15:48:04,297 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-14 15:48:04,305 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-07-14 15:48:04,306 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-07-14 15:50:25,868 [repositories/fiteagle] GET query -439247579
+[INFO ] 2015-07-14 15:50:25,919 [repositories/fiteagle] Request for query -439247579 is finished
+[INFO ] 2015-07-14 15:50:51,619 [repositories/fiteagle] GET query 1037154000
+[INFO ] 2015-07-14 15:50:51,624 [repositories/fiteagle] Request for query 1037154000 is finished
+[INFO ] 2015-07-14 15:50:51,646 [repositories/fiteagle] GET statements
+[INFO ] 2015-07-14 15:51:12,681 [repositories/fiteagle] GET query 1037154000
+[INFO ] 2015-07-14 15:51:12,683 [repositories/fiteagle] Request for query 1037154000 is finished
+[INFO ] 2015-07-14 15:51:12,689 [repositories/fiteagle] GET statements

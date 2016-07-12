@@ -1,0 +1,94 @@
+[INFO ] 2015-07-28 11:28:26,793 [MSC service thread 1-8] Logback logging API implementation is configured.
+[INFO ] 2015-07-28 11:28:31,637 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-28 11:28:31,692 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-07-28 11:28:31,733 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-07-28 11:28:31,864 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-28 11:28:31,874 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-07-28 11:28:31,875 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-07-28 11:28:31,879 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-28 11:28:31,880 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[INFO ] 2015-07-28 11:28:31,880 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-28 11:28:31,880 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-07-28 11:28:31,881 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[WARN ] 2015-07-28 11:28:31,884 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-07-28 11:28:32,541 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-28 11:28:32,541 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-07-28 11:28:32,542 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-07-28 11:45:37,383 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-28 11:45:37,384 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-07-28 11:45:37,385 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-07-28 12:26:46,833 [MSC service thread 1-3] Logback logging API implementation is configured.
+[INFO ] 2015-07-28 14:02:50,818 [ServerService Thread Pool -- 73] Logback logging API implementation is configured.
+[INFO ] 2015-07-28 14:52:00,974 [repositories/SYSTEM] GET statements
+[INFO ] 2015-07-28 14:52:01,090 [default task-5] Request for query 3392903 is finished
+[INFO ] 2015-07-28 14:52:01,203 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2015-07-28 14:52:01,483 [repositories/SYSTEM] GET statements
+[INFO ] 2015-07-28 14:52:03,707 [repositories/fiteagle] GET namespace list
+[INFO ] 2015-07-28 14:52:03,708 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2015-07-28 14:52:03,712 [repositories/fiteagle] GET statements
+[INFO ] 2015-07-28 14:52:04,077 [repositories/SYSTEM] GET statements
+[INFO ] 2015-07-28 15:19:08,076 [repositories/fiteagle] GET namespace list
+[INFO ] 2015-07-28 15:19:08,077 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2015-07-28 15:19:08,082 [repositories/fiteagle] GET statements
+[INFO ] 2015-07-28 15:19:08,350 [repositories/SYSTEM] GET statements
+[INFO ] 2015-07-28 15:19:11,356 [repositories/fiteagle] GET namespace list
+[INFO ] 2015-07-28 15:19:11,360 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2015-07-28 15:19:11,363 [repositories/fiteagle] GET statements
+[INFO ] 2015-07-28 15:19:11,633 [repositories/SYSTEM] GET statements
+[INFO ] 2015-07-28 15:19:40,460 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-28 15:19:40,463 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-28 15:19:40,465 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[INFO ] 2015-07-28 15:19:40,465 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-07-28 15:19:40,492 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[WARN ] 2015-07-28 15:19:40,494 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-07-28 15:19:43,117 [repositories/fiteagle] GET namespace list
+[INFO ] 2015-07-28 15:19:43,118 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2015-07-28 15:19:43,123 [repositories/fiteagle] GET statements
+[INFO ] 2015-07-28 15:19:43,453 [repositories/SYSTEM] GET statements
+[INFO ] 2015-07-28 15:19:45,253 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-28 15:19:45,254 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[INFO ] 2015-07-28 15:19:45,255 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-28 15:19:45,256 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-07-28 15:19:45,256 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[WARN ] 2015-07-28 15:19:45,257 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-07-28 15:19:50,243 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-28 15:19:50,244 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-07-28 15:19:50,244 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-07-28 15:19:50,246 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-28 15:19:50,246 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-07-28 15:19:50,247 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-07-28 15:19:55,244 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-28 15:19:55,244 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-07-28 15:19:55,245 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-07-28 15:19:55,245 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-28 15:19:55,245 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-07-28 15:19:55,249 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-07-28 15:20:00,244 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-28 15:20:00,244 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-07-28 15:20:00,250 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-07-28 15:20:00,252 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-28 15:20:00,252 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-07-28 15:20:00,254 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-07-28 15:20:05,245 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-28 15:20:05,245 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-07-28 15:20:05,246 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-07-28 15:20:05,261 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-07-28 15:20:05,262 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-07-28 15:20:05,263 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-07-28 15:20:48,325 [repositories/fiteagle] GET namespace list
+[INFO ] 2015-07-28 15:20:48,328 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2015-07-28 15:20:48,338 [repositories/fiteagle] GET statements
+[INFO ] 2015-07-28 15:20:48,654 [repositories/SYSTEM] GET statements
+[INFO ] 2015-07-28 15:20:51,236 [repositories/fiteagle] GET namespace list
+[INFO ] 2015-07-28 15:20:51,238 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2015-07-28 15:20:51,244 [repositories/fiteagle] GET statements
+[INFO ] 2015-07-28 15:20:51,608 [repositories/SYSTEM] GET statements
+[INFO ] 2015-07-28 15:21:23,269 [repositories/fiteagle] GET namespace list
+[INFO ] 2015-07-28 15:21:23,271 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2015-07-28 15:21:23,283 [repositories/fiteagle] GET statements
+[INFO ] 2015-07-28 15:21:23,628 [repositories/SYSTEM] GET statements
+[INFO ] 2015-07-28 15:21:26,391 [repositories/fiteagle] GET namespace list
+[INFO ] 2015-07-28 15:21:26,392 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2015-07-28 15:21:26,396 [repositories/fiteagle] GET statements
+[INFO ] 2015-07-28 15:21:26,655 [repositories/SYSTEM] GET statements
+[INFO ] 2015-07-28 15:23:42,654 [ServerService Thread Pool -- 70] Logback logging API implementation is configured.

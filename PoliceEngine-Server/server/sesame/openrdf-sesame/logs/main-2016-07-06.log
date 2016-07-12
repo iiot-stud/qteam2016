@@ -1,0 +1,195 @@
+[INFO ] 2016-07-06 16:31:54,329 [ServerService Thread Pool -- 65] Logback logging API implementation is configured.
+[INFO ] 2016-07-06 16:31:56,171 [default task-1] CompressingFilter has initialized
+[INFO ] 2016-07-06 16:31:56,483 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-07-06 16:31:56,501 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-07-06 16:31:56,540 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-07-06 16:32:31,462 [repositories/fiteagle] GET query 12583279
+[INFO ] 2016-07-06 16:32:31,637 [repositories/fiteagle] Request for query 12583279 is finished
+[INFO ] 2016-07-06 16:33:22,480 [repositories/fiteagle] GET query 12583279
+[INFO ] 2016-07-06 16:33:22,486 [repositories/fiteagle] Request for query 12583279 is finished
+[INFO ] 2016-07-06 16:34:12,982 [repositories/fiteagle] GET query 12583279
+[INFO ] 2016-07-06 16:34:13,001 [repositories/fiteagle] Request for query 12583279 is finished
+[INFO ] 2016-07-06 16:37:50,563 [repositories/fiteagle] GET query 12583279
+[INFO ] 2016-07-06 16:37:50,578 [repositories/fiteagle] Request for query 12583279 is finished
+[INFO ] 2016-07-06 17:02:45,818 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-06 17:02:45,911 [default task-11] Request for query 3392903 is finished
+[INFO ] 2016-07-06 17:02:46,027 [repositories/fiteagle] GET namespace list
+[INFO ] 2016-07-06 17:02:46,030 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2016-07-06 17:02:46,044 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-06 17:02:46,061 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-06 17:02:46,072 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-06 17:02:46,079 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-06 17:02:46,087 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-06 17:02:46,096 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-06 17:02:46,106 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-06 17:02:46,116 [repositories/fiteagle] GET statements
+[INFO ] 2016-07-06 17:02:46,290 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-06 17:06:15,482 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-06 17:06:15,526 [default task-47] Request for query 3392903 is finished
+[INFO ] 2016-07-06 17:06:19,659 [default task-56] Request for query 3392903 is finished
+[INFO ] 2016-07-06 17:06:19,742 [repositories/SYSTEM] Request for query 3392903 is finished
+[INFO ] 2016-07-06 17:06:19,805 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-06 17:06:21,643 [repositories/SYSTEM] GET namespace list
+[INFO ] 2016-07-06 17:06:21,645 [repositories/SYSTEM] Request for query 3392903 is finished
+[INFO ] 2016-07-06 17:06:21,657 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-06 17:06:21,715 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-06 17:06:31,690 [default task-17] Request for query 3392903 is finished
+[INFO ] 2016-07-06 17:11:35,434 [repositories/QTeam] Client sent bad request ( 404)
+org.openrdf.http.server.ClientHTTPException: Unknown repository: QTeam
+	at org.openrdf.http.server.repository.RepositoryInterceptor.setRequestAttributes(RepositoryInterceptor.java:121)
+	at org.openrdf.http.server.ServerInterceptor.preHandle(ServerInterceptor.java:45)
+	at org.openrdf.http.server.repository.RepositoryInterceptor.preHandle(RepositoryInterceptor.java:98)
+	at org.openrdf.http.server.repository.RepositoryInterceptor$$FastClassBySpringCGLIB$$d92044ea.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:133)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:121)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at org.openrdf.http.server.repository.RepositoryInterceptor$$EnhancerBySpringCGLIB$$73f112b7.preHandle(<generated>)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:857)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at com.github.ziplet.filter.compression.CompressingFilter.doFilter(CompressingFilter.java:300)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:60)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[INFO ] 2016-07-06 17:12:23,747 [repositories/QTeam] Client sent bad request ( 404)
+org.openrdf.http.server.ClientHTTPException: Unknown repository: QTeam
+	at org.openrdf.http.server.repository.RepositoryInterceptor.setRequestAttributes(RepositoryInterceptor.java:121)
+	at org.openrdf.http.server.ServerInterceptor.preHandle(ServerInterceptor.java:45)
+	at org.openrdf.http.server.repository.RepositoryInterceptor.preHandle(RepositoryInterceptor.java:98)
+	at org.openrdf.http.server.repository.RepositoryInterceptor$$FastClassBySpringCGLIB$$d92044ea.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:133)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:121)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at org.openrdf.http.server.repository.RepositoryInterceptor$$EnhancerBySpringCGLIB$$73f112b7.preHandle(<generated>)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:857)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at com.github.ziplet.filter.compression.CompressingFilter.doFilter(CompressingFilter.java:300)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:60)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[INFO ] 2016-07-06 17:12:45,655 [default task-23] Request for query 3392903 is finished
+[INFO ] 2016-07-06 17:13:04,677 [repositories/SYSTEM] Request for query 3392903 is finished
+[INFO ] 2016-07-06 17:13:04,731 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-06 17:13:14,846 [repositories/SYSTEM] GET namespace list
+[INFO ] 2016-07-06 17:13:14,848 [repositories/SYSTEM] Request for query 3392903 is finished
+[INFO ] 2016-07-06 17:13:14,852 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-06 17:13:14,944 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-06 17:13:55,973 [default task-2] Request for query 3392903 is finished
+[INFO ] 2016-07-06 17:14:18,142 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-06 17:14:18,307 [repositories/SYSTEM] POST transaction start
+[INFO ] 2016-07-06 17:14:18,318 [repositories/SYSTEM] transaction started
+[INFO ] 2016-07-06 17:14:18,327 [repositories/SYSTEM] PUT txn get/export statements request
+[INFO ] 2016-07-06 17:14:18,327 [repositories/SYSTEM] PUT txn get/export statements request finished
+[INFO ] 2016-07-06 17:14:18,340 [repositories/SYSTEM] PUT txn operation
+[INFO ] 2016-07-06 17:14:18,345 [repositories/SYSTEM] PUT txn operation request finished.
+[INFO ] 2016-07-06 17:14:18,349 [repositories/SYSTEM] PUT txn operation
+[INFO ] 2016-07-06 17:14:18,354 [repositories/SYSTEM] PUT txn operation request finished.
+[INFO ] 2016-07-06 17:14:18,377 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-06 17:14:18,385 [default task-31] Request for query 3392903 is finished
+[INFO ] 2016-07-06 17:14:18,446 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-06 17:14:18,512 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-06 17:14:47,384 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-06 17:14:47,385 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-06 17:14:47,390 [repositories/QTeam] GET statements
+[INFO ] 2016-07-06 17:14:47,449 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-06 17:15:16,580 [repositories/QTeam] GET query 12583279
+[INFO ] 2016-07-06 17:15:16,584 [repositories/QTeam] Request for query 12583279 is finished
+[INFO ] 2016-07-06 17:15:58,156 [ServerService Thread Pool -- 72] Logback logging API implementation is configured.
+[INFO ] 2016-07-06 17:16:00,209 [default task-1] CompressingFilter has initialized
+[INFO ] 2016-07-06 17:16:00,421 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-07-06 17:16:00,435 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-07-06 17:16:00,461 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-07-06 17:17:16,532 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-06 17:17:16,670 [default task-7] Request for query 3392903 is finished
+[INFO ] 2016-07-06 17:17:16,810 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-06 17:17:16,813 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-06 17:17:16,835 [repositories/QTeam] GET statements
+[INFO ] 2016-07-06 17:17:16,950 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-06 17:17:18,667 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-06 17:17:18,728 [default task-21] Request for query 3392903 is finished
+[INFO ] 2016-07-06 17:17:21,471 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-06 17:17:21,523 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-06 17:17:48,070 [repositories/QTeam] GET query 12583279
+[INFO ] 2016-07-06 17:17:48,148 [repositories/QTeam] Request for query 12583279 is finished
+[INFO ] 2016-07-06 17:17:59,378 [repositories/QTeam] POST data to repository
+[INFO ] 2016-07-06 17:17:59,379 [repositories/QTeam] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-07-06 17:17:59,381 [repositories/QTeam] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-07-06 17:18:03,340 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-06 17:18:03,342 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-06 17:18:03,347 [repositories/QTeam] GET statements
+[INFO ] 2016-07-06 17:18:03,440 [repositories/SYSTEM] GET statements
