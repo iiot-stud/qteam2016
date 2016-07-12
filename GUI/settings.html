@@ -15,6 +15,10 @@
 
     QTEAMPostForm = function(){
     var attributes = [];
+
+    var applicationNameField = document.getElementById("inputName");
+    var applicationName = applicationNameField.value
+
     var form = document.getElementById("settingsForm"),
 
      selects = document.getElementById("minAgeSelect"),
@@ -30,6 +34,8 @@
 
       for (var i = 0, max = inputs.length; i < max; i += 1) {
         // Take only those inputs which are checkbox
+
+        
 
         if (inputs[i].type == "checkbox" && inputs[i].name == "vergessen") {
           if (inputs[i].checked) {
@@ -81,7 +87,7 @@
 
     xmlhttp.open("POST", url, true);
 
-      var name = {"name":"Webseite"};
+      var name = {"name":applicationName};
       var vendor = {"vendor":"OpenPolicy"};
       var version = {"version":"0.1"};
       var preferences = {"preferences":["germany"]};
@@ -145,10 +151,10 @@
     <!-- checkboxes -->
 <div class="container" style="margin-top:20px;">
 
-  <form id="settingsForm">
+  <form id="settingsForm" onsubmit="return false">
   <fieldset class="form-group">
     <label for="exampleInputEmail1">Name der Applikation </label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name der Applikation">
+    <input type="text" class="form-control" id="inputName" placeholder="Name der Applikation">
     <small class="text-muted">Dies hilft anderen Ihre Applikation wieder zu erkennen.</small>
   </fieldset>
 
