@@ -65,7 +65,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 QTeamJSONGet = function() {
 var xmlhttp = new XMLHttpRequest();
-var url = "_RASPBERRY_IP_";
+var url = "http://194.95.174.230:8080/federationManager/available";//http://194.95.174.230:8080/federationManager/request/v2
 
 xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -167,8 +167,8 @@ console.log(googleDataTable);
 </head>
 
 <body>
-<button type="submit" class="btn btn-primary" onclick="QTEAMData()">Aktualisieren (dummy)</button> 
-<button type="submit" class="btn btn-primary" onclick="QTeamJSONGet()">Aktualisieren (rapsberry)</button> 
+<button type="submit" class="btn btn-primary" onclick="QTEAMData()">Aktualisieren l</button> 
+<button type="submit" class="btn btn-primary" onclick="QTeamJSONGet()">Aktualisieren n</button> 
 
 <div id="googleMap" style="width:900px;height:500px;"></div>
 </body>

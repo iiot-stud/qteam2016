@@ -1,51 +1,7 @@
 var DATA = {"a" : "b", "c" : "d"};
 
-var RESPONSE = {
-  "name": "alex",
-  "vendor": "OpenPolicy",
-  "version": "0.1",
-  "success": "true/false",
-  "locations": [
-    {
-      "name": "Strato",
-      "country": "Germany",
-      "price": "2€"
-    },
-    {
-      "name": "dsakdkvd",
-      "country": "Germany",
-      "price": "1€"
-    },
-    {
-      "name": "Blub",
-      "country": "Frankreich",
-      "price": "1€"
-    },
-    {
-      "name": "2kjd",
-      "country": "Russland",
-      "price": "2€"
-    },
+var RESPONSE = {"vendor":"OpenPolicy","name":"alex","locations":[{"continent":"Europe","country":"Germany","price":5,"latitude":"48.105964","name":"Slot_ger_4","longitude":"11.612549"},{"continent":"Europe","country":"Germany","price":6,"latitude":"52.473412","name":"Slot_ger_1","longitude":"13.390961"},{"continent":"Europe","country":"Germany","price":5,"latitude":"48.105964","name":"Slot_ger_2","longitude":"11.612549"},{"continent":"Europe","country":"Germany","price":4,"latitude":"52.473412","name":"Slot_ger_3","longitude":"13.390961"}],"version":"0.1"}
 
-    {
-      "name": "2kjd",
-      "country": "Indien",
-      "price": "2€"
-    },
-
-    {
-      "name": "2kjd",
-      "country": "Island",
-      "price": "2€"
-    },
-
-    {
-      "name": "2kjd",
-      "country": "Canada",
-      "price": "2€"
-    }
-]
-}
 
 
 var REQUEST = {

@@ -75,7 +75,7 @@
     */
 
     var xmlhttp = new XMLHttpRequest();
-    var url = "_RASPBERRY_IP_";
+    var url = "http://194.95.174.230:8080/federationManager/request/v2"; //http://194.95.174.230:8080/federationManager/request/v2
 
     xmlhttp.onreadystatechange = function() {
       if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -86,6 +86,8 @@
     };
 
     xmlhttp.open("POST", url, true);
+    xmlhttp.setRequestHeader('Content-Type', 'application/json');
+
 
       var name = {"name":applicationName};
       var vendor = {"vendor":"OpenPolicy"};
@@ -96,7 +98,13 @@
       console.log(myRequest);
 
 
-    xmlhttp.send(myRequest);
+var data = new FormData();
+data.append('user', 'person');
+data.append('pwd', 'password');
+data.append('organization', 'place');
+data.append('requiredkey', 'key');
+
+xmlhttp.send(myRequest);
 
     
 }
