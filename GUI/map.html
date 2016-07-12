@@ -88,7 +88,12 @@ var randomnumber; // to simulate number of Datacenters
 for (var i = 0; i < locations.length; i++) {
 
   randomnumber = Math.floor(Math.random() * (20 - 0 + 1)) + 0;
-  googleDataTable.push([locations[i].country, randomnumber]);
+
+  if (locations[i].country == "England") {
+      googleDataTable.push(["Great Britain", randomnumber]);
+  }else{
+    googleDataTable.push([locations[i].country, randomnumber]);
+  }
   console.log(locations[i].country);
 };
 console.log(googleDataTable);
