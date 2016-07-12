@@ -1,0 +1,30 @@
+[INFO ] 2016-03-14 16:45:23,835 [ServerService Thread Pool -- 81] Logback logging API implementation is configured.
+[INFO ] 2016-03-14 16:45:27,556 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-14 16:45:27,599 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-14 16:45:27,648 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-14 16:45:27,877 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-14 16:45:27,879 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-14 16:45:27,881 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-14 16:45:28,184 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-14 16:45:28,184 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-14 16:45:28,185 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-14 16:45:28,999 [repositories/fiteagle] GET query -439247579
+[INFO ] 2016-03-14 16:45:29,124 [repositories/fiteagle] Request for query -439247579 is finished
+[INFO ] 2016-03-14 16:45:29,230 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-14 16:45:29,231 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-14 16:45:29,233 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-14 16:45:29,424 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-14 16:45:29,428 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-14 16:45:29,430 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-14 16:45:29,484 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-14 16:45:29,484 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-14 16:45:29,486 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-14 16:45:29,510 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-14 16:45:29,511 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-14 16:45:29,512 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-14 16:45:29,547 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-14 16:45:29,548 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-14 16:45:29,549 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-03-14 16:45:29,565 [repositories/fiteagle] POST data to repository
+[INFO ] 2016-03-14 16:45:29,565 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-03-14 16:45:29,567 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)

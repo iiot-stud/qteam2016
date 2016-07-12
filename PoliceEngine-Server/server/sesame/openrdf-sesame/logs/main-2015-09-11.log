@@ -1,0 +1,24 @@
+[INFO ] 2015-09-11 15:47:18,049 [ServerService Thread Pool -- 69] Logback logging API implementation is configured.
+[INFO ] 2015-09-11 15:47:21,566 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-09-11 15:47:21,575 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-09-11 15:47:21,590 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-09-11 15:47:21,944 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-09-11 15:47:21,946 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-09-11 15:47:21,948 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-09-11 15:47:32,459 [repositories/SYSTEM] GET statements
+[INFO ] 2015-09-11 15:47:32,566 [default task-31] Request for query 3392903 is finished
+[INFO ] 2015-09-11 15:47:32,650 [repositories/fiteagle] GET namespace list
+[INFO ] 2015-09-11 15:47:32,652 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2015-09-11 15:47:32,665 [repositories/fiteagle] GET statements
+[INFO ] 2015-09-11 15:47:32,671 [repositories/fiteagle] GET statements
+[INFO ] 2015-09-11 15:47:32,682 [repositories/fiteagle] GET statements
+[INFO ] 2015-09-11 15:47:32,689 [repositories/fiteagle] GET statements
+[INFO ] 2015-09-11 15:47:32,697 [repositories/fiteagle] GET statements
+[INFO ] 2015-09-11 15:47:32,703 [repositories/fiteagle] GET statements
+[INFO ] 2015-09-11 15:47:32,712 [repositories/fiteagle] GET statements
+[INFO ] 2015-09-11 15:47:32,719 [repositories/fiteagle] GET statements
+[INFO ] 2015-09-11 15:47:32,975 [repositories/SYSTEM] GET statements
+[INFO ] 2015-09-11 15:47:35,168 [repositories/fiteagle] GET namespace list
+[INFO ] 2015-09-11 15:47:35,170 [repositories/fiteagle] Request for query 3392903 is finished
+[INFO ] 2015-09-11 15:47:35,179 [repositories/fiteagle] GET statements
+[INFO ] 2015-09-11 15:47:35,361 [repositories/SYSTEM] GET statements

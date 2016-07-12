@@ -1,0 +1,246 @@
+[INFO ] 2016-07-11 17:01:24,637 [ServerService Thread Pool -- 65] Logback logging API implementation is configured.
+[INFO ] 2016-07-11 17:01:32,835 [default task-18] CompressingFilter has initialized
+[INFO ] 2016-07-11 17:01:33,037 [repositories/QTeam] POST data to repository
+[INFO ] 2016-07-11 17:01:33,048 [repositories/QTeam] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-07-11 17:01:33,067 [repositories/QTeam] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-07-11 17:07:54,003 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 17:07:54,198 [default task-24] Request for query 3392903 is finished
+[INFO ] 2016-07-11 17:07:54,307 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 17:07:54,317 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 17:07:54,417 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 17:07:57,010 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 17:07:57,022 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 17:07:57,036 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:07:57,195 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 17:08:02,391 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 17:08:02,393 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 17:08:02,402 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:02,415 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:02,424 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:02,432 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:02,439 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:02,447 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:02,454 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:02,462 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:02,540 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 17:08:11,812 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 17:08:11,815 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 17:08:11,820 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:11,831 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:11,838 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:11,844 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:11,850 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:11,862 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:11,870 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:11,878 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:11,925 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 17:08:27,703 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 17:08:27,710 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 17:08:27,715 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:27,723 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:27,729 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:27,742 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:27,751 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:27,761 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:27,768 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:27,776 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:08:27,844 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 17:13:39,755 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 17:13:39,758 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 17:13:39,768 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:39,774 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:39,791 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:39,798 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:39,805 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:39,812 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:39,817 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:39,829 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:39,908 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 17:13:43,151 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 17:13:43,154 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 17:13:43,160 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:43,170 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:43,177 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:43,190 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:43,197 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:43,205 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:43,210 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:43,219 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:43,288 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 17:13:47,955 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 17:13:47,957 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 17:13:47,962 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:47,968 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:47,974 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:47,984 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:47,990 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:47,996 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:48,002 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:48,007 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 17:13:48,050 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 17:39:02,604 [repositories/QTeam] GET query 1935590443
+[INFO ] 2016-07-11 17:39:02,813 [repositories/QTeam] Request for query 1935590443 is finished
+[INFO ] 2016-07-11 17:39:18,406 [repositories/QTeam] POST data to repository
+[INFO ] 2016-07-11 17:39:18,407 [repositories/QTeam] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-07-11 17:39:18,409 [repositories/QTeam] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-07-11 21:18:33,637 [ServerService Thread Pool -- 71] Logback logging API implementation is configured.
+[INFO ] 2016-07-11 21:18:41,195 [default task-1] CompressingFilter has initialized
+[INFO ] 2016-07-11 21:18:41,404 [repositories/QTeam] POST data to repository
+[INFO ] 2016-07-11 21:18:41,420 [repositories/QTeam] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-07-11 21:18:41,462 [repositories/QTeam] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-07-11 21:31:11,900 [repositories/QTeam] GET query 1935590443
+[INFO ] 2016-07-11 21:31:12,168 [repositories/QTeam] Request for query 1935590443 is finished
+[INFO ] 2016-07-11 21:31:26,587 [repositories/QTeam] POST data to repository
+[INFO ] 2016-07-11 21:31:26,588 [repositories/QTeam] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-07-11 21:31:26,589 [repositories/QTeam] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-07-11 21:33:56,728 [repositories/QTeam] GET query 1935590443
+[INFO ] 2016-07-11 21:33:56,792 [repositories/QTeam] Request for query 1935590443 is finished
+[INFO ] 2016-07-11 21:35:04,860 [repositories/QTeam] GET query 1935590443
+[INFO ] 2016-07-11 21:35:04,945 [repositories/QTeam] Request for query 1935590443 is finished
+[INFO ] 2016-07-11 21:40:34,550 [repositories/QTeam] GET query 1935590443
+[INFO ] 2016-07-11 21:40:34,637 [repositories/QTeam] Request for query 1935590443 is finished
+[INFO ] 2016-07-11 21:40:50,702 [repositories/QTeam] POST data to repository
+[INFO ] 2016-07-11 21:40:50,713 [repositories/QTeam] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-07-11 21:40:50,717 [repositories/QTeam] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-07-11 21:43:24,625 [repositories/QTeam] GET query 1935590443
+[INFO ] 2016-07-11 21:43:24,771 [repositories/QTeam] Request for query 1935590443 is finished
+[INFO ] 2016-07-11 21:43:36,512 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 21:43:36,591 [default task-17] Request for query 3392903 is finished
+[INFO ] 2016-07-11 21:43:36,693 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 21:43:36,696 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 21:43:36,714 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:43:36,921 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 21:43:46,074 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 21:43:46,077 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 21:43:46,091 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:43:46,105 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:43:46,124 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:43:46,139 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:43:46,150 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:43:46,167 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:43:46,182 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:43:46,199 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:43:46,291 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 21:44:28,735 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 21:44:28,744 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 21:44:28,756 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:44:28,770 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:44:28,777 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:44:28,786 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:44:28,796 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:44:28,805 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:44:28,811 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:44:28,819 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:44:28,902 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 21:46:07,587 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 21:46:07,591 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 21:46:07,596 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:46:07,603 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:46:07,612 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:46:07,618 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:46:07,623 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:46:07,635 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:46:07,645 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:46:07,651 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:46:07,732 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 21:47:26,312 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 21:47:26,315 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 21:47:26,321 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:47:26,331 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:47:26,337 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:47:26,343 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:47:26,349 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:47:26,356 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:47:26,361 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:47:26,369 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:47:26,444 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 21:48:11,002 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 21:48:11,003 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 21:48:11,013 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:48:11,020 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:48:11,025 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:48:11,032 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:48:11,039 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:48:11,047 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:48:11,053 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:48:11,060 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:48:11,142 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 21:56:16,621 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 21:56:16,623 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 21:56:16,631 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:56:16,638 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:56:16,645 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:56:16,652 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:56:16,659 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:56:16,671 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:56:16,681 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:56:16,687 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:56:16,819 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 21:57:24,784 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 21:57:24,787 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 21:57:24,792 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:57:24,797 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:57:24,802 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:57:24,808 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:57:24,813 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:57:24,821 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:57:24,825 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:57:24,837 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 21:57:24,932 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 22:01:56,275 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 22:01:56,277 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 22:01:56,284 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:01:56,290 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:01:56,295 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:01:56,304 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:01:56,310 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:01:56,316 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:01:56,320 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:01:56,325 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:01:56,386 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 22:02:09,843 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 22:02:09,844 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 22:02:09,848 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:02:09,855 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:02:09,860 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:02:09,865 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:02:09,870 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:02:09,875 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:02:09,884 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:02:09,893 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:02:09,960 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 22:02:37,693 [repositories/QTeam] GET query 1935590443
+[INFO ] 2016-07-11 22:02:37,795 [repositories/QTeam] Request for query 1935590443 is finished
+[INFO ] 2016-07-11 22:04:35,874 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 22:04:35,875 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 22:04:35,880 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:04:35,885 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:04:35,892 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:04:35,900 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:04:35,905 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:04:35,919 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:04:35,927 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:04:35,934 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:04:36,019 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 22:04:38,191 [repositories/QTeam] GET namespace list
+[INFO ] 2016-07-11 22:04:38,192 [repositories/QTeam] Request for query 3392903 is finished
+[INFO ] 2016-07-11 22:04:38,196 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:04:38,207 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:04:38,211 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:04:38,216 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:04:38,222 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:04:38,227 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:04:38,232 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:04:38,238 [repositories/QTeam] GET statements
+[INFO ] 2016-07-11 22:04:38,289 [repositories/SYSTEM] GET statements
+[INFO ] 2016-07-11 22:05:29,568 [repositories/QTeam] GET query 1935590443
+[INFO ] 2016-07-11 22:05:29,635 [repositories/QTeam] Request for query 1935590443 is finished
+[INFO ] 2016-07-11 22:05:45,482 [repositories/QTeam] POST data to repository
+[INFO ] 2016-07-11 22:05:45,482 [repositories/QTeam] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2016-07-11 22:05:45,484 [repositories/QTeam] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2016-07-11 22:06:04,808 [repositories/QTeam] GET query 1935590443
+[INFO ] 2016-07-11 22:06:04,866 [repositories/QTeam] Request for query 1935590443 is finished
+[INFO ] 2016-07-11 22:06:58,077 [repositories/QTeam] GET query 1935590443
+[INFO ] 2016-07-11 22:06:58,119 [repositories/QTeam] Request for query 1935590443 is finished
+[INFO ] 2016-07-11 22:22:02,282 [repositories/QTeam] GET query 1935590443
+[INFO ] 2016-07-11 22:22:02,381 [repositories/QTeam] Request for query 1935590443 is finished

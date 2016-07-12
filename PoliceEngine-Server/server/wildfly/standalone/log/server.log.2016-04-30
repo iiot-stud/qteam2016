@@ -1,0 +1,112 @@
+2016-04-30 14:58:56,933 ERROR [org.apache.activemq.artemis.core.server] (Thread-2 (ActiveMQ-scheduled-threads-2039799420)) AMQ224033: Failed to broadcast connector configs: java.io.IOException: Das Netzwerk ist nicht erreichbar
+	at java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.net.DatagramSocket.send(DatagramSocket.java:693)
+	at org.apache.activemq.artemis.api.core.UDPBroadcastEndpointFactory$UDPBroadcastEndpoint.broadcast(UDPBroadcastEndpointFactory.java:140)
+	at org.apache.activemq.artemis.core.server.cluster.impl.BroadcastGroupImpl.broadcastConnectors(BroadcastGroupImpl.java:187)
+	at org.apache.activemq.artemis.core.server.cluster.impl.BroadcastGroupImpl.run(BroadcastGroupImpl.java:196)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-04-30 14:58:57,604 WARN  [org.apache.activemq.artemis.core.client] (activemq-failure-check-thread) AMQ212037: Connection failure has been detected: AMQ119014: Did not receive data from /127.0.0.1:35030. It is likely the client has exited or crashed without closing its connection, or the network between the server and client has failed. You also might have configured connection-ttl and client-failure-check-period incorrectly. Please check user manual for more information. The connection will now be closed. [code=CONNECTION_TIMEDOUT]
+2016-04-30 14:58:57,619 INFO  [org.apache.activemq.artemis.core.server] (activemq-failure-check-thread) AMQ221021: failed to remove connection
+2016-04-30 15:00:33,517 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested.
+2016-04-30 15:00:33,559 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 87) WFLYUT0022: Unregistered web context: /openrdf-sesame
+2016-04-30 15:00:33,566 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 89) WFLYUT0022: Unregistered web context: /resourceAdapterManager
+2016-04-30 15:00:33,567 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 88) WFLYUT0022: Unregistered web context: /openrdf-workbench
+2016-04-30 15:00:33,588 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 90) WFLYUT0022: Unregistered web context: /reservation
+2016-04-30 15:00:33,608 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/usersDS]
+2016-04-30 15:00:33,621 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 91) WFLYUT0022: Unregistered web context: /orchestrator
+2016-04-30 15:00:33,668 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 87) Destroying Spring FrameworkServlet 'openrdf-http-server'
+2016-04-30 15:00:33,668 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] (ServerService Thread Pool -- 87) Closing WebApplicationContext for namespace 'openrdf-http-server-servlet': startup date [Fri Apr 29 17:58:52 CEST 2016]; root of context hierarchy
+2016-04-30 15:00:33,680 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 93) WFLYUT0022: Unregistered web context: /bus
+2016-04-30 15:00:33,706 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 95) WFLYUT0022: Unregistered web context: /OpenBaton
+2016-04-30 15:00:33,710 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 92) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:/ConnectionFactory
+2016-04-30 15:00:33,711 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 97) WFLYUT0022: Unregistered web context: /motor
+2016-04-30 15:00:33,736 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 96) WFLYUT0022: Unregistered web context: /federationManager
+2016-04-30 15:00:33,744 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 92) WFLYUT0022: Unregistered web context: /sfa
+2016-04-30 15:00:33,815 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 88) WFLYUT0022: Unregistered web context: /usercerts
+2016-04-30 15:00:33,817 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 94) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2016-04-30 15:00:33,967 INFO  [org.fiteagle.north.sfa.StartUp] (ServerService Thread Pool -- 97) STOP
+2016-04-30 15:00:34,049 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0010: Stopping weld service for deployment usercerts.war
+2016-04-30 15:00:34,067 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+2016-04-30 15:00:34,084 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0010: Stopping weld service for deployment sfa.war
+2016-04-30 15:00:34,137 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment usercerts.war (runtime-name: usercerts.war) in 571ms
+2016-04-30 15:00:34,146 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment sfa.war (runtime-name: sfa.war) in 580ms
+2016-04-30 15:00:34,277 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0010: Stopping weld service for deployment bus.war
+2016-04-30 15:00:34,283 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0010: Stopping weld service for deployment resourceAdapterManager.war
+2016-04-30 15:00:34,344 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0010: Stopping weld service for deployment federationManager.war
+2016-04-30 15:00:34,344 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0010: Stopping weld service for deployment motor.war
+2016-04-30 15:00:34,368 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0010: Stopping weld service for deployment reservation.war
+2016-04-30 15:00:34,369 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0010: Stopping weld service for deployment OpenBaton.war
+2016-04-30 15:00:34,428 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment motor.war (runtime-name: motor.war) in 862ms
+2016-04-30 15:00:34,430 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0010: Stopping weld service for deployment orchestrator.war
+2016-04-30 15:00:34,444 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment resourceAdapterManager.war (runtime-name: resourceAdapterManager.war) in 878ms
+2016-04-30 15:00:34,450 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment bus.war (runtime-name: bus.war) in 880ms
+2016-04-30 15:00:34,452 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2016-04-30 15:00:34,453 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2016-04-30 15:00:34,454 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) java.lang.InterruptedException
+2016-04-30 15:00:34,456 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-4) WFLYJCA0011: Unbound JCA ConnectionFactory [java:/JmsXA]
+2016-04-30 15:00:34,457 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2016-04-30 15:00:34,465 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+2016-04-30 15:00:34,465 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
+2016-04-30 15:00:34,465 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:492)
+2016-04-30 15:00:34,465 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:680)
+2016-04-30 15:00:34,465 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at sun.nio.fs.AbstractWatchService.take(AbstractWatchService.java:118)
+2016-04-30 15:00:34,465 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at org.fiteagle.abstractAdapter.AdapterControl$1.run(AdapterControl.java:91)
+2016-04-30 15:00:34,465 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at org.jboss.as.ee.concurrent.ControlPointUtils$ControlledRunnable.run(ControlPointUtils.java:105)
+2016-04-30 15:00:34,475 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+2016-04-30 15:00:34,476 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+2016-04-30 15:00:34,476 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment reservation.war (runtime-name: reservation.war) in 916ms
+2016-04-30 15:00:34,476 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at org.glassfish.enterprise.concurrent.internal.ManagedFutureTask.run(ManagedFutureTask.java:141)
+2016-04-30 15:00:34,476 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+2016-04-30 15:00:34,476 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment OpenBaton.war (runtime-name: OpenBaton.war) in 917ms
+2016-04-30 15:00:34,476 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+2016-04-30 15:00:34,476 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at java.lang.Thread.run(Thread.java:745)
+2016-04-30 15:00:34,476 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-2) 	at org.glassfish.enterprise.concurrent.ManagedThreadFactoryImpl$ManagedThread.run(ManagedThreadFactoryImpl.java:250)
+2016-04-30 15:00:34,477 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) java.lang.InterruptedException
+2016-04-30 15:00:34,477 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+2016-04-30 15:00:34,477 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
+2016-04-30 15:00:34,477 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:492)
+2016-04-30 15:00:34,477 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:680)
+2016-04-30 15:00:34,477 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at sun.nio.fs.AbstractWatchService.take(AbstractWatchService.java:118)
+2016-04-30 15:00:34,478 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at org.fiteagle.abstractAdapter.AdapterControl$1.run(AdapterControl.java:91)
+2016-04-30 15:00:34,478 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at org.jboss.as.ee.concurrent.ControlPointUtils$ControlledRunnable.run(ControlPointUtils.java:105)
+2016-04-30 15:00:34,478 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+2016-04-30 15:00:34,478 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+2016-04-30 15:00:34,478 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at org.glassfish.enterprise.concurrent.internal.ManagedFutureTask.run(ManagedFutureTask.java:141)
+2016-04-30 15:00:34,478 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+2016-04-30 15:00:34,478 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+2016-04-30 15:00:34,478 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at java.lang.Thread.run(Thread.java:745)
+2016-04-30 15:00:34,478 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-1) 	at org.glassfish.enterprise.concurrent.ManagedThreadFactoryImpl$ManagedThread.run(ManagedThreadFactoryImpl.java:250)
+2016-04-30 15:00:34,479 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-3) java.lang.InterruptedException
+2016-04-30 15:00:34,479 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-3) 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+2016-04-30 15:00:34,479 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-3) 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
+2016-04-30 15:00:34,479 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-3) 	at java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:492)
+2016-04-30 15:00:34,479 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-3) 	at java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:680)
+2016-04-30 15:00:34,479 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-3) 	at sun.nio.fs.AbstractWatchService.take(AbstractWatchService.java:118)
+2016-04-30 15:00:34,479 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-3) 	at org.fiteagle.abstractAdapter.AdapterControl$1.run(AdapterControl.java:91)
+2016-04-30 15:00:34,480 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-3) 	at org.jboss.as.ee.concurrent.ControlPointUtils$ControlledRunnable.run(ControlPointUtils.java:105)
+2016-04-30 15:00:34,480 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-3) 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+2016-04-30 15:00:34,480 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-3) 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+2016-04-30 15:00:34,480 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-3) 	at org.glassfish.enterprise.concurrent.internal.ManagedFutureTask.run(ManagedFutureTask.java:141)
+2016-04-30 15:00:34,480 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-3) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+2016-04-30 15:00:34,480 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-3) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+2016-04-30 15:00:34,480 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-3) 	at java.lang.Thread.run(Thread.java:745)
+2016-04-30 15:00:34,480 ERROR [stderr] (EE-ManagedExecutorService-default-Thread-3) 	at org.glassfish.enterprise.concurrent.ManagedThreadFactoryImpl$ManagedThread.run(ManagedThreadFactoryImpl.java:250)
+2016-04-30 15:00:34,483 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTPS listener xmlrpc-listener suspending
+2016-04-30 15:00:34,490 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment federationManager.war (runtime-name: federationManager.war) in 924ms
+2016-04-30 15:00:34,500 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTPS listener xmlrpc-listener stopped, was bound to 0.0.0.0:8089
+2016-04-30 15:00:34,513 INFO  [org.apache.activemq.artemis.ra] (ServerService Thread Pool -- 94) AMQ151003: resource adaptor stopped
+2016-04-30 15:00:34,549 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment orchestrator.war (runtime-name: orchestrator.war) in 990ms
+2016-04-30 15:00:34,562 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment openrdf-workbench.war (runtime-name: openrdf-workbench.war) in 1003ms
+2016-04-30 15:00:34,598 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment openrdf-sesame.war (runtime-name: openrdf-sesame.war) in 1032ms
+2016-04-30 15:00:34,635 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 94) AMQ221002: Apache ActiveMQ Artemis Message Broker version 1.1.0.wildfly-011 [12463af9-f433-11e5-b72a-0bd9450d96f4] stopped
+2016-04-30 15:00:34,635 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+2016-04-30 15:00:34,636 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:8080
+2016-04-30 15:00:34,637 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 1.3.15.Final stopping
+2016-04-30 15:00:34,651 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly Full 10.0.0.Final (WildFly Core 2.0.10.Final) stopped in 1084ms

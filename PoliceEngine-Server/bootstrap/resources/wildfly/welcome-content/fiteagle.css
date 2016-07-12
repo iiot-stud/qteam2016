@@ -1,0 +1,56 @@
+body{
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.4em;
+  font-size: 18px;
+  width: 100%;
+
+}
+
+a:link{color:#FF9600;text-decoration: none;}
+a:visited{color:#FF9600;text-decoration: none;}
+
+h2{
+  font-size: 30px;
+
+  font-weight: 700;
+  line-height: 1.3em;
+}
+
+
+.logo-holder{
+  display: block;
+  margin: 0 auto;
+  min-width: 600px;
+  max-width:1400px;
+  margin-top: 5%;
+
+
+}
+
+img#logo {
+ 
+  width:300px;
+  height:300px;
+  border:0px;
+  float: left;
+  margin-top:15px;
+
+}
+
+
+#text {
+  display: block;
+  border:0px;
+  width: 65%;
+  float: left;
+  padding-left: 3em;
+  white-space: normal;
+}
+
+
+
+.lead{
+  white-space: normal;
+  word-wrap: break-word;
+
+}

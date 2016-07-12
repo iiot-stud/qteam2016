@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBFPMKBWTZwpnKVKAUSfJVkzu-d5G10XZM"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+
+
+<script>
+/*
+function initialize() {
+  var myLatLng = {lat: -25.363, lng: 131.044};
+  var mapProp = {
+    center:myLatLng,
+    zoom:5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'test!'
+  });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+*/
+</script>
+
+
+<script type="text/javascript">
+/*
+      google.charts.load('current', {'packages':['geochart']});
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Datacenters','iwas'],
+          ['Germany', 1, 5],
+          ['Ireland', 1, 5],
+          ['Italy', 0, 5]
+        ]);
+
+        var options = {
+          colorAxis: {colors: ['#00853f', 'white', '#e31b23']},
+          backgroundColor: '#81d4fa', //water
+          datalessRegionColor: '#fafafa', // gray for all countries that are not deployed.
+          defaultColor: '#f5f5f5', //90ee90
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('googleMap'));
+        chart.draw(data, options);
+
+      }
+  */
+</script>
+
+<script src="data.js" ></script>
+<script> 
+
+QTeamJSONGet = function() {
+var xmlhttp = new XMLHttpRequest();
+var url = "_RASPBERRY_IP_";
+
+xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        var data = JSON.parse(xmlhttp.responseText);
+        processData(data);
+    }
+};
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
+
+function processData(data) {
+var locations = data.locations;
+var out = [];
+var googleDataTable = [];
+googleDataTable.push(['Land', 'Datenzentren']);
+var i;
+var randomnumber; // to simulate number of Datacenters
+
+for (var i = 0; i < locations.length; i++) {
+
+  randomnumber = Math.floor(Math.random() * (20 - 0 + 1)) + 0;
+  googleDataTable.push([locations[i].country, randomnumber]);
+  console.log(locations[i].country);
+};
+console.log(googleDataTable);
+
+//now add this to googleCharts
+ google.charts.load('current', {'packages':['geochart']});
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+
+        var data = google.visualization.arrayToDataTable(googleDataTable);
+
+        var options = {
+          colorAxis: {colors: ['#5cffa9','#00c25c','#007638']},
+          backgroundColor: '#81d4fa', //water #00853f
+          datalessRegionColor: '#fafafa', // gray for all countries that are not deployed.
+          defaultColor: '#f5f5f5', //90ee90
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('googleMap'));
+        chart.draw(data, options);
+
+      }
+}
+};
+
+
+
+/*
+DummyData Version
+*/
+
+/*
+QTEAMData = function(){
+var data = RESPONSE;
+var locations = data.locations;
+var out = [];
+var googleDataTable = [];
+googleDataTable.push(['Land', 'Datenzentren']);
+var i;
+var randomnumber; // to simulate number of Datacenters
+
+for (var i = 0; i < locations.length; i++) {
+
+  randomnumber = Math.floor(Math.random() * (20 - 0 + 1)) + 0;
+  googleDataTable.push([locations[i].country, randomnumber]);
+  console.log(locations[i].country);
+};
+console.log(googleDataTable);
+
+//now add this to googleCharts
+ google.charts.load('current', {'packages':['geochart']});
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+
+        var data = google.visualization.arrayToDataTable(googleDataTable);
+
+        var options = {
+          colorAxis: {colors: ['#5cffa9','#00c25c','#007638']},
+          backgroundColor: '#81d4fa', //water #00853f
+          datalessRegionColor: '#fafafa', // gray for all countries that are not deployed.
+          defaultColor: '#f5f5f5', //90ee90
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('googleMap'));
+        chart.draw(data, options);
+
+      }
+}
+*/
+
+</script>
+
+
+</head>
+
+<body>
+<!-- <button type="submit" class="btn btn-primary" onclick="QTEAMData()">Aktualisieren</button> QTeamJSONGet -->
+<button type="submit" class="btn btn-primary" onclick="QTeamJSONGet()">Aktualisieren</button> QTeamJSONGet
+
+<div id="googleMap" style="width:900px;height:500px;"></div>
+</body>
+
+</html>

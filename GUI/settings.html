@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Q-Team</title>
+
+    <!-- link cdn files here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+
+    <!--- get checkbox data and make an array out of it -->
+    <script type="text/javascript">
+
+    QTEAMPostForm = function(){
+    var attributes = [];
+
+    var applicationNameField = document.getElementById("inputName");
+    var applicationName = applicationNameField.value
+
+    var form = document.getElementById("settingsForm"),
+
+     selects = document.getElementById("minAgeSelect"),
+     inputs = form.getElementsByTagName("input"),
+
+     age = selects.options[selects.selectedIndex].value,
+     ageEntry = { "http://www.q-team.org/Ontology#minAge":age};
+      attributes.push(ageEntry);
+
+    //console.log(selects.options[selects.selectedIndex].value);
+
+    var inputs = form.getElementsByTagName("input");
+
+      for (var i = 0, max = inputs.length; i < max; i += 1) {
+        // Take only those inputs which are checkbox
+
+        
+
+        if (inputs[i].type == "checkbox" && inputs[i].name == "vergessen") {
+          if (inputs[i].checked) {
+            var entry = { "http://www.q-team.org/Ontology#Recht_auf_Vergessen":true};
+              attributes.push(entry);
+          }else{
+            var entry = { "http://www.q-team.org/Ontology#Recht_auf_Vergessen":false};
+              attributes.push(entry);
+          };          
+        };
+
+        if (inputs[i].type == "checkbox" && inputs[i].name == "einwilligung") {
+          if (inputs[i].checked) {
+            var entry = { "http://www.q-team.org/Ontology#Einwilligung_Zur_Datensammlung":true};
+              attributes.push(entry);
+          }else{
+            var entry = { "http://www.q-team.org/Ontology#Einwilligung_Zur_Datensammlung":false};
+              attributes.push(entry);
+          };          
+        };
+
+        if (inputs[i].type == "checkbox" && inputs[i].name == "meldepflicht") {
+          if (inputs[i].checked) {
+            var entry = { "http://www.q-team.org/Ontology#Meldepflicht_bei_Verletzung":true};
+              attributes.push(entry);
+          }else{
+            var entry = { "http://www.q-team.org/Ontology#Meldepflicht_bei_Verletzung":false};
+              attributes.push(entry);
+          };          
+        };  
+      };
+
+   // console.log(attributes);
+
+    /*
+      ### POST TO SERVER
+    */
+
+    var xmlhttp = new XMLHttpRequest();
+    var url = "http://194.95.174.230:8080/federationManager/request/v2"; //http://194.95.174.230:8080/federationManager/request/v2
+
+    xmlhttp.onreadystatechange = function() {
+      if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+          alert("Hat geklappt");
+      }else if(xmlhttp.readyState == 4 && xmlhttp.status != 200){
+          alert(xmlhttp.status);
+      }
+    };
+
+    xmlhttp.open("POST", url, true);
+    xmlhttp.setRequestHeader("Content-Type", "application/json");
+
+
+      var name = {"name":applicationName};
+      var vendor = {"vendor":"OpenPolicy"};
+      var version = {"version":"0.1"};
+      var preferences = {"preferences":["germany"]};
+
+      var myRequest = {name,vendor,version,preferences,attributes};
+      console.log(myRequest);
+
+
+var data = new FormData();
+data.append('user', 'person');
+data.append('pwd', 'password');
+data.append('organization', 'place');
+data.append('requiredkey', 'key');
+
+xmlhttp.send(myRequest);
+
+    
+}
+
+    
+
+
+/*
+    var inputs = form.getElementsByTagName("input"),
+
+      for (var i = 0, max = inputs.length; i < max; i += 1) {
+        // Take only those inputs which are checkbox
+
+        if (inputs[i].type == "checkbox" && inputs[i].name == "vergessen") {
+          if (inputs[i].checked) {
+            var entry = { "http://www.q-team.org/Ontology#Recht_auf_Vergessen":true};
+              attributes.push(entry);
+          }else{
+            var entry = { "http://www.q-team.org/Ontology#Recht_auf_Vergessen":false};
+              attributes.push(entry);
+          };          
+        };
+
+        if (inputs[i].type == "checkbox" && inputs[i].name == "einwilligung") {
+          if (inputs[i].checked) {
+            var entry = { "http://www.q-team.org/Ontology#Einwilligung_Zur_Datensammlung":true};
+              attributes.push(entry);
+          }else{
+            var entry = { "http://www.q-team.org/Ontology#Einwilligung_Zur_Datensammlung":false};
+              attributes.push(entry);
+          };          
+        };
+
+        if (inputs[i].type == "checkbox" && inputs[i].name == "meldepflicht") {
+          if (inputs[i].checked) {
+            var entry = { "http://www.q-team.org/Ontology#Meldepflicht_bei_Verletzung":true};
+              attributes.push(entry);
+          }else{
+            var entry = { "http://www.q-team.org/Ontology#Meldepflicht_bei_Verletzung":false};
+              attributes.push(entry);
+          };          
+        };  
+      };
+*/
+
+
+    </script>
+
+  </head>
+  <body>
+
+    <!-- checkboxes -->
+<div class="container" style="margin-top:20px;">
+
+  <form id="settingsForm" onsubmit="return false">
+  <fieldset class="form-group">
+    <label for="exampleInputEmail1">Name der Applikation </label>
+    <input type="text" class="form-control" id="inputName" placeholder="Name der Applikation">
+    <small class="text-muted">Dies hilft anderen Ihre Applikation wieder zu erkennen.</small>
+  </fieldset>
+
+  
+
+  <fieldset class="form-group">
+    <label for="exampleSelect1">Datenschutz Mindestalter</label>
+    <select class="form-control" name="minAge" id="minAgeSelect">
+      <option value="12">mindestens 12 Jahre</option>
+      <option value="13">mindestens 13 Jahre</option>
+      <option value="14">mindestens 14 Jahre</option>
+      <option value="16">mindestens 16 Jahre</option>
+      <option value="18">mindestens 18 Jahre</option>
+      <option value="21">+ 21 Jahre</option>
+    </select>
+  </fieldset>
+
+
+  <fieldset class="form-group">
+
+    <label for="exampleSelect1">Datenschutzgesetze</label>
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" name="bdsg">Bundesdatenschutzgesetz
+  </div>
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" name="grundverordnung"> Datenschutz-Grundverordnung
+    </label>
+  </div>
+  </fieldset>
+
+
+  <fieldset class="form-group">
+
+    <label for="exampleSelect1">Weitere Datenschutzregeln</label>
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" name="vergessen"> Recht auf Vergessen
+  </div>
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" name="meldepflicht"> Meldepflicht bei Verletzung
+    </label>
+  </div>
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" name="einwilligung"> Einwilligung zur Datensammlung
+    </label>
+  </div>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="exampleTextarea">Zusätzliche Informationen (Optional)</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="exampleInputFile">Konfigurationsdatei hochladen (Optional)</label>
+    <input type="file" class="form-control-file" id="exampleInputFile">
+    <small class="text-muted">Laden Sie ihre Konfigurationsdatei hoch.</small>
+  </fieldset>
+
+  <button type="submit" class="btn btn-primary" onclick="QTEAMPostForm()">Submit</button>
+</form>
+
+    <!-- JavaScriptfiles-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   <!-- <script src="js/functions.js"></script> -->
+</div>
+
+  </body>
+
+</html>

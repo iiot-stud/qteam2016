@@ -1,0 +1,395 @@
+2016-02-29 17:02:28,414 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.1.Final
+2016-02-29 17:02:28,554 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-02-29 17:02:28,669 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0049: WildFly Full 10.0.0.Final (WildFly Core 2.0.10.Final) starting
+2016-02-29 17:02:29,342 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.0.0.Final (WildFly Core 2.0.10.Final) started in 913ms - Started 27 of 29 services (2 services are lazy, passive or on-demand)
+2016-02-29 17:02:31,390 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: WildFly Full 10.0.0.Final (WildFly Core 2.0.10.Final) stopped in 46ms
+2016-02-29 17:04:55,104 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.1.Final
+2016-02-29 17:04:55,412 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-02-29 17:04:55,515 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 10.0.0.Final (WildFly Core 2.0.10.Final) starting
+2016-02-29 17:04:55,517 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	info.aduna.platform.appdata.basedir = ../sesame
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/home/Dokumente/workspace/server/wildfly/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /opt/java/jre/lib/endorsed
+	java.ext.dirs = /opt/java/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /opt/java/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_72-b15
+	java.security.egd = file:/dev/./urandom
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_72
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.72-b15
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = /home/home/Dokumente/workspace/server/wildfly
+	jboss.host.name = home
+	jboss.modules.dir = /home/home/Dokumente/workspace/server/wildfly/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = home
+	jboss.qualified.host.name = home
+	jboss.server.base.dir = /home/home/Dokumente/workspace/server/wildfly/standalone
+	jboss.server.config.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/configuration
+	jboss.server.data.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/data
+	jboss.server.deploy.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/data/content
+	jboss.server.log.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/log
+	jboss.server.name = home
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/home/Dokumente/workspace/server/wildfly/standalone/configuration/logging.properties
+	module.path = /home/home/Dokumente/workspace/server/wildfly/modules
+	org.jboss.boot.log.file = /home/home/Dokumente/workspace/server/wildfly/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.5.0-040500rc5-generic
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/java/jre/lib/resources.jar:/opt/java/jre/lib/rt.jar:/opt/java/jre/lib/sunrsasign.jar:/opt/java/jre/lib/jsse.jar:/opt/java/jre/lib/jce.jar:/opt/java/jre/lib/charsets.jar:/opt/java/jre/lib/jfr.jar:/opt/java/jre/classes
+	sun.boot.library.path = /opt/java/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/home/Dokumente/workspace/server/wildfly/jboss-modules.jar -mp /home/home/Dokumente/workspace/server/wildfly/modules org.jboss.as.standalone -Djboss.home.dir=/home/home/Dokumente/workspace/server/wildfly -Djboss.server.base.dir=/home/home/Dokumente/workspace/server/wildfly/standalone -Dinfo.aduna.platform.appdata.basedir=../sesame -b 0.0.0.0 -Djava.security.egd=file:/dev/./urandom -c standalone-fiteagle.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = DE
+	user.dir = /home/home/Dokumente/workspace/server/wildfly
+	user.home = /home/home
+	user.language = de
+	user.name = home
+	user.timezone = Europe/Berlin
+2016-02-29 17:04:55,518 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -agentlib:jdwp=transport=dt_socket,address=8787,server=y,suspend=n -Dorg.jboss.boot.log.file=/home/home/Dokumente/workspace/server/wildfly/standalone/log/server.log -Dlogging.configuration=file:/home/home/Dokumente/workspace/server/wildfly/standalone/configuration/logging.properties 
+2016-02-29 17:04:56,499 ERROR [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0055: Caught exception during boot: org.jboss.as.controller.persistence.ConfigurationPersistenceException: WFLYCTL0085: Failed to parse configuration
+	at org.jboss.as.controller.persistence.XmlConfigurationPersister.load(XmlConfigurationPersister.java:131) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.server.ServerService.boot(ServerService.java:356) [wildfly-server-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.controller.AbstractControllerService$1.run(AbstractControllerService.java:299) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_72]
+Caused by: javax.xml.stream.XMLStreamException: WFLYCTL0083: Failed to load module org.jboss.as.jacorb
+	at org.jboss.as.controller.parsing.ExtensionXml.parseExtensions(ExtensionXml.java:155) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.server.parsing.StandaloneXml$DefaultExtensionHandler.parseExtensions(StandaloneXml.java:126) [wildfly-server-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.server.parsing.StandaloneXml_4.readServerElement(StandaloneXml_4.java:218) [wildfly-server-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.server.parsing.StandaloneXml_4.readElement(StandaloneXml_4.java:141) [wildfly-server-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.server.parsing.StandaloneXml.readElement(StandaloneXml.java:103) [wildfly-server-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.server.parsing.StandaloneXml.readElement(StandaloneXml.java:49) [wildfly-server-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.staxmapper.XMLMapperImpl.processNested(XMLMapperImpl.java:110) [staxmapper-1.2.0.Final.jar:1.2.0.Final]
+	at org.jboss.staxmapper.XMLMapperImpl.parseDocument(XMLMapperImpl.java:69) [staxmapper-1.2.0.Final.jar:1.2.0.Final]
+	at org.jboss.as.controller.persistence.XmlConfigurationPersister.load(XmlConfigurationPersister.java:123) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	... 3 more
+Caused by: java.util.concurrent.ExecutionException: java.lang.UnsupportedOperationException: WFLYCTL0309: Legacy extension 'org.jboss.as.jacorb' is not supported on servers running this version. The extension is only supported for use by hosts running a previous release in a mixed-version managed domain
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) [rt.jar:1.8.0_72]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) [rt.jar:1.8.0_72]
+	at org.jboss.as.controller.parsing.ExtensionXml.parseExtensions(ExtensionXml.java:147) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	... 11 more
+Caused by: java.lang.UnsupportedOperationException: WFLYCTL0309: Legacy extension 'org.jboss.as.jacorb' is not supported on servers running this version. The extension is only supported for use by hosts running a previous release in a mixed-version managed domain
+	at org.jboss.as.controller.extension.AbstractLegacyExtension.initializeParsers(AbstractLegacyExtension.java:87) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.controller.parsing.ExtensionXml.loadModule(ExtensionXml.java:183) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.controller.parsing.ExtensionXml.access$000(ExtensionXml.java:69) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.controller.parsing.ExtensionXml$1.call(ExtensionXml.java:127) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.controller.parsing.ExtensionXml$1.call(ExtensionXml.java:124) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [rt.jar:1.8.0_72]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_72]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_72]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_72]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320) [jboss-threads-2.2.1.Final.jar:2.2.1.Final]
+
+2016-02-29 17:04:56,510 FATAL [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0056: Server boot has failed in an unrecoverable manner; exiting. See previous messages for details.
+2016-02-29 17:04:56,557 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested.
+2016-02-29 17:04:56,685 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly Full 10.0.0.Final (WildFly Core 2.0.10.Final) stopped in 59ms
+2016-02-29 17:10:16,744 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.1.Final
+2016-02-29 17:10:17,039 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-02-29 17:10:17,143 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: WildFly Full 10.0.0.Final (WildFly Core 2.0.10.Final) starting
+2016-02-29 17:10:17,144 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	info.aduna.platform.appdata.basedir = ../sesame
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/home/Dokumente/workspace/server/wildfly/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /opt/java/jre/lib/endorsed
+	java.ext.dirs = /opt/java/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /opt/java/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_72-b15
+	java.security.egd = file:/dev/./urandom
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_72
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.72-b15
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = /home/home/Dokumente/workspace/server/wildfly
+	jboss.host.name = home
+	jboss.modules.dir = /home/home/Dokumente/workspace/server/wildfly/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = home
+	jboss.qualified.host.name = home
+	jboss.server.base.dir = /home/home/Dokumente/workspace/server/wildfly/standalone
+	jboss.server.config.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/configuration
+	jboss.server.data.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/data
+	jboss.server.deploy.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/data/content
+	jboss.server.log.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/log
+	jboss.server.name = home
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/home/Dokumente/workspace/server/wildfly/standalone/configuration/logging.properties
+	module.path = /home/home/Dokumente/workspace/server/wildfly/modules
+	org.jboss.boot.log.file = /home/home/Dokumente/workspace/server/wildfly/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.5.0-040500rc5-generic
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/java/jre/lib/resources.jar:/opt/java/jre/lib/rt.jar:/opt/java/jre/lib/sunrsasign.jar:/opt/java/jre/lib/jsse.jar:/opt/java/jre/lib/jce.jar:/opt/java/jre/lib/charsets.jar:/opt/java/jre/lib/jfr.jar:/opt/java/jre/classes
+	sun.boot.library.path = /opt/java/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/home/Dokumente/workspace/server/wildfly/jboss-modules.jar -mp /home/home/Dokumente/workspace/server/wildfly/modules org.jboss.as.standalone -Djboss.home.dir=/home/home/Dokumente/workspace/server/wildfly -Djboss.server.base.dir=/home/home/Dokumente/workspace/server/wildfly/standalone -Dinfo.aduna.platform.appdata.basedir=../sesame -b 0.0.0.0 -Djava.security.egd=file:/dev/./urandom -c standalone-fiteagle.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = DE
+	user.dir = /home/home/Dokumente/workspace/server/wildfly
+	user.home = /home/home
+	user.language = de
+	user.name = home
+	user.timezone = Europe/Berlin
+2016-02-29 17:10:17,145 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -agentlib:jdwp=transport=dt_socket,address=8787,server=y,suspend=n -Dorg.jboss.boot.log.file=/home/home/Dokumente/workspace/server/wildfly/standalone/log/server.log -Dlogging.configuration=file:/home/home/Dokumente/workspace/server/wildfly/standalone/configuration/logging.properties 
+2016-02-29 17:10:18,028 ERROR [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0055: Caught exception during boot: org.jboss.as.controller.persistence.ConfigurationPersistenceException: WFLYCTL0085: Failed to parse configuration
+	at org.jboss.as.controller.persistence.XmlConfigurationPersister.load(XmlConfigurationPersister.java:131) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.server.ServerService.boot(ServerService.java:356) [wildfly-server-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.controller.AbstractControllerService$1.run(AbstractControllerService.java:299) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_72]
+Caused by: javax.xml.stream.XMLStreamException: WFLYCTL0083: Failed to load module org.jboss.as.jacorb
+	at org.jboss.as.controller.parsing.ExtensionXml.parseExtensions(ExtensionXml.java:155) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.server.parsing.StandaloneXml$DefaultExtensionHandler.parseExtensions(StandaloneXml.java:126) [wildfly-server-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.server.parsing.StandaloneXml_Legacy.readServerElement_1_4(StandaloneXml_Legacy.java:424) [wildfly-server-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.server.parsing.StandaloneXml_Legacy.readElement(StandaloneXml_Legacy.java:135) [wildfly-server-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.server.parsing.StandaloneXml.readElement(StandaloneXml.java:100) [wildfly-server-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.server.parsing.StandaloneXml.readElement(StandaloneXml.java:49) [wildfly-server-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.staxmapper.XMLMapperImpl.processNested(XMLMapperImpl.java:110) [staxmapper-1.2.0.Final.jar:1.2.0.Final]
+	at org.jboss.staxmapper.XMLMapperImpl.parseDocument(XMLMapperImpl.java:69) [staxmapper-1.2.0.Final.jar:1.2.0.Final]
+	at org.jboss.as.controller.persistence.XmlConfigurationPersister.load(XmlConfigurationPersister.java:123) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	... 3 more
+Caused by: java.util.concurrent.ExecutionException: java.lang.UnsupportedOperationException: WFLYCTL0309: Legacy extension 'org.jboss.as.jacorb' is not supported on servers running this version. The extension is only supported for use by hosts running a previous release in a mixed-version managed domain
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) [rt.jar:1.8.0_72]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) [rt.jar:1.8.0_72]
+	at org.jboss.as.controller.parsing.ExtensionXml.parseExtensions(ExtensionXml.java:147) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	... 11 more
+Caused by: java.lang.UnsupportedOperationException: WFLYCTL0309: Legacy extension 'org.jboss.as.jacorb' is not supported on servers running this version. The extension is only supported for use by hosts running a previous release in a mixed-version managed domain
+	at org.jboss.as.controller.extension.AbstractLegacyExtension.initializeParsers(AbstractLegacyExtension.java:87) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.controller.parsing.ExtensionXml.loadModule(ExtensionXml.java:183) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.controller.parsing.ExtensionXml.access$000(ExtensionXml.java:69) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.controller.parsing.ExtensionXml$1.call(ExtensionXml.java:127) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.controller.parsing.ExtensionXml$1.call(ExtensionXml.java:124) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [rt.jar:1.8.0_72]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_72]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_72]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_72]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320) [jboss-threads-2.2.1.Final.jar:2.2.1.Final]
+
+2016-02-29 17:10:18,035 FATAL [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0056: Server boot has failed in an unrecoverable manner; exiting. See previous messages for details.
+2016-02-29 17:10:18,071 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested.
+2016-02-29 17:10:18,185 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: WildFly Full 10.0.0.Final (WildFly Core 2.0.10.Final) stopped in 24ms
+2016-02-29 17:12:13,909 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.1.Final
+2016-02-29 17:12:14,249 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-02-29 17:12:14,343 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: WildFly Full 10.0.0.Final (WildFly Core 2.0.10.Final) starting
+2016-02-29 17:12:14,345 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	info.aduna.platform.appdata.basedir = ../sesame
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/home/Dokumente/workspace/server/wildfly/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /opt/java/jre/lib/endorsed
+	java.ext.dirs = /opt/java/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /opt/java/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_72-b15
+	java.security.egd = file:/dev/./urandom
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_72
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.72-b15
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = /home/home/Dokumente/workspace/server/wildfly
+	jboss.host.name = home
+	jboss.modules.dir = /home/home/Dokumente/workspace/server/wildfly/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = home
+	jboss.qualified.host.name = home
+	jboss.server.base.dir = /home/home/Dokumente/workspace/server/wildfly/standalone
+	jboss.server.config.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/configuration
+	jboss.server.data.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/data
+	jboss.server.deploy.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/data/content
+	jboss.server.log.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/log
+	jboss.server.name = home
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/home/Dokumente/workspace/server/wildfly/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/home/Dokumente/workspace/server/wildfly/standalone/configuration/logging.properties
+	module.path = /home/home/Dokumente/workspace/server/wildfly/modules
+	org.jboss.boot.log.file = /home/home/Dokumente/workspace/server/wildfly/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.5.0-040500rc5-generic
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/java/jre/lib/resources.jar:/opt/java/jre/lib/rt.jar:/opt/java/jre/lib/sunrsasign.jar:/opt/java/jre/lib/jsse.jar:/opt/java/jre/lib/jce.jar:/opt/java/jre/lib/charsets.jar:/opt/java/jre/lib/jfr.jar:/opt/java/jre/classes
+	sun.boot.library.path = /opt/java/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/home/Dokumente/workspace/server/wildfly/jboss-modules.jar -mp /home/home/Dokumente/workspace/server/wildfly/modules org.jboss.as.standalone -Djboss.home.dir=/home/home/Dokumente/workspace/server/wildfly -Djboss.server.base.dir=/home/home/Dokumente/workspace/server/wildfly/standalone -Dinfo.aduna.platform.appdata.basedir=../sesame -b 0.0.0.0 -Djava.security.egd=file:/dev/./urandom -c standalone-fiteagle.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = DE
+	user.dir = /home/home/Dokumente/workspace/server/wildfly
+	user.home = /home/home
+	user.language = de
+	user.name = home
+	user.timezone = Europe/Berlin
+2016-02-29 17:12:14,345 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -agentlib:jdwp=transport=dt_socket,address=8787,server=y,suspend=n -Dorg.jboss.boot.log.file=/home/home/Dokumente/workspace/server/wildfly/standalone/log/server.log -Dlogging.configuration=file:/home/home/Dokumente/workspace/server/wildfly/standalone/configuration/logging.properties 
+2016-02-29 17:12:15,134 ERROR [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0055: Caught exception during boot: org.jboss.as.controller.persistence.ConfigurationPersistenceException: WFLYCTL0085: Failed to parse configuration
+	at org.jboss.as.controller.persistence.XmlConfigurationPersister.load(XmlConfigurationPersister.java:131) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.server.ServerService.boot(ServerService.java:356) [wildfly-server-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.controller.AbstractControllerService$1.run(AbstractControllerService.java:299) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_72]
+Caused by: javax.xml.stream.XMLStreamException: WFLYCTL0083: Failed to load module org.jboss.as.messaging
+	at org.jboss.as.controller.parsing.ExtensionXml.parseExtensions(ExtensionXml.java:155) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.server.parsing.StandaloneXml$DefaultExtensionHandler.parseExtensions(StandaloneXml.java:126) [wildfly-server-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.server.parsing.StandaloneXml_Legacy.readServerElement_1_4(StandaloneXml_Legacy.java:424) [wildfly-server-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.server.parsing.StandaloneXml_Legacy.readElement(StandaloneXml_Legacy.java:135) [wildfly-server-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.server.parsing.StandaloneXml.readElement(StandaloneXml.java:100) [wildfly-server-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.server.parsing.StandaloneXml.readElement(StandaloneXml.java:49) [wildfly-server-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.staxmapper.XMLMapperImpl.processNested(XMLMapperImpl.java:110) [staxmapper-1.2.0.Final.jar:1.2.0.Final]
+	at org.jboss.staxmapper.XMLMapperImpl.parseDocument(XMLMapperImpl.java:69) [staxmapper-1.2.0.Final.jar:1.2.0.Final]
+	at org.jboss.as.controller.persistence.XmlConfigurationPersister.load(XmlConfigurationPersister.java:123) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	... 3 more
+Caused by: java.util.concurrent.ExecutionException: java.lang.UnsupportedOperationException: WFLYCTL0309: Legacy extension 'org.jboss.as.messaging' is not supported on servers running this version. The extension is only supported for use by hosts running a previous release in a mixed-version managed domain
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) [rt.jar:1.8.0_72]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) [rt.jar:1.8.0_72]
+	at org.jboss.as.controller.parsing.ExtensionXml.parseExtensions(ExtensionXml.java:147) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	... 11 more
+Caused by: java.lang.UnsupportedOperationException: WFLYCTL0309: Legacy extension 'org.jboss.as.messaging' is not supported on servers running this version. The extension is only supported for use by hosts running a previous release in a mixed-version managed domain
+	at org.jboss.as.controller.extension.AbstractLegacyExtension.initializeParsers(AbstractLegacyExtension.java:87) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.controller.parsing.ExtensionXml.loadModule(ExtensionXml.java:183) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.controller.parsing.ExtensionXml.access$000(ExtensionXml.java:69) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.controller.parsing.ExtensionXml$1.call(ExtensionXml.java:127) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at org.jboss.as.controller.parsing.ExtensionXml$1.call(ExtensionXml.java:124) [wildfly-controller-2.0.10.Final.jar:2.0.10.Final]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [rt.jar:1.8.0_72]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_72]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_72]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_72]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320) [jboss-threads-2.2.1.Final.jar:2.2.1.Final]
+
+2016-02-29 17:12:15,139 FATAL [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0056: Server boot has failed in an unrecoverable manner; exiting. See previous messages for details.
+2016-02-29 17:12:15,152 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested.
+2016-02-29 17:12:15,223 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 10.0.0.Final (WildFly Core 2.0.10.Final) stopped in 16ms

@@ -1,0 +1,19 @@
+[INFO ] 2015-06-01 15:22:42,812 [MSC service thread 1-1] Logback logging API implementation is configured.
+[INFO ] 2015-06-01 15:22:46,760 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-06-01 15:22:46,759 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-06-01 15:22:46,781 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[INFO ] 2015-06-01 15:22:46,781 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-06-01 15:22:46,821 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[WARN ] 2015-06-01 15:22:46,824 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-06-01 15:41:30,874 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-06-01 15:41:30,875 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-06-01 15:41:30,876 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-06-01 16:00:39,098 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-06-01 16:00:39,107 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-06-01 16:00:39,108 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-06-01 16:02:43,861 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-06-01 16:02:43,861 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-06-01 16:02:43,863 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)
+[INFO ] 2015-06-01 16:11:20,938 [repositories/fiteagle] POST data to repository
+[INFO ] 2015-06-01 16:11:20,939 [repositories/fiteagle] no base URI specified, using dummy 'foo:bar'
+[WARN ] 2015-06-01 16:11:20,940 [repositories/fiteagle] http://javax.xml.XMLConstants/feature/secure-processing is not a recognized SAX feature. (-1, -1)

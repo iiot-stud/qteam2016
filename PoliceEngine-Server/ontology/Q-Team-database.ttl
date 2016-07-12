@@ -1,0 +1,166 @@
+@prefix : <http://www.q-team.org/Ontology#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix p0: <http://www.w3.org/2003/01/geo/wgs84_pos> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+<http://www.q-team.org/Ontology#> a owl:Ontology ;
+	rdfs:label "Q-Team Communication Testbed"@en ;
+	rdfs:seeAlso "Q-Team Communication Testbed"@en .
+	
+# http://www.q-team.org/Ontology#China
+
+:China a owl:NamedIndividual , :Country .
+#
+# http://www.q-team.org/Ontology#EU
+
+:EU a owl:NamedIndividual , :LawAlliance ;
+	:hasMember :France , :Germany .
+#
+# http://www.q-team.org/Ontology#Einwilligung_Zur_Datensammlung_eu
+
+:Einwilligung_Zur_Datensammlung_eu a owl:NamedIndividual , :EinwilligungZurDatensammlung ;
+	:partOfAct :dsgvo ;
+	:minAge "16"^^xsd:integer .
+#
+# http://www.q-team.org/Ontology#Einwilligung_Zur_Datensammlung_ger
+
+:Einwilligung_Zur_Datensammlung_ger a owl:NamedIndividual , :EinwilligungZurDatensammlung ;
+	:partOfAct :bdsg ;
+	:minAge "12"^^xsd:integer .
+#
+# http://www.q-team.org/Ontology#England
+
+:England a owl:NamedIndividual , :Country ;
+	:memberOf :EU .
+#
+# http://www.q-team.org/Ontology#France
+
+:France a owl:NamedIndividual , :Country .
+#
+# http://www.q-team.org/Ontology#Germany
+
+:Germany a owl:NamedIndividual , :Country .
+#
+# http://www.q-team.org/Ontology#Italy
+
+:Italy a owl:NamedIndividual , :Country ;
+	:memberOf :EU .
+#
+# http://www.q-team.org/Ontology#Meldepflicht_bei_Verletzung
+
+:Meldepflicht_bei_Verletzung a owl:NamedIndividual , :Rule ;
+	:partOfAct :dsgvo .
+#
+# http://www.q-team.org/Ontology#Recht_auf_Vergessen
+
+:Recht_auf_Vergessen a owl:NamedIndividual , :Rule ;
+	:partOfAct :dsgvo .
+#
+# http://www.q-team.org/Ontology#Slot_fr_1
+
+:Slot_fr_1 a owl:NamedIndividual , :Slot ;
+	:hostedInDataCenter :dc_fr_1 .
+#
+# http://www.q-team.org/Ontology#Slot_gb_1
+
+:Slot_gb_1 a owl:NamedIndividual , :Slot ;
+	:hostedInDataCenter :dc_gb_1 .
+#
+# http://www.q-team.org/Ontology#Slot_ger_1
+
+:Slot_ger_1 a owl:NamedIndividual , :Slot ;
+	:hostedInDataCenter :dc_ger_1 .
+#
+# http://www.q-team.org/Ontology#Slot_ger_2
+
+:Slot_ger_2 a owl:NamedIndividual , :Slot ;
+	:hostedInDataCenter :dc_ger_2 .
+#
+# http://www.q-team.org/Ontology#Slot_ger_3
+
+:Slot_ger_3 a owl:NamedIndividual , :Slot ;
+	:hostedInDataCenter :dc_ger_1 .
+#
+# http://www.q-team.org/Ontology#Slot_ger_4
+
+:Slot_ger_4 a owl:NamedIndividual , :Slot ;
+	:hostedInDataCenter :dc_ger_2 .
+#
+# http://www.q-team.org/Ontology#Slot_usa_1
+
+:Slot_usa_1 a owl:NamedIndividual , :Slot ;
+	:hostedInDataCenter :dc_usa_1 .
+#
+# http://www.q-team.org/Ontology#Slot_usa_2
+
+:Slot_usa_2 a owl:NamedIndividual , :Slot ;
+	:hostedInDataCenter :dc_usa_1 .
+#
+# http://www.q-team.org/Ontology#Slot_usa_3
+
+:Slot_usa_3 a owl:NamedIndividual , :Slot ;
+	:hostedInDataCenter :dc_usa_1 .
+#
+# http://www.q-team.org/Ontology#USA
+
+:USA a owl:NamedIndividual , :Country .
+#
+# http://www.q-team.org/Ontology#bdsg
+
+:bdsg a owl:NamedIndividual , :Act ;
+	:appliedIn :Germany .
+#
+# http://www.q-team.org/Ontology#dc_chn_1
+
+:dc_chn_1 a owl:NamedIndividual , :DataCenter ;
+	:locatedIn :China ;
+	:latitude "39.915802"^^xsd:decimal ;
+	:longitude "116.396919"^^xsd:decimal .
+#
+# http://www.q-team.org/Ontology#dc_fr_1
+
+:dc_fr_1 a owl:NamedIndividual , :DataCenter ;
+	:locatedIn :France ;
+	:latitude "48.870289"^^xsd:decimal ;
+	:longitude "2.316667"^^xsd:decimal .
+#
+# http://www.q-team.org/Ontology#dc_gb_1
+
+:dc_gb_1 a owl:NamedIndividual , :DataCenter ;
+	:locatedIn :England ;
+	:latitude "51.451269"^^xsd:decimal ;
+	:longitude "-0.175781"^^xsd:decimal .
+#
+# http://www.q-team.org/Ontology#dc_ger_1
+
+:dc_ger_1 a owl:NamedIndividual , :DataCenter ;
+	:locatedIn :Germany ;
+	:latitude "52.473412"^^xsd:decimal ;
+	:longitude "13.390961"^^xsd:decimal .
+#
+# http://www.q-team.org/Ontology#dc_ger_2
+
+:dc_ger_2 a owl:NamedIndividual , :DataCenter ;
+	:locatedIn :Germany ;
+	:latitude "48.105964"^^xsd:decimal ;
+	:longitude "11.612549"^^xsd:decimal .
+#
+# http://www.q-team.org/Ontology#dc_usa_1
+
+:dc_usa_1 a owl:NamedIndividual , :DataCenter ;
+	:locatedIn :USA ;
+	:latitude "39.107939"^^xsd:decimal ;
+	:longitude "-76.744652"^^xsd:decimal .
+#
+# http://www.q-team.org/Ontology#dsgvo
+
+:dsgvo a owl:NamedIndividual , :Act ;
+	:appliedIn :EU ;
+	:containsRule :Meldepflicht_bei_Verletzung , :Recht_auf_Vergessen .
+#
