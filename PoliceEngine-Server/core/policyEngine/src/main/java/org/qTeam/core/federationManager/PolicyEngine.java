@@ -3,11 +3,14 @@ package org.qTeam.core.federationManager;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.hornetq.utils.json.JSONArray;
 import org.hornetq.utils.json.JSONException;
 import org.hornetq.utils.json.JSONObject;
+import org.qTeam.api.core.IMessageBus;
+import org.qTeam.api.core.MessageUtil;
 import org.qTeam.api.tripletStoreAccessor.TripletStoreAccessor;
 import org.qTeam.api.tripletStoreAccessor.TripletStoreAccessor.ResourceRepositoryException;
 
@@ -22,6 +25,8 @@ import org.qTeam.core.federationManager.Request;
 public class PolicyEngine {
 
 	private static Logger LOGGER = Logger.getLogger(PolicyEngine.class.toString());
+	
+	public Model datacentersModel;
 
 	public Response handleRequest(String jsonRequest) {
 		// Parsing the JSON String to an Java Class
@@ -69,24 +74,44 @@ public class PolicyEngine {
 
 	private Model findSlots(Request request) {
 		Model slutModel /* ;-) */= TripletStoreAccessor.getAllSlots();
+		Property typeProperty = slutModel.getProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#type");
+		Node slotNode = slutModel.getResource("http://www.q-team.org/Ontology#Slot").asNode();
+		
+		Model newSlutNode = ModelFactory.createDefaultModel();
+		ResIterator iterator = slutModel.listResourcesWithProperty(typeProperty,slotNode );
+		for (Resource r : iterator.toList()){
+			Model model = TripletStoreAccessor.getResource(r.getURI());
+			newSlutNode.add(model);
+		}
+		
+		
 		HashMap<String, String> attributes = request.getAttributes();
 		for(String s : attributes.keySet()){
 			if(!attributes.get(s).equals("false")){
-				slutModel = filterModel(s,slutModel);
+				newSlutNode = filterModel(s,newSlutNode);
 			}
 		}
 		
-		return slutModel;
+		return newSlutNode;
 	}
 
 	private Model filterModel(String s,Model model){
 		try{
-			Property property = model.getProperty("http://www.q-team.org/Ontology#complyWithRule");		
-			ResIterator iterator = model.listResourcesWithProperty(property);
+			Property property = model.getProperty("http://www.q-team.org/Ontology#complyWithRule");	
+			Resource object = TripletStoreAccessor.getResource(s).getResource(s);
+			LOGGER.log(Level.SEVERE, "-------------- Filtering Model:");
+			LOGGER.log(Level.INFO, MessageUtil.serializeModel(model, IMessageBus.SERIALIZATION_TURTLE));
+
+			ResIterator iterator = model.listResourcesWithProperty(property,object);
 			Model newModel = ModelFactory.createDefaultModel();
+			
 			for(Resource r : iterator.toList()){
-				newModel.add(r.getModel());
+				if(r.hasProperty(property, object)){
+					newModel.add(TripletStoreAccessor.getResource(r.getURI()));
+				}
 			}
+			LOGGER.log(Level.SEVERE, "-------------- Finished Model:");
+			LOGGER.log(Level.INFO, MessageUtil.serializeModel(newModel, IMessageBus.SERIALIZATION_TURTLE));
 			return newModel;
 		}catch(Exception e){
 			e.printStackTrace();
@@ -95,11 +120,12 @@ public class PolicyEngine {
 	}
 	private Response createResponse(Request request, Model slotModel) {
 		Response response = null;
+		datacentersModel = TripletStoreAccessor.getDataCenters();
 		if (slotModel.isEmpty()) {
-			response = new Response(request.getName(), request.getVendor(), request.getVersion(), false, null);
+			response = new Response(request.getName(), request.getVendor(), request.getVersion(), false, null, null);
 		} else {
 			response = new Response(request.getName(), request.getVendor(), request.getVersion(), true,
-					slotModel);
+					slotModel,datacentersModel);
 		}
 
 		return response;

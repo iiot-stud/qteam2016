@@ -311,7 +311,7 @@ public class TripletStoreAccessor {
         query.setQueryDescribeType();
         query.addResultVar("resource");
         Triple tripleForPattern = new Triple(new Node_Variable("resource"),new Node_Variable("o"),new Node_Variable("p"));
-        Node node = ModelFactory.createDefaultModel().getResource("http://www.q-team.org/Ontology#Data_center").asNode();
+        Node node = ModelFactory.createDefaultModel().getResource("http://www.q-team.org/Ontology#DataCenter").asNode();
         ElementGroup whereClause = new ElementGroup();
         whereClause.addTriplePattern(new Triple(new Node_Variable("resource"), RDF.type.asNode(), node));
         whereClause.addTriplePattern(tripleForPattern);
@@ -326,11 +326,11 @@ public class TripletStoreAccessor {
     	Query query = QueryFactory.create();
         query.setQueryDescribeType();
         query.addResultVar("resource");
-        Triple tripleForPattern = new Triple(new Node_Variable("resource"),new Node_Variable("o"),new Node_Variable("p"));
+//        Triple tripleForPattern = new Triple(new Node_Variable("resource"),new Node_Variable("o"),new Node_Variable("p"));
         Node node = ModelFactory.createDefaultModel().getResource("http://www.q-team.org/Ontology#Slot").asNode();
         ElementGroup whereClause = new ElementGroup();
         whereClause.addTriplePattern(new Triple(new Node_Variable("resource"), RDF.type.asNode(), node));
-        whereClause.addTriplePattern(tripleForPattern);
+//        whereClause.addTriplePattern(tripleForPattern);
         query.setQueryPattern(whereClause);
 
         QueryExecution execution =  QueryExecutionFactory.sparqlService(QueryExecuter.SESAME_SERVICE, query);

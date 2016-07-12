@@ -75,19 +75,23 @@ public class FederationManagerREST{
 			  ArrayList<HashMap<String,String>> slotList = new  ArrayList<HashMap<String,String>>();
 			  HashMap<String,String> slotMap = new HashMap<String,String>();
 			  
-			  slotMap.put("country", "germany");
+			  slotMap.put("country", "Germany");
 			  slotMap.put("continent", "EU");
 			  slotMap.put("name", "Strato");
 			  slotMap.put("location", "Berlin");
 			  slotMap.put("price", "2");
+			  slotMap.put("latitude", "52.473412");
+			  slotMap.put("longitude", "13.390961");
 			  slotList.add(slotMap);
 
 			  slotMap = new HashMap<String,String>();
-			  slotMap.put("country", "germany");
+			  slotMap.put("country", "China");
 			  slotMap.put("continent", "Asia");
 			  slotMap.put("name", "Ching-chong");
 			  slotMap.put("location", "Peking");
 			  slotMap.put("price", "0,5");
+			  slotMap.put("latitude", "39.915802");
+			  slotMap.put("longitude", "116.396919");
 			  slotList.add(slotMap);
 
 			  response.setSlotList(slotList);
